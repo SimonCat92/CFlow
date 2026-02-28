@@ -28,14 +28,14 @@ I hope C~ will help you build your software blueprints, using AI as it should be
 
 ## Key Features
 
-C~ inherits some of the constructs of building a program with C and most C-based programming languages. Also, C~ doesn't need to be strict—rather, you can see it as a set of rules to follow, as they are backed by a lot of papers about prompt contextualization so that the AI works better, a great combo with the rulesheet!
+C~ inherits some of the constructs of building a program with C and most C-based programming languages. Also, C~ doesn't need to be strict. Rather, you can see it as a set of rules to follow, as they are backed by a lot of papers about prompt contextualization so that the AI works better, a great combo with the rulesheet!
 
 - Brackets, objects, classes, vectors, pointers, lists, variables, comments, function definitions...
 - **No more casting issues**
 - **No more syntax errors**
 - **Less suffering behind the screen**
 
-Importing a library that doesn't exist or you have not defined? Not an issue—if it doesn't exist, it may be created with the help of AI. Of course, the more general you'll be, the more difficult it will be for the AI to stay on track (in fact, this is—I repeat—a middle ground between vanilla coding and pure vibe coding), so you'll still have to express your program idea with actual "pseudocode". Still, where you want help in writing, the AI will assist you, improving your work where you asked to!
+Importing a library that doesn't exist or you have not defined? Not an issue and -if it doesn't exist- it may be created with the help of AI. Of course, the more general you'll be, the more difficult it will be for the AI to stay on track (in fact, this is—I repeat—a middle ground between vanilla coding and pure vibe coding), so you'll still have to express your program idea with actual "pseudocode". Still, where you want help in writing, the AI will assist you, improving your work where you asked to!
 
 ## Happy Coding!
 
