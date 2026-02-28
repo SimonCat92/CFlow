@@ -35,8 +35,10 @@ C~ inherits some of the constructs of building a program with C and most C-based
 - **No more syntax errors**
 - **Less suffering behind the screen**
 
-Importing a library that doesn't exist or you have not defined? Not an issue and -if it doesn't exist- it may be created with the help of AI. Of course, the more general you'll be, the more difficult it will be for the AI to stay on track (in fact, this is—I repeat—a middle ground between vanilla coding and pure vibe coding), so you'll still have to express your program idea with actual "pseudocode". Still, where you want help in writing, the AI will assist you, improving your work where you asked to!
+Importing a library that doesn't exist or you have not defined? Not an issue and -if it doesn't exist- it may be created with the help of AI. Of course, the more general you'll be, the more difficult it will be for the AI to stay on track (in fact, C~ is (repeating myself) intended to be a middle ground between vanilla coding and pure vibe coding), so you'll still have to express your program idea with actual "pseudocode". But in any case, where you want help in writing, the AI will assist you, improving your work where you asked to!
 
 ## Happy Coding!
 
 I wish you all happy coding! **Go with the (C) flow!** 🚀
+
+(PS: FOR THE MOMENT C~ IS UNDERGOING IT'S CREATION!)
