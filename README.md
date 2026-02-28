@@ -18,7 +18,7 @@ In a more straightforward way, what is C~? Well, just like to use software made 
 
 ## Why the Name?
 
-It is actually simple: I really like the syntax and programming level of C, and I believe it's one of the best programming languages ever created. As a token of appreciation, I decided I really wanted to call this new form of programming language **"C flow"**. And the `~`? Well, it's one of those characters that on the Italian keyboard is so complex to type—I really wanted to use it somewhere. 😉
+It is actually simple: I really like the syntax and programming level of C, and I believe it's one of the best programming languages ever created. As a token of appreciation, I decided I really wanted to call this new form of programming language **"C flow"**. And the `~`? Well, it's one of those characters that on the Italian keyboard is so complex to type, I really wanted to use it somewhere. ;)
 
 ## Why the Need for a Pseudocode Programming Language?
 
