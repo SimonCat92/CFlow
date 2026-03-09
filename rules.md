@@ -1,6 +1,4 @@
 # rules.cf — C~ (C Flow) Official Rulesheet v1.0
-**The AI Transpiler Alignment Document**
-*Science-backed by landmark prompt engineering research*
 
 ---
 
