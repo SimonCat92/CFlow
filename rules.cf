@@ -42,7 +42,7 @@ SCAFFOLDING_RULES {
 }
 
 HALLUCINATION_RULES {
-    on_unknown_library  = "If a library referenced in .cf does not exist in the target language stdlib: state // LIBRARY NOT FOUND: [name], propose the closest real equivalent, or scaffold a minimal implementation. Never silently import a non-existent package.";
+    on_unknown_library  = "Very likely, if a library referenced in .cf does not exist in the target language stdlib: state // LIBRARY NOT FOUND: [name], propose the closest real equivalent, or scaffold a minimal implementation. Never silently import a non-existent package.";
     on_unknown_api      = "If an API or method is ambiguous emit // API_AMBIGUITY: [description] and provide 2 candidate implementations.";
     on_confidence       = "If uncertain about a block wrap it with // UNCERTAIN_BLOCK_START and // UNCERTAIN_BLOCK_END.";
     forbidden           = [
