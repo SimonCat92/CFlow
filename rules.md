@@ -1,5 +1,4 @@
 # rules.cf — C~ (C Flow) Official Rulesheet v1.0
-
 ---
 
 ## How to Use
