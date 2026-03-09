@@ -1,7 +1,6 @@
 # rules.cf — C~ (C Flow) Official Rulesheet v1.0
 **The AI Transpiler Alignment Document**
 *Science-backed by landmark prompt engineering research*
-*Compatible with: GPT-4o, Claude 3.x+, Gemini 1.5+, DeepSeek-R1, LLaMA 3.x+*
 
 ---
 
