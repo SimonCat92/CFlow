@@ -523,7 +523,7 @@ ai_assist    = "AI_ASSIST" "{" natural_language "}" ;
 
 ## Appendix C: A complete program
 
-See [`example_program.cf`](example_program.cf) (GradeFlow, a student grade manager) for a full program that uses directives, constants, enums, structs, classes, pointers, empty-body contracts, written logic and `AI_ASSIST`. In the playground, press **Load example** to try it.
+See [`example_program.cf`](example_program.cf) (GradeFlow, a student grade manager) for a full program that uses directives, constants, enums, structs, classes, pointers, empty-body contracts and written logic. In the playground, press **Load example** to try it.
 
 ---
 

@@ -6,7 +6,7 @@
 // - Declarations (structs, classes, fn signatures) = YOU control the architecture
 // - Empty bodies {} = AI invents the implementation
 // - Logic blocks in main/control flow = YOU define what happens and in what order
-// - AI_ASSIST{} inside a function = AI handles only that specific part
+// - A comment above an empty body = the contract the AI must satisfy
 // ============================================================
 
 #import math
@@ -124,23 +124,17 @@ fn bool submit_grade(int student_id, string subject, float raw_score) {
     return true;
 }
 
-fn void generate_report(*Student s, ReportConfig cfg) {
-    // The whole report is delegated to the AI: AI_ASSIST states the
-    // minimum requirements, the AI decides how to build it.
-    AI_ASSIST {
-        Print a formatted report for student s, honouring cfg.
-        Minimum requirements:
-        - if s is null, print an error and return;
-        - a header with the student's name and surname;
-        - the average, its GradeLabel (via label_to_string) and whether
-          all exams were passed;
-        - if cfg.show_exams, the exam list sorted by date in
-          cfg.exam_order, one "date | subject | score" line each;
-        - if cfg.show_stats, the best and worst subjects;
-        - if cfg.motivational_closing, a short closing line that fits
-          the GradeLabel, using the student name (max 2 sentences).
-    }
-}
+// AI implements the whole function. Minimum requirements for the report:
+// - if s is null, print an error and return;
+// - a header with the student's name and surname;
+// - the average, its GradeLabel (via label_to_string) and whether all
+//   exams were passed;
+// - if cfg.show_exams, the exam list sorted by date in cfg.exam_order,
+//   one "date | subject | score" line each;
+// - if cfg.show_stats, the best and worst subjects;
+// - if cfg.motivational_closing, a short closing line that fits the
+//   GradeLabel, using the student name (max 2 sentences).
+fn void generate_report(*Student s, ReportConfig cfg) {}
 
 // --- MAIN ---
 
