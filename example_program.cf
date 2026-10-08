@@ -125,38 +125,20 @@ fn bool submit_grade(int student_id, string subject, float raw_score) {
 }
 
 fn void generate_report(*Student s, ReportConfig cfg) {
-    // guard clause
-    if (s == null) { print("ERROR: null student pointer"); return; }
-
-    // print header
-    print("=====================================");
-    print("REPORT: " + s->name + " " + s->surname);
-    print("Average : " + s->average());
-    print("Label   : " + label_to_string(s->grade_label()));
-    print("Passed  : " + s->passed_all());
-    print("=====================================");
-
-    // conditionally print exam list
-    if (cfg.show_exams) {
-        list<ExamResult> exams = sort(s->grades, by=date, order=cfg.exam_order);
-        for (ExamResult e in exams) {
-            print(e.date + " | " + e.subject + " | " + e.score);
-        }
-    }
-
-    // conditionally print subject stats
-    if (cfg.show_stats) {
-        print("Best  subject: " + s->best_subject());
-        print("Worst subject: " + s->worst_subject());
-    }
-
-    // hand off the creative part to AI
-    if (cfg.motivational_closing) {
-        AI_ASSIST {
-            Print a short motivational closing line that fits the
-            student's GradeLabel. Encouraging for FAIL, proud for EXCELLENT.
-            Use the student name. Max 2 sentences.
-        }
+    // The whole report is delegated to the AI: AI_ASSIST states the
+    // minimum requirements, the AI decides how to build it.
+    AI_ASSIST {
+        Print a formatted report for student s, honouring cfg.
+        Minimum requirements:
+        - if s is null, print an error and return;
+        - a header with the student's name and surname;
+        - the average, its GradeLabel (via label_to_string) and whether
+          all exams were passed;
+        - if cfg.show_exams, the exam list sorted by date in
+          cfg.exam_order, one "date | subject | score" line each;
+        - if cfg.show_stats, the best and worst subjects;
+        - if cfg.motivational_closing, a short closing line that fits
+          the GradeLabel, using the student name (max 2 sentences).
     }
 }
 
