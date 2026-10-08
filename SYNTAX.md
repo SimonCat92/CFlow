@@ -2,7 +2,7 @@
 
 *Version 2.0, matching `rules.cf` v2.0*
 
-Cƒ (C Flow) is a pseudo-programming language. You write the **architecture** and the **logic flow** of a program in C-like pseudocode, and an LLM acting as a transpiler turns it into real code in the language you choose. This book describes every construct defined by the Cƒ rules (`rules.cf`), so the transpiler handles them predictably.
+Cƒ (C Flow) is a pseudo-C language. You write the **architecture** and the **logic flow** of a program in pseudo C, and an LLM acting as a transpiler turns it into real code in the language you choose. This book describes every construct defined by the Cƒ rules (`rules.cf`), so the transpiler handles them predictably.
 
 Cƒ is forgiving by design: the transpiler interprets anything outside this book from context and takes care of syntax details and type conversions for you. The conventions below give you **predictable** results.
 

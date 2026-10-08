@@ -32,9 +32,9 @@ Version 1.0 was built on the classic prompt-engineering canon from 2020 to 2023.
 
 ---
 
-## Why a pseudocode language works at all
+## Why a pseudo-C language works at all
 
-Cƒ rests on a simple bet: a program written in structured, C-like pseudocode is a better instruction for an LLM than the same idea written in prose.
+Cƒ rests on a simple bet: a program written in structured pseudo C is a better instruction for an LLM than the same idea written in prose.
 
 - Pseudocode prompts beat natural-language prompts by 7 to 16 F1 points on classification and 12 to 38% (relative) ROUGE-L across 132 tasks, on the BLOOM and CodeGen model families. Code comments, docstrings and structural cues all contributed (Mishra et al. 2023).
 - Expressing task logic as pseudocode and having the model "execute" it beats chain-of-thought and program-of-thought baselines; pseudocode guides reasoning better than natural-language plans (Chae et al. 2024).

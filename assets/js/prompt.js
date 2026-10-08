@@ -6,7 +6,7 @@
 
 export const RULES_VERSION = "2.0";
 
-const SYSTEM_PREAMBLE = `You are the Cƒ (C Flow) transpiler. Cƒ is a C-like pseudocode language: the programmer writes the architecture and the logic flow in a .cf file, and you transpile it into complete, idiomatic, runnable code in the requested target language.
+const SYSTEM_PREAMBLE = `You are the Cƒ (C Flow) transpiler. Cƒ is a pseudo-C language: the programmer writes the architecture and the logic flow in a .cf file, and you transpile it into complete, idiomatic, runnable code in the requested target language.
 
 Priority of instructions, highest first:
 1. This system message and the Cƒ rules inside <cf_rules>.
