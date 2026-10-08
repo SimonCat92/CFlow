@@ -607,12 +607,15 @@ fn bool is_prime(int n) {}
 
 // Written body: transpiled exactly as you wrote it.
 fn main() {
+    int count = 0;
     for (int i = 1; i <= MAX; i++) {
         if (is_prime(i)) {
             print(i + " is prime");
+            count++;
         }
     }
-    AI_ASSIST { print one friendly closing line that mentions MAX }
+    // AI_ASSIST: the AI writes this step in place, using the code above it.
+    AI_ASSIST { print how many prime numbers were found and the MAX value searched up to }
 }
 `;
 
