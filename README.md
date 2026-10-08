@@ -1,44 +1,67 @@
-# C~ (C Flow)
+# Cƒ (C Flow)
 
-C~ (C Flow) is a new kind of programming language that acts as a middle ground between vibe coding and vanilla coding. After months of programming and vibe coding, I find it so easy to introduce a feature in code that I personally wrote, but find it so hard later to understand what the AI did. On the other hand, I find it so hard to start coding into a completely vibe-coded project. Maybe it's a skill issue on my part, but (for me) it also feels like trying to understand someone else's code, which (again, for me) is one of the most infuriating things about coding in general.
+Cƒ (C Flow) is a new kind of programming language that acts as a middle ground between vibe coding and vanilla coding. After months of programming and vibe coding, I find it so easy to introduce a feature in code that I personally wrote, but find it so hard later to understand what the AI did. On the other hand, I find it so hard to start coding into a completely vibe-coded project. Maybe it's a skill issue on my part, but (for me) it also feels like trying to understand someone else's code, which (again, for me) is one of the most infuriating things about coding in general.
 
-## Introducing C~
+## Introducing Cƒ
 
-So here it comes C~ (C Flow, or as a close friend of mine called it **C Slop**), the first logic pseudo-programming language made to maintain the logic flux of a program while also making it easier for the AI to use your "pseudocode" to build a working piece of software in less time, with the features you want, with fewer errors and therefore less token waste, while still making you (the programmer) understand what is going on in your software.
+So here it comes Cƒ (C Flow, or as a close friend of mine called it **C Slop**), the first logic pseudo-programming language made to maintain the logic flux of a program while also making it easier for the AI to use your "pseudocode" to build a working piece of software in less time, with the features you want, with fewer errors and therefore less token waste, while still making you (the programmer) understand what is going on in your software.
 
 This won't solve AI hallucinations, but the scope is to reduce them and improve the overall logic so the AI remains aligned.
 
-## What is C~?
+## Try it online
 
-In a more straightforward way, what is C~? Well, just like to use software made with a programming language like C you need a compiler, or to make your Python app run you need the interpreter, you could see a C~ program as a general **"map code"** that the AI (as a transpiler) is able to rewrite as any programming language you like.
+**[https://simoncat92.github.io/CFlow/](https://simoncat92.github.io/CFlow/)** is the Cƒ playground. It runs entirely in your browser: bring your own OpenRouter API key, pick a model, and transpile your `.cf` program to the language you want. Requests are restricted to Zero-Data-Retention endpoints and go straight from your browser to OpenRouter.
+
+## What is Cƒ?
+
+In a more straightforward way, what is Cƒ? Well, just like to use software made with a programming language like C you need a compiler, or to make your Python app run you need the interpreter, you could see a Cƒ program as a general **"map code"** that the AI (as a transpiler) is able to rewrite as any programming language you like.
 
 **The ingredients are simple:**
 - Use your favorite AI model, local or online
-- Upload your `program.cf` and the `rules.cf` rulesheet, built to help fine-tune the AI to follow the C~ approach and syntax
+- Upload your `program.cf` and the `rules.cf` rulesheet, built to help fine-tune the AI to follow the Cƒ approach and syntax
+
+## Documentation
+
+- [`SYNTAX.md`](SYNTAX.md): **The Cƒ Syntax Book**, the language reference
+- [`rules.md`](rules.md): the science-backed rulesheet, with the research each rule is based on
+- [`rules.cf`](rules.cf): the machine ruleset you feed to the LLM together with your program
+- [`example_program.cf`](example_program.cf): a full example program (GradeFlow)
 
 ## Why the Name?
 
-It is actually simple: I really like the syntax and programming level of C, and I believe it's one of the best programming languages ever created. As a token of appreciation, I decided I really wanted to call this new form of programming language **"C flow"**. And the `~`? Well, it's one of those characters that on the Italian keyboard is so complex to type, I really wanted to use it somewhere. ;)
+It is actually simple: I really like the syntax and programming level of C, and I believe it's one of the best programming languages ever created. As a token of appreciation, I decided I really wanted to call this new form of programming language **"C flow"**. And the `ƒ`? It's the hooked "function" f of mathematics, and it reads *C-f*, just like the `.cf` files you write. Bonus: it's one of those characters that on the Italian keyboard are so complex to type (Alt+0131 on Windows, Option+F on Mac), and I really wanted to use it somewhere. ;)
 
 ## Why the Need for a Pseudocode Programming Language?
 
 It's hard to admit for an engineer like me, but we can no longer deny the truth: **the era of 'vanilla' programming HAS ended**. Negating this would be similar to the folks back in the day who said the internet was bullshit. Nonetheless, I feel like I'm no longer in control of what I build, and I don't like that. I don't want my prefrontal cortex to atrophy and I still want to program my stuff, but in this era we can finally logically program (almost) without the hassle of syntax and type errors aided by AI, which is hundreds of times faster than us at coding at this point.
 
-I hope C~ will help you build your software blueprints, using AI as it should be used: **to empower you**, rather than softly making you dumber day by day and "replacing" jobs, while automation should help us work better instead!
+I hope Cƒ will help you build your software blueprints, using AI as it should be used: **to empower you**, rather than softly making you dumber day by day and "replacing" jobs, while automation should help us work better instead!
 
 ## Key Features
 
-C~ inherits some of the constructs of building a program with C and most C-based programming languages. Also, C~ doesn't need to be strict. Rather, you can see it as a set of rules to follow, as they are backed by a lot of papers about prompt contextualization so that the AI works better, a great combo with the rulesheet!
+Cƒ inherits some of the constructs of building a program with C and most C-based programming languages. Also, Cƒ doesn't need to be strict. Rather, you can see it as a set of rules to follow, as they are backed by a lot of papers about prompt contextualization so that the AI works better, a great combo with the rulesheet!
 
 - Brackets, objects, classes, vectors, pointers, lists, variables, comments, function definitions...
 - **No more casting issues**
 - **No more syntax errors**
 - **Less suffering behind the screen**
 
-Importing a library that doesn't exist or you have not defined? Not an issue and -if it doesn't exist- it may be created with the help of AI. Of course, the more general you'll be, the more difficult it will be for the AI to stay on track (in fact, C~ is (repeating myself) intended to be a middle ground between vanilla coding and pure vibe coding), so you'll still have to express your program idea with actual "pseudocode". But in any case, where you want help in writing, the AI will assist you, improving your work where you asked to!
+Importing a library that doesn't exist or you have not defined? Not an issue and -if it doesn't exist- it may be created with the help of AI. Of course, the more general you'll be, the more difficult it will be for the AI to stay on track (in fact, Cƒ is (repeating myself) intended to be a middle ground between vanilla coding and pure vibe coding), so you'll still have to express your program idea with actual "pseudocode". But in any case, where you want help in writing, the AI will assist you, improving your work where you asked to!
+
+## Privacy
+
+The website runs entirely in your browser and keeps no data: the site uses no cookies or storage. When you press *Compile*, your program, the `rules.cf` ruleset and **your own OpenRouter API key** go directly from your browser to [OpenRouter](https://openrouter.ai), under your account and OpenRouter's terms. As with any web host, GitHub Pages may process standard technical access logs (e.g. IP address) to serve the files: see [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). This is not legal advice; the full Privacy Notice & Terms are on the site.
+
+## Deploying
+
+The site is pure static HTML/CSS/JS, served by **GitHub Pages** from the repo root:
+
+- GitHub Pages: **Settings → Pages → Deploy from a branch → `main` / `(root)`**
+- Local preview: `python -m http.server 8080` from the repo root, then open `http://localhost:8080`
+- Tests: `node --test tests/*.test.mjs` (Node 18+, no dependencies)
 
 ## Happy Coding!
 
 I wish you all happy coding! **Go with the (C) flow!** 🚀
 
-(PS: FOR THE MOMENT C~ IS UNDERGOING IT'S CREATION!)
+(PS: Cƒ is young and evolving: feedback and PRs are welcome!)

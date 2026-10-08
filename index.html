@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://openrouter.ai; base-uri 'none'; form-action 'none'">
+<title>Cƒ (C Flow) · Go with the flow</title>
+<meta name="description" content="Cƒ (C Flow): write the logic flow in pseudocode, an AI transpiles it to the language you choose. Runs entirely in your browser.">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="app">
+
+<header class="site-header">
+  <a class="brand" href="./index.html">
+    <img src="assets/img/logo.svg" alt="" width="26" height="26">
+    <span class="brand-sub">C Flow</span>
+  </a>
+  <span class="tagline">Go with the flow</span>
+  <span class="tag-desc">Write the logic flow in pseudocode. An AI transpiles it to the language you choose.</span>
+  <nav aria-label="Site">
+    <a href="./book.html">Book</a>
+    <a href="./science.html">Science</a>
+    <a href="./privacy.html">Privacy</a>
+    <a href="https://github.com/SimonCat92/CFlow" rel="noopener">GitHub</a>
+  </nav>
+</header>
+
+<main class="app-main">
+
+  <section class="panel boxed p-program" aria-labelledby="h-program">
+    <h2 class="panel-title" id="h-program">Program</h2>
+    <div class="editor-toolbar">
+      <span class="file-name" id="file-name">program.cf</span>
+      <span class="line-count" id="line-count">1 line</span>
+      <button type="button" class="btn btn-small" id="upload-btn">Upload</button>
+      <input type="file" id="upload-input" accept=".cf,.txt" hidden>
+      <button type="button" class="btn btn-small" id="example-btn">Example</button>
+      <button type="button" class="btn btn-small" id="download-btn">Download</button>
+      <button type="button" class="btn btn-small" id="clear-btn">Clear</button>
+    </div>
+    <div class="editor-wrap" id="editor-wrap">
+      <pre id="editor-highlight" aria-hidden="true"><code id="editor-highlight-code"></code></pre>
+      <textarea id="editor" class="code" spellcheck="false" autocomplete="off" autocapitalize="off" wrap="off" aria-label="Cƒ program editor" placeholder="// Write your Cƒ program here, upload a .cf file, or drop one onto this editor."></textarea>
+    </div>
+  </section>
+
+  <section class="panel boxed p-compile" aria-labelledby="h-compile">
+    <h2 class="panel-title" id="h-compile">Compile</h2>
+    <div class="panel-scroll">
+      <div class="key-row">
+        <input type="password" id="api-key" autocomplete="off" spellcheck="false" placeholder="OpenRouter API key (sk-or-…)" aria-label="OpenRouter API key" class="cut">
+        <button type="button" class="btn btn-small" id="clear-key">Clear</button>
+      </div>
+      <p class="key-warning" id="key-warning" hidden>OpenRouter keys usually start with “sk-or-”. Double-check what you pasted.</p>
+      <p class="key-hint">Kept in memory, sent only to openrouter.ai</p>
+      <div class="field-row">
+        <div class="field">
+          <label for="lang-select">Target language</label>
+          <select id="lang-select" class="cut"></select>
+          <input type="text" id="lang-other" class="cut" placeholder="e.g. Haskell" maxlength="60" hidden>
+        </div>
+        <div class="field">
+          <label for="model-combo">Model <span class="muted" id="model-count"></span></label>
+          <div class="combo">
+            <input type="text" id="model-combo" class="cut" role="combobox" aria-expanded="false" aria-controls="model-list" aria-autocomplete="list" placeholder="Pick a model…" autocomplete="off" spellcheck="false">
+          </div>
+          <p class="model-line" id="model-selected" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+    <div class="run-row">
+      <button type="button" class="btn btn-primary" id="compile-btn" disabled><span class="btn-text">Compile</span><span class="arr" aria-hidden="true">→</span></button>
+      <button type="button" class="btn" id="stop-btn" hidden>Stop</button>
+    </div>
+  </section>
+
+  <section class="panel boxed p-output" aria-labelledby="h-output">
+    <h2 class="panel-title" id="h-output">Output</h2>
+    <p id="status" role="status" aria-live="polite"></p>
+    <div id="out-warnings"></div>
+    <div class="output-body">
+      <pre id="output-raw" class="placeholder" aria-label="Model output">Output appears here.</pre>
+      <div id="result" hidden>
+        <div id="result-tabs"></div>
+        <div id="result-panels"></div>
+      </div>
+    </div>
+    <p class="ai-note">AI-generated code. Review and test before use.</p>
+  </section>
+
+</main>
+
+<!-- Model dropdown lives outside the panels so it can overlay the Output panel
+     without being clipped by their cut corners. -->
+<div id="model-drop" class="combo-drop cut cutline" hidden>
+  <p class="model-msg" id="model-status" hidden></p>
+  <button type="button" class="btn btn-small" id="model-retry" hidden>Retry</button>
+  <ul id="model-list" role="listbox" aria-label="Zero-data-retention models"></ul>
+</div>
+
+<footer class="site-footer">
+  <span>Runs in your browser · Stores no data · <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener">CC0</a></span>
+  <nav aria-label="Footer">
+    <a href="./book.html">Book</a>
+    <a href="./science.html">Science</a>
+    <a href="./privacy.html">Privacy</a>
+    <a href="https://github.com/SimonCat92/CFlow" rel="noopener">GitHub</a>
+  </nav>
+</footer>
+
+<div id="notice" role="region" aria-label="Privacy notice">
+  <div class="banner-card">
+    <p class="banner-text">Cƒ runs entirely in your browser. This site stores no data and uses no cookies. When you press Compile, your program, the Cƒ rules and your OpenRouter key go directly to OpenRouter, under your own account and OpenRouter's <a href="https://openrouter.ai/terms" rel="noopener">terms</a> and <a href="https://openrouter.ai/privacy" rel="noopener">privacy policy</a>, and only to zero-data-retention providers. The generated code is AI output, so review it before use. GitHub Pages hosts these files and may keep standard access logs.</p>
+    <div class="banner-actions">
+      <a class="banner-link" href="./privacy.html">Privacy &amp; Terms</a>
+      <button type="button" class="btn btn-primary" id="notice-accept"><span class="btn-text">Got it</span></button>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

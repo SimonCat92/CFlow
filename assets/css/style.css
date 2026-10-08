@@ -1,0 +1,788 @@
+/* Cƒ (C Flow) site styles. Single dark sunset theme, sharp corners with a
+   small 45deg cut at the bottom-right of every boxed element, system fonts. */
+
+:root {
+  --bg: #140b1f;
+  --bg-2: #1b1029;
+  --surface: #221433;
+  --surface-2: #2b1940;
+  --border: #3d2557;
+  --text: #fbeff5;
+  --muted: #c3a9c9;
+  --a1: #ff9a3c;
+  --a2: #ff4f7b;
+  --a3: #9b4dff;
+  --grad: linear-gradient(120deg, var(--a1) 0%, var(--a2) 50%, var(--a3) 100%);
+  --cut: 8px;
+  --cut-lg: 14px;
+  --mono: ui-monospace, "Cascadia Code", "Cascadia Mono", Consolas, "Liberation Mono", monospace;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+[hidden] { display: none !important; }
+
+/* Scrollbars: ::-webkit-scrollbar for Chromium/Safari. Do NOT set
+   scrollbar-color or scrollbar-width outside the @supports block below:
+   Chromium >=121 then ignores the webkit rules, and scrollbar-color inherits. */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track, ::-webkit-scrollbar-corner { background: transparent; }
+::-webkit-scrollbar-button { display: none; }
+::-webkit-scrollbar-thumb { background: var(--grad); }
+::-webkit-scrollbar-thumb:hover { filter: brightness(1.3); }
+
+/* Touch devices use native overlay scrolling: hide the custom bars so nothing
+   ever covers text. */
+@media (pointer: coarse) {
+  ::-webkit-scrollbar { width: 0; height: 0; }
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  html { scrollbar-width: thin; scrollbar-color: #ff4f7b transparent; }
+  .editor-wrap pre { scrollbar-width: thin; scrollbar-color: transparent transparent; }
+  .editor-wrap textarea { scrollbar-width: thin; scrollbar-color: #ff4f7b transparent; }
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(900px 500px at 85% -10%, rgba(155, 77, 255, 0.16), transparent 60%),
+    radial-gradient(700px 400px at -10% 110%, rgba(255, 79, 123, 0.10), transparent 60%),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.6;
+}
+
+a { color: var(--a1); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+code, pre, textarea.code { font-family: var(--mono); }
+
+:focus-visible { outline: 2px solid var(--a2); outline-offset: 2px; }
+
+.muted { color: var(--muted); }
+.warning { color: var(--a1); }
+.error { color: var(--a2); }
+
+/* The 45deg bottom-right cut. --c is the cut leg length (--cut on controls,
+   --cut-lg on panels and other large boxes). */
+.cut, .cut-lg, .boxed,
+.editor-wrap, .combo-drop, #output-raw,
+.doc-toc, .doc-content pre, .doc-content table, .tab-panel pre {
+  clip-path: polygon(
+    0 0, 100% 0,
+    100% calc(100% - var(--c, var(--cut))),
+    calc(100% - var(--c, var(--cut))) 100%,
+    0 100%
+  );
+}
+.cut-lg, .boxed, .doc-toc { --c: var(--cut-lg); }
+
+/* 1px border that follows the silhouette, including the cut edge: four
+   axis drop-shadows plus four diagonal ones trace a solid ring around the
+   clipped shape. --line carries the border colour so focus can restyle it. */
+.cutline, .editor-wrap, .combo-drop, #output-raw,
+input[type="password"], input[type="text"], input[type="search"], select,
+.doc-toc, .doc-content pre, .doc-content table, .tab-panel pre, .banner-card {
+  --line: var(--border);
+  filter:
+    drop-shadow(0.8px 0 0 var(--line)) drop-shadow(-0.8px 0 0 var(--line))
+    drop-shadow(0 0.8px 0 var(--line)) drop-shadow(0 -0.8px 0 var(--line))
+    drop-shadow(0.6px 0.6px 0 var(--line)) drop-shadow(-0.6px 0.6px 0 var(--line))
+    drop-shadow(0.6px -0.6px 0 var(--line)) drop-shadow(-0.6px -0.6px 0 var(--line));
+}
+
+input:focus, select:focus, textarea:focus,
+.editor-wrap:focus-within {
+  --line: var(--a3);
+  outline: none;
+}
+
+/* Boxed two-layer pattern: the element background is the border layer and a
+   ::before inset by 1px carries the fill, so the border follows the cut. */
+.boxed {
+  position: relative;
+  isolation: isolate;
+  background: var(--border);
+}
+.boxed::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--surface);
+  clip-path: polygon(
+    0 0, 100% 0,
+    100% calc(100% - (var(--c, var(--cut-lg)) - 0.6px)),
+    calc(100% - (var(--c, var(--cut-lg)) - 0.6px)) 100%,
+    0 100%
+  );
+  z-index: -1;
+}
+.boxed:focus-within { background: var(--a3); }
+
+/* ---- buttons ------------------------------------------------------------ */
+
+.btn {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  font: inherit;
+  font-weight: 600;
+  border: none;
+  background: var(--grad);
+  color: var(--text);
+  padding: 0.55rem 1.05rem;
+  cursor: pointer;
+  clip-path: polygon(
+    0 0, 100% 0,
+    100% calc(100% - var(--cut)),
+    calc(100% - var(--cut)) 100%,
+    0 100%
+  );
+}
+/* secondary style: gradient border, transparent fill that sweeps in */
+.btn::before, .btn::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  clip-path: polygon(
+    0 0, 100% 0,
+    100% calc(100% - (var(--cut) - 0.6px)),
+    calc(100% - (var(--cut) - 0.6px)) 100%,
+    0 100%
+  );
+  z-index: -1;
+}
+.btn::before { background: var(--surface); }
+.btn::after {
+  background: var(--grad);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s ease-out;
+}
+.btn:hover::after { transform: scaleX(1); }
+.btn:active { transform: translateY(1px); }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn:disabled::after { transform: scaleX(0); }
+
+.btn-primary::before, .btn-primary::after { content: none; }
+.btn-primary {
+  background: var(--grad);
+  background-size: 200% 100%;
+  background-position: 0% 0;
+  color: #1d0716;
+  transition: background-position 0.35s ease-out;
+}
+.btn-primary:hover { background-position: 100% 0; }
+
+.btn .arr { display: inline-block; transition: transform 0.2s ease-out; }
+.btn:hover .arr { transform: translateX(3px); }
+
+.btn-small { padding: 0.3rem 0.65rem; font-size: 0.82rem; }
+
+.btn-primary.running {
+  background: repeating-linear-gradient(
+    115deg,
+    var(--a1) 0, var(--a1) 14px,
+    var(--a2) 14px, var(--a2) 28px,
+    var(--a3) 28px, var(--a3) 42px
+  );
+  background-size: 200% 100%;
+  animation: btn-stripes 0.9s linear infinite;
+  color: #fff;
+}
+@keyframes btn-stripes {
+  from { background-position: 0% 0; }
+  to { background-position: 100% 0; }
+}
+
+.btn:focus-visible {
+  outline: none;
+  filter: drop-shadow(0 0 6px var(--a2)) drop-shadow(0 0 2px var(--a2));
+}
+
+/* ---- forms ---------------------------------------------------------------- */
+
+input[type="password"], input[type="text"], input[type="search"], select, textarea {
+  font: inherit;
+  color: var(--text);
+  background: var(--bg-2);
+  border: none;
+  padding: 0.55rem 0.8rem;
+}
+input::placeholder, textarea::placeholder { color: var(--muted); opacity: 0.7; }
+
+label { font-weight: 600; font-size: 0.95rem; }
+.field { display: flex; flex-direction: column; gap: 0.35rem; }
+
+/* ---- header / footer -------------------------------------------------------- */
+
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 52px;
+  padding: 0 14px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(27, 16, 41, 0.9);
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text);
+  font-weight: 800;
+  font-size: 1.05rem;
+  white-space: nowrap;
+}
+.brand:hover { text-decoration: none; }
+.brand img { display: block; }
+.brand-sub { color: var(--text); font-weight: 700; font-size: 0.95rem; }
+
+.tagline {
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  white-space: nowrap;
+}
+.tag-desc { color: var(--muted); font-size: 0.82rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 1279px) { .tag-desc { display: none; } }
+
+.site-header nav {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  font-size: 0.9rem;
+}
+.site-header nav a { color: var(--muted); white-space: nowrap; }
+.site-header nav a:hover, .site-header nav a[aria-current] { color: var(--text); text-decoration: none; }
+
+.site-footer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0.35rem 14px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+.site-footer nav { display: flex; gap: 0.9rem; }
+.site-footer nav a { color: var(--muted); }
+.site-footer nav a:hover { color: var(--text); }
+
+/* ---- app layout (index) ------------------------------------------------------ */
+
+@media (min-width: 1024px) and (min-height: 640px) {
+  body.app {
+    height: 100dvh;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+  }
+  .app-main {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(300px, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: 12px;
+    padding: 12px;
+    min-height: 0;
+  }
+  .app-main .panel { min-height: 0; }
+  .app-main .p-program { grid-row: 1 / -1; }
+  .app-main .p-output { min-height: 0; }
+  .app-main .editor-wrap { min-height: 0; flex: 1; }
+}
+
+@media (max-width: 1023px), (max-height: 639px) {
+  .app-main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; padding: 12px; }
+  .app-main .editor-wrap { flex: none; height: 65svh; min-height: 22rem; margin: 0 0.7rem 0.7rem; }
+  .editor-toolbar { gap: 0.25rem; padding: 0.2rem 0.7rem 0.6rem; }
+  .editor-toolbar .btn { padding: 0.28rem 0.5rem; font-size: 0.75rem; }
+  .site-header { flex-wrap: wrap; height: auto; padding: 0.6rem 14px; }
+}
+
+.panel {
+  --c: var(--cut-lg);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 0 1px;
+}
+.panel > * { position: relative; }
+
+.panel-title {
+  margin: 0;
+  padding: 0.7rem 1rem 0.3rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* staggered entrance of the three panels, runs once */
+@media (min-width: 1024px) and (min-height: 640px) {
+  .app-main .panel { animation: panel-in 0.5s ease-out backwards; }
+  .app-main .panel:nth-child(2) { animation-delay: 0.08s; }
+  .app-main .panel:nth-child(3) { animation-delay: 0.16s; }
+}
+@keyframes panel-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.panel-body {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 0.4rem 1rem 1rem;
+}
+.panel-scroll { flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 0.7rem; padding: 0.4rem 1rem; }
+.panel-foot { padding: 0 1rem 1rem; }
+
+/* ---- program column ------------------------------------------------------------ */
+
+.editor-toolbar {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-width: 0;
+  padding: 0.2rem 1rem 0.7rem;
+}
+.editor-toolbar .file-name {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--a1);
+  margin-right: auto;
+  min-width: 0;
+  flex-shrink: 10;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.line-count { font-size: 0.78rem; color: var(--muted); white-space: nowrap; }
+@media (max-width: 480px) { .line-count { display: none; } }
+.editor-toolbar .btn { white-space: nowrap; }
+
+/* The wrap is a clipped frame: padding-bottom keeps the textarea's bottom
+   edge (and both scrollbars) clear of the cut corner. */
+.editor-wrap {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  margin: 0 1rem 1rem;
+  background: var(--bg-2);
+  padding-bottom: calc(var(--c, var(--cut)) + 4px);
+}
+.editor-wrap.dragging { --line: var(--a1); }
+
+/* Identical padding on both layers keeps the highlight overlay aligned with
+   the caret, and the extra right/bottom padding keeps the scrollbars off the
+   text. */
+.editor-wrap pre, .editor-wrap textarea {
+  font-family: var(--mono);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  tab-size: 4;
+  padding: 0.9rem calc(1rem + 9px) calc(0.9rem + 9px) 1rem;
+  margin: 0;
+  border: none;
+  white-space: pre;
+  width: 100%;
+  height: 100%;
+}
+/* The overlay pre gets the same scrollbar gutters as the textarea (overflow:
+   scroll on both, transparent bars on the pre) so it never paints text into
+   the area the textarea reserves for its scrollbars. */
+.editor-wrap pre {
+  position: absolute;
+  inset: 0 0 calc(var(--c, var(--cut)) + 4px) 0;
+  height: auto;
+  overflow: scroll;
+  pointer-events: none;
+  color: var(--text);
+}
+.editor-wrap pre::-webkit-scrollbar,
+.editor-wrap pre::-webkit-scrollbar-track,
+.editor-wrap pre::-webkit-scrollbar-thumb,
+.editor-wrap pre::-webkit-scrollbar-corner {
+  background: transparent;
+}
+.editor-wrap pre code { display: block; min-height: 100%; }
+.editor-wrap textarea {
+  position: relative;
+  display: block;
+  overflow: scroll;
+  background: transparent;
+  color: transparent;
+  caret-color: var(--a1);
+  resize: none;
+}
+.editor-wrap textarea::selection { background: rgba(155, 77, 255, 0.4); }
+
+/* ---- compile column -------------------------------------------------------------- */
+
+.key-row { display: flex; gap: 0.5rem; align-items: center; }
+.key-row input { flex: 1; min-width: 0; }
+.key-warning { color: var(--a1); font-size: 0.8rem; margin: 0.15rem 0 0; }
+.key-hint { font-size: 0.75rem; color: var(--muted); margin: 0; }
+
+.field-row { display: flex; gap: 0.7rem; align-items: start; flex-wrap: wrap; }
+.field-row .field { flex: 1; min-width: 9rem; }
+.field > select, .field > input { width: 100%; }
+
+/* model combobox: the input stays in the panel, the dropdown is a fixed,
+   body-level clipped frame so it can overlay the Output panel */
+.combo { position: relative; }
+.combo::after {
+  content: "▾";
+  position: absolute;
+  right: 0.7rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+  font-size: 0.75rem;
+  pointer-events: none;
+}
+.combo input { width: 100%; padding-right: 1.6rem; }
+
+.combo-drop {
+  position: fixed;
+  z-index: 90;
+  max-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  padding: 4px 4px calc(var(--cut) + 4px);   /* list clears the cut corner */
+}
+.model-msg { margin: 0.5rem 0.8rem; font-size: 0.82rem; color: var(--muted); }
+.combo-drop > .btn { align-self: flex-start; margin: 0.2rem 0.8rem 0.6rem; }
+
+#model-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  min-height: 0;
+  background: var(--bg-2);
+}
+.model-option {
+  position: relative;
+  padding: 0.5rem 0.8rem 0.5rem 1rem;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+.model-option:last-child { border-bottom: none; }
+.model-option::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--border);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.18s ease-out, background 0.18s;
+}
+.model-option:hover { background: var(--surface-2); }
+.model-option:hover::before { transform: scaleY(1); background: var(--a3); }
+.model-option.active { outline: 2px solid var(--a2); outline-offset: -2px; }
+.model-option[aria-selected="true"] { background: rgba(155, 77, 255, 0.15); }
+.model-option[aria-selected="true"]::before { transform: scaleY(1); background: var(--grad); }
+.model-option-top { display: flex; justify-content: space-between; gap: 0.6rem; }
+.model-name { font-weight: 600; font-size: 0.9rem; }
+.model-ctx { color: var(--muted); font-size: 0.8rem; white-space: nowrap; }
+.model-id { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); }
+.model-meta { font-size: 0.76rem; color: var(--muted); }
+
+.model-line { font-size: 0.72rem; margin: 0.2rem 0 0; color: var(--muted); min-height: 1.1em; }
+
+.run-row {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  padding: 0.6rem 1rem 1rem;
+}
+
+/* ---- output column ------------------------------------------------------------------ */
+
+#status {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0;
+  padding: 0.1rem 1rem 0;
+  min-height: 1.3em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+#status.live::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--a2);
+  animation: pulse 0.9s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 1; }
+}
+
+#out-warnings { padding: 0 1rem; }
+#out-warnings .warning { font-size: 0.85rem; margin: 0.2rem 0; }
+
+.output-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  padding: 0.4rem 1rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+#output-raw {
+  background: var(--bg-2);
+  padding: 0.8rem 0.9rem;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 0.85rem;
+  min-height: 6rem;
+  flex-shrink: 0;
+}
+#output-raw.placeholder { color: var(--muted); font-style: italic; }
+
+.ai-note { font-size: 0.78rem; color: var(--muted); margin: 0; padding: 0 1rem 0.8rem; }
+
+#result { display: flex; flex-direction: column; min-height: 0; flex: 1; }
+#result-tabs { display: flex; gap: 0.2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+.tab {
+  position: relative;
+  font: inherit;
+  background: none;
+  border: none;
+  color: var(--muted);
+  padding: 0.45rem 0.75rem;
+  cursor: pointer;
+}
+.tab::after {
+  content: "";
+  position: absolute;
+  left: 0.4rem; right: 0.4rem; bottom: -1px;
+  height: 2px;
+  background: var(--grad);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s ease-out;
+}
+.tab:hover { color: var(--text); }
+.tab.active { color: var(--text); }
+.tab.active::after { transform: scaleX(1); }
+
+.tab-panel { padding: 0.7rem 0; overflow: auto; scrollbar-gutter: stable; min-height: 0; flex: 1; }
+/* clipped frame: the inner code element scrolls so the bar clears the cut */
+.tab-panel pre {
+  background: var(--bg-2);
+  padding: 0.8rem 0.9rem calc(0.8rem + var(--c, var(--cut)));
+  margin: 0;
+  overflow: hidden;
+  white-space: pre;
+  font-size: 0.85rem;
+}
+.tab-panel pre > code { display: block; overflow-x: auto; padding-bottom: 10px; }
+/* syntax tokens (escape-first highlighter output) */
+.tk-com { color: var(--muted); font-style: italic; }
+.tk-str { color: #ffc46b; }
+.tk-num { color: #ff8fa8; }
+.tk-kw  { color: var(--a2); font-weight: 600; }
+.tk-type { color: #c99bff; }
+.tk-dir { color: #7ee0ff; }
+.tk-op  { color: var(--a1); }
+.tk-todo { color: #140b1f; background: var(--a1); padding: 0 0.2em; }
+.tk-ai  { color: #7ee0ff; font-weight: 700; }
+
+.prose-block { white-space: pre-wrap; word-break: break-word; }
+.file-bar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.6rem;
+  padding: 0.45rem 0.6rem;
+  background: var(--surface-2);
+}
+.file-bar .btn { font-weight: 700; letter-spacing: 0.04em; }
+.file-bar code { color: var(--a1); margin-right: auto; font-size: 0.8rem; overflow-wrap: anywhere; }
+
+/* ---- banner (privacy notice) -------------------------------------------------------- */
+
+#notice {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem calc(0.8rem + var(--cut-lg));
+  pointer-events: none;
+}
+.banner-card {
+  pointer-events: auto;
+  width: 100%;
+  max-width: 60rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  background: var(--surface);
+  padding: 0.85rem 1.1rem;
+  animation: banner-in 0.45s ease-out 0.3s backwards;
+}
+.banner-text { flex: 1 1 30rem; margin: 0; font-size: 0.85rem; color: var(--text); }
+.banner-actions { display: flex; gap: 0.9rem; align-items: center; }
+.banner-link { font-size: 0.85rem; white-space: nowrap; }
+
+@keyframes banner-in {
+  from { transform: translateY(110%); }
+  to { transform: translateY(0); }
+}
+#notice.leaving .banner-card {
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  transform: translateY(120%);
+  opacity: 0;
+}
+
+/* ---- docs pages ------------------------------------------------------------------------ */
+
+.doc-page .site-footer { margin-top: 3rem; }
+.doc-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+  max-width: 72rem;
+  margin: 0.6rem auto 2rem;
+  padding: 0 1.5rem;
+}
+@media (min-width: 60rem) {
+  .doc-layout { grid-template-columns: 15rem minmax(0, 1fr); }
+}
+/* Desktop: clipped sticky frame whose inner nav scrolls (bar clears the cut).
+   Sized so the whole box fits between the header and the viewport bottom. */
+.doc-toc {
+  position: sticky;
+  top: 64px;
+  align-self: start;
+  font-size: 0.88rem;
+  max-height: calc(100dvh - 76px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  padding: 0.8rem 1rem calc(0.8rem + var(--c, var(--cut-lg)));
+}
+.doc-toc nav { overflow-y: auto; scrollbar-gutter: stable; min-height: 0; flex: 1; }
+.doc-toc summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+@media (min-width: 60rem) { .doc-toc > summary { display: none; } }
+@media (max-width: 59.99rem) {
+  .doc-toc { position: static; max-height: none; display: block; }
+  .doc-toc .toc-title { display: none; }
+}
+.doc-toc .toc-title { font-weight: 700; margin: 0 0 0.4rem; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.doc-toc ul { list-style: none; margin: 0; padding: 0; }
+.doc-toc li { margin: 0.22rem 0; }
+.doc-toc li.toc-sub { padding-left: 1rem; }
+.doc-toc a { color: var(--muted); }
+.doc-toc a:hover { color: var(--text); }
+
+.doc-content { min-width: 0; }
+.doc-content h1 { font-size: 1.9rem; font-weight: 800; }
+.doc-content h2 { margin-top: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; font-weight: 700; }
+.doc-content h3 { margin-top: 1.6rem; font-weight: 700; }
+.doc-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  background: var(--surface);
+}
+.doc-content th, .doc-content td { border: 1px solid var(--border); padding: 0.45rem 0.7rem; text-align: left; }
+.doc-content th { background: var(--surface-2); }
+.doc-content blockquote {
+  border-left: 3px solid var(--a3);
+  margin: 1rem 0;
+  padding: 0.2rem 1rem;
+  color: var(--muted);
+  background: var(--surface);
+}
+/* clipped frame: the inner code element scrolls so the bar clears the cut */
+.doc-content pre {
+  background: var(--bg-2);
+  padding: 0.8rem 0.9rem calc(0.8rem + var(--c, var(--cut)));
+  overflow: hidden;
+  font-size: 0.86rem;
+}
+.doc-content pre > code { display: block; overflow-x: auto; padding-bottom: 10px; }
+.table-scroll { overflow-x: auto; margin: 1rem 0; padding-bottom: 10px; }
+.table-scroll table { margin: 0; min-width: 100%; width: max-content; }
+.doc-content code { font-family: var(--mono); font-size: 0.92em; }
+.doc-content :not(pre) > code {
+  background: var(--surface-2);
+  padding: 0.1rem 0.35rem;
+}
+.doc-content hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+/* ---- legal page ---------------------------------------------------------------------------- */
+
+.legal { max-width: 52rem; margin: 2rem auto; padding: 0 1.5rem; }
+.legal h1 { font-weight: 800; }
+.legal h2 { margin-top: 2.2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; font-weight: 700; }
+.legal h3 { margin-top: 1.4rem; font-weight: 700; }
+
+/* ---- syntax tokens (sunset palette) ----------------------------------------------------------- */
+
+.tk-com  { color: #a885c2; font-style: italic; }
+.tk-str  { color: #ffc86b; }
+.tk-num  { color: #ff9a3c; }
+.tk-kw   { color: #ff6d9d; }
+.tk-type { color: #b98cff; }
+.tk-dir  { color: #ff8a80; }
+.tk-ai   { color: #4de3c2; font-weight: 700; }
+.tk-todo { color: var(--a1); font-weight: 700; }
+.tk-op   { color: #ff4f7b; }
+
+/* ---- reduced motion ---------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .banner-card { transform: none; }
+}

@@ -1,6 +1,6 @@
 // ============================================================
-// example_program.cf — GradeFlow
-// C~ (C Flow) Example Program v5.0
+// example_program.cf: GradeFlow
+// Cƒ (C Flow) Example Program v5.0
 // ============================================================
 // HOW TO READ THIS FILE:
 // - Declarations (structs, classes, fn signatures) = YOU control the architecture
@@ -15,6 +15,7 @@
 #import fileio     // doesn't exist? AI will scaffold it or find the closest equivalent
 
 // --- CONSTANTS & CONFIG ---
+const string APP_NAME      = "GradeFlow";
 const int    MAX_STUDENTS  = 100;
 const float  PASS_GRADE    = 60.0;
 const string OUTPUT_PATH   = "./output/";
@@ -26,7 +27,7 @@ enum SortOrder   { ASC, DESC }
 enum ExportFormat { JSON, CSV, XML }
 
 // --- STRUCTS ---
-// Lightweight data containers — no methods, pure data
+// Lightweight data containers with no methods, pure data
 struct ExamResult {
     string  subject;
     float   score;
@@ -54,7 +55,7 @@ class Student {
     // constructor
     Student(int id, string name, string surname, string email) {}
 
-    // methods — signatures define the contract, AI builds the body
+    // methods: signatures define the contract, AI builds the body
     fn add_grade(string subject, float score) -> void           {}
     fn average()                              -> float          {}
     fn best_subject()                         -> string         {}
@@ -183,7 +184,7 @@ fn main() {
     // print top 3 leaderboard
     print("--- TOP 3 ---");
     for (*Student s in db->top_n(3)) {
-        print(s->name + " — " + s->average() + " [" + label_to_string(s->grade_label()) + "]");
+        print(s->name + ": " + s->average() + " [" + label_to_string(s->grade_label()) + "]");
     }
 
     // print students at risk
@@ -200,5 +201,5 @@ fn main() {
     db->export(OUTPUT_PATH + "grades.json", ExportFormat.JSON);
     db->export(OUTPUT_PATH + "grades.csv",  ExportFormat.CSV);
 
-    log("Done. Go with the C~ flow!");
+    log("Done. Go with the Cƒ flow!");
 }
