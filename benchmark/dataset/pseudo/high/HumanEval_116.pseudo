@@ -1,0 +1,13 @@
+// HumanEval/116: sort_array
+// Sort the array ascending by the number of 1-bits in each element's
+// binary representation; ties by decimal value.
+// Examples: sort_array([1,5,2,3,4]) -> [1,2,3,4,5];
+//           sort_array([-2,-3,-4,-5,-6]) -> [-6,-5,-4,-3,-2];
+//           sort_array([1,0,2,3,4]) -> [0,1,2,3,4]
+function sort_array(arr):
+    let result = copy(arr)
+    sort(result)
+    AI_ASSIST { stable-sort result ascending by the number of 1 bits in
+                each element's binary representation }
+    return result
+end function

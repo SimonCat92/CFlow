@@ -1,0 +1,10 @@
+// HumanEval/150: x_or_y
+// Return x if n is a prime number, y otherwise.
+// Examples: x_or_y(7, 34, 12) -> 34; x_or_y(15, 8, 5) -> 5
+function x_or_y(n, x, y):
+    if n < 2: return y
+    for i from 2 to n - 1:
+        if n mod i == 0: return y
+    end for
+    return x
+end function

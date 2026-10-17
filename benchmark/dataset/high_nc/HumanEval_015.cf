@@ -1,0 +1,5 @@
+fn string string_sequence(int n) {
+    list<int> nums;
+    for (int i = 0; i <= n; i++) { nums.add(i); }
+    return join(nums, " ");
+}

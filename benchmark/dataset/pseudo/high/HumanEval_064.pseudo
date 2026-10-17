@@ -1,0 +1,15 @@
+// HumanEval/64: vowels_count
+// Return the number of vowels in the string. Vowels are a, e, i, o, u
+// (either case); y also counts, but only when it is the last character.
+// Examples: vowels_count("abcde") -> 2; vowels_count("ACEDY") -> 3
+function vowels_count(s):
+    let count = 0
+    for each c in s:
+        let lc = lower(c)
+        if lc == "a" or lc == "e" or lc == "i" or lc == "o" or lc == "u":
+            increment count
+        end if
+    end for
+    AI_ASSIST { add 1 to count if the last character of s is "y" or "Y" }
+    return count
+end function

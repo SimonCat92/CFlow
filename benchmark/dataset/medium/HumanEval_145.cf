@@ -1,0 +1,16 @@
+// HumanEval/145: order_by_points
+// Sort the integers ascending by the sum of their digits; for negatives
+// the first signed digit is negative (-12 -> -1+2). Ties keep the
+// original order.
+// Example: order_by_points([1, 11, -1, -11, -12]) -> [-1, -11, 1, -12, 11];
+//          order_by_points([]) -> []
+fn int digits_sum(int n) {
+    AI_ASSIST { return the sum of n's digits, first digit negated when n
+                is negative }
+}
+
+fn list<int> order_by_points(list<int> nums) {
+    list<int> result;
+    AI_ASSIST { sort a copy of nums into result by digits_sum, stable for
+                ties; return result }
+}

@@ -1,0 +1,13 @@
+// HumanEval/36: fizz_buzz
+// Return the number of times the digit 7 appears in integers below n
+// that are divisible by 11 or 13.
+// Examples: fizz_buzz(50) -> 0; fizz_buzz(78) -> 2; fizz_buzz(79) -> 3
+function fizz_buzz(n):
+    let count = 0
+    for i from 0 to n - 1:
+        if i mod 11 == 0 or i mod 13 == 0:
+            AI_ASSIST { add to count how many '7' digits i contains }
+        end if
+    end for
+    return count
+end function

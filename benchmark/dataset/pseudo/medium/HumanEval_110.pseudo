@@ -1,0 +1,11 @@
+// HumanEval/110: exchange
+// You may swap any number of elements between lst1 and lst2. Return
+// "YES" if lst1 can end up all even, else "NO".
+// Examples: exchange([1,2,3,4], [1,2,3,4]) -> "YES";
+//           exchange([1,2,3,4], [1,5,3,4]) -> "NO"
+function exchange(lst1, lst2):
+    let odd = 0
+    let even = 0
+    AI_ASSIST { count odd elements of lst1 into odd and even elements of
+                lst2 into even; return "YES" if even >= odd else "NO" }
+end function

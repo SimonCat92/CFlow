@@ -1,0 +1,4 @@
+fn any string_to_md5(string text) {
+    if (text == "") { return null; }
+    AI_ASSIST { return the md5 hex digest of text (ASCII-encoded) }
+}

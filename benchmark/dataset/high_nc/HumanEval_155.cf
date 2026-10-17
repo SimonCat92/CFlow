@@ -1,0 +1,9 @@
+fn tuple even_odd_count(int num) {
+    int even_count = 0;
+    int odd_count = 0;
+    for (string d in str(abs(num))) {
+        AI_ASSIST { if d is an even digit increment even_count, else
+                    increment odd_count }
+    }
+    return (even_count, odd_count);
+}

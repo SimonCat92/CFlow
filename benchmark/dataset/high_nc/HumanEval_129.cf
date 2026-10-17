@@ -1,0 +1,14 @@
+fn list<int> minPath(list<list<int>> grid, int k) {
+    int n = grid.length();
+    int best = n * n + 1;
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (grid[i][j] == 1) {
+                AI_ASSIST { set best to the smallest value among the
+                            edge-adjacent neighbors of cell (i, j) }
+            }
+        }
+    }
+    AI_ASSIST { return the length-k list alternating 1, best, 1, best, ... }
+}

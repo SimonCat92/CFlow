@@ -1,0 +1,10 @@
+fn int digits_sum(int n) {
+    AI_ASSIST { return the sum of n's digits, first digit negated when n
+                is negative (e.g. -12 -> -1+2 = 1) }
+}
+
+fn list<int> order_by_points(list<int> nums) {
+    list<int> result = copy(nums);
+    AI_ASSIST { stable-sort result ascending by digits_sum }
+    return result;
+}

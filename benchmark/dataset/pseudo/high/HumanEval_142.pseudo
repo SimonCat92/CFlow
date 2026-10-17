@@ -1,0 +1,20 @@
+// HumanEval/142: sum_squares
+// Square entries whose index is a multiple of 3; cube entries whose
+// index is a multiple of 4 but not of 3; leave the rest. Return the sum.
+// Examples: sum_squares([1,2,3]) -> 6; sum_squares([]) -> 0;
+//           sum_squares([-1,-5,2,-1,-5]) -> -126
+function sum_squares(lst):
+    let result = empty list
+    for i from 0 to length(lst) - 1:
+        if i mod 3 == 0:
+            append lst[i] * lst[i] to result
+        else if i mod 4 == 0:
+            append lst[i] * lst[i] * lst[i] to result
+        else:
+            append lst[i] to result
+        end if
+    end for
+    let total = 0
+    for each v in result: total = total + v
+    return total
+end function

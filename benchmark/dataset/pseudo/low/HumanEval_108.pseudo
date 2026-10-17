@@ -1,0 +1,9 @@
+// HumanEval/108: count_nums
+// Count the elements whose digit sum is > 0. For a negative number the
+// first signed digit is negative: -123 has digits -1, 2, 3.
+// Examples: count_nums([]) -> 0; count_nums([-1, 11, -11]) -> 1;
+//           count_nums([1, 1, 2]) -> 3
+function count_nums(arr):
+    AI_ASSIST { count the elements of arr whose signed digit sum is
+                positive }
+end function

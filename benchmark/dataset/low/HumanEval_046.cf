@@ -1,0 +1,8 @@
+// HumanEval/46: fib4
+// Fib4 sequence: fib4(0)=0, fib4(1)=0, fib4(2)=2, fib4(3)=0,
+// fib4(n) = fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).
+// Compute the n-th element efficiently, without recursion.
+// Examples: fib4(5) -> 4; fib4(6) -> 8; fib4(7) -> 14
+fn int fib4(int n) {
+    AI_ASSIST { return the n-th Fib4 number iteratively }
+}

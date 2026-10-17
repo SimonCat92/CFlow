@@ -1,0 +1,7 @@
+// HumanEval/39: prime_fib
+// Return the n-th number that is both a Fibonacci number and prime.
+// Examples: prime_fib(1) -> 2; prime_fib(2) -> 3; prime_fib(3) -> 5;
+//           prime_fib(4) -> 13; prime_fib(5) -> 89
+function prime_fib(n):
+    AI_ASSIST { return the n-th Fibonacci number that is also prime }
+end function

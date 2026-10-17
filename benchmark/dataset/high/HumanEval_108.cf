@@ -1,0 +1,17 @@
+// HumanEval/108: count_nums
+// Count the elements whose digit sum is > 0. For a negative number the
+// first signed digit is negative: -123 has digits -1, 2, 3.
+// Examples: count_nums([]) -> 0; count_nums([-1, 11, -11]) -> 1;
+//           count_nums([1, 1, 2]) -> 3
+fn int digits_sum(int n) {
+    AI_ASSIST { return the sum of n's digits, with the first digit
+                negated when n is negative (e.g. -123 -> -1+2+3 = 0) }
+}
+
+fn int count_nums(list<int> arr) {
+    int count = 0;
+    for (int v in arr) {
+        if (digits_sum(v) > 0) { count++; }
+    }
+    return count;
+}

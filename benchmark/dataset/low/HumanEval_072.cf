@@ -1,0 +1,9 @@
+// HumanEval/72: will_it_fly
+// Return true if object q will fly: it flies when it is balanced (a
+// palindromic list) AND the sum of its elements is <= w.
+// Examples: will_it_fly([1,2], 5) -> false; will_it_fly([3,2,3], 1) -> false;
+//           will_it_fly([3,2,3], 9) -> true; will_it_fly([3], 5) -> true
+fn bool will_it_fly(list<int> q, int w) {
+    AI_ASSIST { return true if q is a palindrome and its elements sum to
+                at most w }
+}

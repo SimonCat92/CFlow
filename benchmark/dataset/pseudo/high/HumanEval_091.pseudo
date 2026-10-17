@@ -1,0 +1,12 @@
+// HumanEval/91: is_bored
+// Count the boredoms: sentences (delimited by ".", "?" or "!") that
+// start with the word "I".
+// Examples: is_bored("Hello world") -> 0;
+//           is_bored("The sky is blue. The sun is shining. I love this weather") -> 1
+function is_bored(S):
+    let count = 0
+    AI_ASSIST { split S into sentences wherever ".", "?" or "!" appears;
+                for each sentence, if it starts with the word "I"
+                increment count }
+    return count
+end function

@@ -1,0 +1,11 @@
+// HumanEval/84: solve
+// Given a positive integer N (0 <= N <= 10000), return the sum of its
+// decimal digits expressed in binary (as a string).
+// Examples: solve(1000) -> "1"; solve(150) -> "110"; solve(147) -> "1100"
+fn string solve(int N) {
+    int total = 0;
+    for (string c in str(N)) {
+        AI_ASSIST { add the numeric value of digit character c to total }
+    }
+    return binary(total);
+}

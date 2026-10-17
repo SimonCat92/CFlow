@@ -1,0 +1,9 @@
+fn bool pairs_sum_to_zero(list<int> l) {
+    int n = l.length();
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (l[i] + l[j] == 0) { return true; }
+        }
+    }
+    return false;
+}

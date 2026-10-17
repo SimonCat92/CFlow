@@ -1,0 +1,7 @@
+// HumanEval/24: largest_divisor
+// For a given number n, find the largest number that divides n evenly
+// and is smaller than n.
+// Example: largest_divisor(15) -> 5
+fn int largest_divisor(int n) {
+    AI_ASSIST { return the largest proper divisor of n }
+}

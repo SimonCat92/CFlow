@@ -1,0 +1,11 @@
+// HumanEval/103: rounded_avg
+// Compute the average of the integers from n to m inclusive, round to
+// the nearest integer and return it as a binary string. If n > m,
+// return -1.
+// Examples: rounded_avg(1, 5) -> "0b11"; rounded_avg(7, 5) -> -1;
+//           rounded_avg(10, 20) -> "0b1111"
+function rounded_avg(n, m):
+    let summation = 0
+    AI_ASSIST { return -1 if m < n; sum n..m into summation, then return
+                the rounded average as a binary string }
+end function

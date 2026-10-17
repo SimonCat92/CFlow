@@ -1,0 +1,10 @@
+// HumanEval/12: longest
+// Return the longest string in the list; the first one on ties, or null
+// when the list is empty.
+// Examples: longest([]) -> null; longest(["a","b","c"]) -> "a";
+//           longest(["a","bb","ccc"]) -> "ccc"
+fn string longest(list<string> strings) {
+    string best = null;
+    AI_ASSIST { set best to the longest string in strings (first on ties)
+                or leave null for an empty list; return best }
+}

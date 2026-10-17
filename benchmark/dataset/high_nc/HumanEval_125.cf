@@ -1,0 +1,12 @@
+fn any split_words(string txt) {
+    if (txt.contains(" ")) { return split_whitespace(txt); }
+    if (txt.contains(",")) {
+        AI_ASSIST { return txt split on commas }
+    }
+    int count = 0;
+    for (string c in txt) {
+        AI_ASSIST { if c is a lowercase letter at an odd alphabet position
+                    (a=0, b=1, ...), increment count }
+    }
+    return count;
+}

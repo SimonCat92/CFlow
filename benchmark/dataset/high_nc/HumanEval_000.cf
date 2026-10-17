@@ -1,0 +1,11 @@
+fn bool has_close_elements(list<float> numbers, float threshold) {
+    for (int i = 0; i < numbers.length(); i++) {
+        for (int j = 0; j < numbers.length(); j++) {
+            if (i != j) {
+                AI_ASSIST { if the distance between numbers[i] and
+                            numbers[j] is below threshold, return true }
+            }
+        }
+    }
+    return false;
+}

@@ -1,0 +1,10 @@
+fn list<int> factorize(int n) {
+    list<int> fact;
+    int i = 2;
+    while (i <= sqrt(n) + 1) {
+        AI_ASSIST { while n is divisible by i, append i to fact and divide
+                    n by i; once it is not, increment i }
+    }
+    if (n > 1) { fact.add(n); }
+    return fact;
+}

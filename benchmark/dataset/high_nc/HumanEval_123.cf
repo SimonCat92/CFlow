@@ -1,0 +1,11 @@
+fn list<int> get_odd_collatz(int n) {
+    list<int> odd_collatz;
+    if (n % 2 == 1) { odd_collatz.add(n); }
+    while (n > 1) {
+        AI_ASSIST { advance n by one Collatz step (n/2 if even, 3n+1 if
+                    odd), and if the new n is odd append it to
+                    odd_collatz }
+    }
+    sort(odd_collatz);
+    return odd_collatz;
+}

@@ -1,0 +1,6 @@
+fn list<int> sort_third(list<int> l) {
+    list<int> result = copy(l);
+    AI_ASSIST { sort the elements at indices 0, 3, 6, ... of result among
+                themselves, leaving all other positions unchanged;
+                return result }
+}

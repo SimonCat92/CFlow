@@ -1,0 +1,7 @@
+// HumanEval/2: truncate_number
+// Given a positive floating point number, return its decimal part
+// (the leftover part always smaller than 1).
+// Example: truncate_number(3.5) -> 0.5
+fn float truncate_number(float number) {
+    AI_ASSIST { return the fractional part of number }
+}

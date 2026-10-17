@@ -1,0 +1,6 @@
+fn string circular_shift(int x, int shift) {
+    string s = str(x);
+    if (shift > s.length()) { return reverse(s); }
+    AI_ASSIST { return the last `shift` digits of s followed by the
+                remaining leading digits }
+}

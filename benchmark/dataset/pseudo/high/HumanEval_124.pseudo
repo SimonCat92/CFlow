@@ -1,0 +1,23 @@
+// HumanEval/124: valid_date
+// Validate a date string in the format mm-dd-yyyy: non-empty, month
+// 1..12, day within that month's range (31 for 1,3,5,7,8,10,12; 30 for
+// 4,6,9,11; 29 for 2).
+// Examples: valid_date("03-11-2000") -> true; valid_date("15-01-2012") -> false;
+//           valid_date("04-0-2040") -> false; valid_date("06/04/2020") -> false
+function valid_date(date):
+    let month = 0
+    let day = 0
+    let year = 0
+    AI_ASSIST { parse date as "mm-dd-yyyy" into month, day, year; return
+                false if the string is empty or not in that format }
+    if month < 1 or month > 12: return false
+    if day < 1: return false
+    if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
+        if day > 31: return false
+    end if
+    if month == 4 or month == 6 or month == 9 or month == 11:
+        if day > 30: return false
+    end if
+    if month == 2 and day > 29: return false
+    return true
+end function

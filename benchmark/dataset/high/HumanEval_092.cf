@@ -1,0 +1,10 @@
+// HumanEval/92: any_int
+// Return true if one of the three numbers equals the sum of the other
+// two, provided all three are integers. False otherwise.
+// Examples: any_int(5, 2, 7) -> true; any_int(3, 2, 2) -> false;
+//           any_int(3, -2, 1) -> true; any_int(3.6, -2.2, 2) -> false
+fn bool any_int(any x, any y, any z) {
+    AI_ASSIST { if x, y or z is not an integer, return false }
+    if (x + y == z || x + z == y || y + z == x) { return true; }
+    return false;
+}

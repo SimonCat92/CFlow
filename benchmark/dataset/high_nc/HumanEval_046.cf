@@ -1,0 +1,15 @@
+fn int fib4(int n) {
+    int a = 0;
+    int b = 0;
+    int c = 2;
+    int d = 0;
+    if (n == 0) { return a; }
+    if (n == 1) { return b; }
+    if (n == 2) { return c; }
+    if (n == 3) { return d; }
+    for (int i = 4; i <= n; i++) {
+        AI_ASSIST { compute the next value as a + b + c + d and rotate the
+                    window: a = b, b = c, c = d, d = next }
+    }
+    return d;
+}

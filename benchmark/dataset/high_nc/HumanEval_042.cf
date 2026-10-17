@@ -1,0 +1,5 @@
+fn list<int> incr_list(list<int> l) {
+    list<int> result;
+    for (int e in l) { result.add(e + 1); }
+    return result;
+}

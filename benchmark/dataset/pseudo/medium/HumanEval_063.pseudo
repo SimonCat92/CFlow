@@ -1,0 +1,10 @@
+// HumanEval/63: fibfib
+// FibFib sequence: fibfib(0)=0, fibfib(1)=0, fibfib(2)=1,
+// fibfib(n) = fibfib(n-1) + fibfib(n-2) + fibfib(n-3).
+// Examples: fibfib(1) -> 0; fibfib(5) -> 4; fibfib(8) -> 24
+function fibfib(n):
+    declare result
+    AI_ASSIST { compute the n-th FibFib number into result (fibfib(0)=0,
+                fibfib(1)=0, fibfib(2)=1) }
+    return result
+end function

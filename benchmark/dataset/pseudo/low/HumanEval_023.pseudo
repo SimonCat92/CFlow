@@ -1,0 +1,6 @@
+// HumanEval/23: strlen
+// Return the length of the given string.
+// Examples: strlen("") -> 0; strlen("abc") -> 3
+function strlen(s):
+    AI_ASSIST { return the number of characters in s }
+end function

@@ -1,0 +1,9 @@
+// HumanEval/138: is_equal_to_sum_even
+// Return true if n can be written as the sum of exactly 4 positive even
+// numbers.
+// Examples: is_equal_to_sum_even(4) -> false;
+//           is_equal_to_sum_even(6) -> false;
+//           is_equal_to_sum_even(8) -> true
+function is_equal_to_sum_even(n):
+    AI_ASSIST { return true iff n is the sum of 4 positive even numbers }
+end function

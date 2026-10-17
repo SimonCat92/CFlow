@@ -1,0 +1,13 @@
+// HumanEval/5: intersperse
+// Insert `delimeter` between every two consecutive elements of numbers.
+// Examples: intersperse([], 4) -> []; intersperse([1,2,3], 4) -> [1,4,2,4,3]
+function intersperse(numbers, delimeter):
+    if length(numbers) == 0: return []
+    let result = empty list
+    for i from 0 to (length(numbers) - 1) - 1:
+        append numbers[i] to result
+        append delimeter to result
+    end for
+    append length(numbers[numbers) - 1] to result
+    return result
+end function

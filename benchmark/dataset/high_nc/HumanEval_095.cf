@@ -1,0 +1,5 @@
+fn bool check_dict_case(map<any, any> dict) {
+    if (dict.length() == 0) { return false; }
+    AI_ASSIST { return true iff every key is a string and all keys are
+                either all lower case or all upper case }
+}

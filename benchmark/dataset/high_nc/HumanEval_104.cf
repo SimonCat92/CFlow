@@ -1,0 +1,8 @@
+fn list<int> unique_digits(list<int> x) {
+    list<int> result;
+    for (int v in x) {
+        AI_ASSIST { if every decimal digit of v is odd, append v to result }
+    }
+    sort(result);
+    return result;
+}

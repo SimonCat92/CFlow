@@ -1,0 +1,12 @@
+fn string find_max(list<string> words) {
+    string best = words[0];
+    int best_count = 0;
+    AI_ASSIST { set best_count to the number of distinct characters in
+                best }
+    for (string w in words) {
+        AI_ASSIST { if w has more distinct characters than best_count, or
+                    the same count but sorts lexicographically before
+                    best, set best to w and update best_count }
+    }
+    return best;
+}

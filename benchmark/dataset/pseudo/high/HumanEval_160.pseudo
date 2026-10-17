@@ -1,0 +1,12 @@
+// HumanEval/160: do_algebra
+// Build the algebraic expression operand[0] op[0] operand[1] op[1] ...
+// (operators are +, -, *, //, **) and return its evaluation.
+// Example: do_algebra(["+","*","-"], [2,3,4,5]) -> 9  // 2+3*4-5
+function do_algebra(op, operand):
+    let expression = str(operand[0])
+    for i from 0 to length(op) - 1:
+        expression = expression + op[i] + str(operand[i + 1])
+    end for
+    AI_ASSIST { evaluate expression honoring standard precedence
+                (**, then * and //, then + and -) and return the result }
+end function

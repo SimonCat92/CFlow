@@ -1,0 +1,7 @@
+// HumanEval/51: remove_vowels
+// Return the string without vowels.
+// Examples: remove_vowels("") -> ""; remove_vowels("abcdef") -> "bcdf";
+//           remove_vowels("aaBAA") -> "B"; remove_vowels("zbcd") -> "zbcd"
+fn string remove_vowels(string text) {
+    AI_ASSIST { return text with all vowels (both cases) removed }
+}

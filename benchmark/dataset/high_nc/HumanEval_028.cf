@@ -1,0 +1,3 @@
+fn string concatenate(list<string> strings) {
+    return join(strings, "");
+}

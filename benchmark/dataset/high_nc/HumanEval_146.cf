@@ -1,0 +1,10 @@
+fn int specialFilter(list<int> nums) {
+    int count = 0;
+    for (int num in nums) {
+        if (num > 10) {
+            AI_ASSIST { if the first and last digit of num are both odd,
+                        increment count }
+        }
+    }
+    return count;
+}

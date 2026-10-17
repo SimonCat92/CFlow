@@ -1,0 +1,11 @@
+// HumanEval/134: check_if_last_char_is_a_letter
+// Return true if the last character of txt is an alphabetical character
+// and is not part of a word (a "word" is a space-separated group).
+// Examples: check_if_last_char_is_a_letter("apple pie") -> false;
+//           check_if_last_char_is_a_letter("apple pi e") -> true;
+//           check_if_last_char_is_a_letter("apple pi e ") -> false;
+//           check_if_last_char_is_a_letter("") -> false
+function check_if_last_char_is_a_letter(txt):
+    AI_ASSIST { return true iff txt's last space-separated token is a
+                single letter }
+end function

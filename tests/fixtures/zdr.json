@@ -1,0 +1,85 @@
+{
+  "data": [
+    {
+      "name": "CoreWeave | meta-llama/llama-3.3-70b-instruct",
+      "model_id": "meta-llama/llama-3.3-70b-instruct",
+      "model_name": "Meta: Llama 3.3 70B Instruct",
+      "context_length": 128000,
+      "provider_name": "CoreWeave",
+      "pricing": {
+        "prompt": "0.00000071",
+        "completion": "0.00000071",
+        "input_cache_read": "0.00000071",
+        "discount": 0
+      },
+      "max_completion_tokens": 115200
+    },
+    {
+      "name": "AkashML | meta-llama/llama-3.3-70b-instruct",
+      "model_id": "meta-llama/llama-3.3-70b-instruct",
+      "model_name": "Meta: Llama 3.3 70B Instruct",
+      "context_length": 131072,
+      "provider_name": "AkashML",
+      "pricing": {
+        "prompt": "0.0000002",
+        "completion": "0.00000052",
+        "input_cache_read": "0.0000001",
+        "discount": 0
+      },
+      "max_completion_tokens": 128000
+    },
+    {
+      "name": "Parasail | baai/bge-m3-20251117",
+      "model_id": "baai/bge-m3",
+      "model_name": "BAAI: bge-m3",
+      "context_length": 8194,
+      "provider_name": "Parasail",
+      "pricing": {
+        "prompt": "0.00000001",
+        "completion": "0",
+        "discount": 0
+      },
+      "max_completion_tokens": 7374
+    },
+    {
+      "name": "DekaLLM | openai/gpt-oss-20b",
+      "model_id": "openai/gpt-oss-20b",
+      "model_name": "OpenAI: gpt-oss-20b",
+      "context_length": 131072,
+      "provider_name": "DekaLLM",
+      "pricing": {
+        "prompt": "0.000000029",
+        "completion": "0.00000014",
+        "input_cache_read": "0.000000029",
+        "discount": 0
+      },
+      "max_completion_tokens": 117964
+    },
+    {
+      "name": "AkashML | openai/gpt-oss-20b",
+      "model_id": "openai/gpt-oss-20b",
+      "model_name": "OpenAI: gpt-oss-20b",
+      "context_length": 131072,
+      "provider_name": "AkashML",
+      "pricing": {
+        "prompt": "0.00000002",
+        "completion": "0.0000001",
+        "discount": 0
+      },
+      "max_completion_tokens": 117964
+    },
+    {
+      "name": "TestProv | test/embedding-model",
+      "model_id": "test/embedding-model",
+      "model_name": "Test: Embedding Only",
+      "context_length": 100000,
+      "provider_name": "TestProv",
+      "pricing": {
+        "prompt": "0.0000001",
+        "completion": "0",
+        "discount": 0
+      },
+      "max_completion_tokens": null
+    }
+  ]
+}

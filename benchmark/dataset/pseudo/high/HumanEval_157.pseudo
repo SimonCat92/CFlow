@@ -1,0 +1,7 @@
+// HumanEval/157: right_angle_triangle
+// Return true if the three sides form a right-angled triangle.
+// Examples: right_angle_triangle(3, 4, 5) -> true;
+//           right_angle_triangle(1, 2, 3) -> false
+function right_angle_triangle(a, b, c):
+    return a * a == b * b + c * c or b * b == a * a + c * c or c * c == a * a + b * b
+end function

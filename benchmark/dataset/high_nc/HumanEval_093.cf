@@ -1,0 +1,9 @@
+fn string encode(string message) {
+    string result = "";
+    for (string c in message) {
+        AI_ASSIST { swap the case of c; if it is now a vowel, replace it
+                    with the letter 2 positions ahead in the alphabet;
+                    append to result }
+    }
+    return result;
+}

@@ -1,0 +1,12 @@
+// HumanEval/143: words_in_sentence
+// Return the words of the sentence whose lengths are prime numbers,
+// keeping their original order, joined by spaces.
+// Examples: words_in_sentence("This is a test") -> "is";
+//           words_in_sentence("lets go for swimming") -> "go for"
+fn string words_in_sentence(string sentence) {
+    list<string> new_lst;
+    for (string word in split_whitespace(sentence)) {
+        AI_ASSIST { if the length of word is prime, append it to new_lst }
+    }
+    return join(new_lst, " ");
+}

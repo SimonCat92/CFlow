@@ -1,0 +1,9 @@
+// HumanEval/101: words_string
+// Split the string into words separated by commas or spaces; return the
+// words in order.
+// Examples: words_string("Hi, my name is John") -> ["Hi","my","name","is","John"];
+//           words_string("One, two, three") -> ["One","two","three"]
+function words_string(s):
+    AI_ASSIST { return the words of s, where commas and spaces are
+                separators }
+end function

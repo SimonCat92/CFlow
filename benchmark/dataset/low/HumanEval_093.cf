@@ -1,0 +1,9 @@
+// HumanEval/93: encode
+// Encode the message (letters only): swap the case of every letter, then
+// replace every vowel with the letter 2 places ahead in the alphabet.
+// Examples: encode("test") -> "TGST";
+//           encode("This is a message") -> "tHKS KS C MGSSCGG"
+fn string encode(string message) {
+    AI_ASSIST { swap case of all letters and replace each vowel with the
+                letter two positions ahead }
+}

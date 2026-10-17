@@ -1,0 +1,8 @@
+fn list<int> parse_nested_parens(string paren_string) {
+    list<int> result;
+    for (string g in paren_string.split(" ")) {
+        if (g == "") { continue; }
+        AI_ASSIST { append to result the deepest nesting level of g }
+    }
+    return result;
+}

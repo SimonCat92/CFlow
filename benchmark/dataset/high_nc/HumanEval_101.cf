@@ -1,0 +1,5 @@
+fn list<string> words_string(string s) {
+    string t = s;
+    AI_ASSIST { replace every comma in t with a space }
+    return split_whitespace(t);
+}

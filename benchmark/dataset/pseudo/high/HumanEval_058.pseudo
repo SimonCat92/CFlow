@@ -1,0 +1,16 @@
+// HumanEval/58: common
+// Return the sorted unique elements common to both lists.
+// Examples: common([1,4,3,34,653,2,5], [5,7,1,5,9,653,121]) -> [1,5,653];
+//           common([5,3,2,8], [3,2]) -> [2,3]
+function common(l1, l2):
+    let both = empty set
+    for each e1 in l1:
+        for each e2 in l2:
+            if e1 == e2: append e1 to both
+        end for
+    end for
+    let result = empty list
+    for each e in both: append e to result
+    sort(result)
+    return result
+end function

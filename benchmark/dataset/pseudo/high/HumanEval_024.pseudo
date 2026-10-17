@@ -1,0 +1,10 @@
+// HumanEval/24: largest_divisor
+// For a given number n, find the largest number that divides n evenly
+// and is smaller than n.
+// Example: largest_divisor(15) -> 5
+function largest_divisor(n):
+    for i from n - 1 down to 1:
+        if n mod i == 0: return i
+    end for
+    return 1
+end function

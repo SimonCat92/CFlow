@@ -1,0 +1,8 @@
+fn int do_algebra(list<string> op, list<int> operand) {
+    string expression = str(operand[0]);
+    for (int i = 0; i < op.length(); i++) {
+        expression += op[i] + str(operand[i + 1]);
+    }
+    AI_ASSIST { evaluate expression honoring standard precedence
+                (**, then * and
+}

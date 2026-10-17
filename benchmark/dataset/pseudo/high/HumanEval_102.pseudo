@@ -1,0 +1,10 @@
+// HumanEval/102: choose_num
+// Return the biggest even integer in the range [x, y] inclusive, or -1
+// if none exists (also -1 when x > y).
+// Examples: choose_num(12, 15) -> 14; choose_num(13, 12) -> -1
+function choose_num(x, y):
+    if x > y: return -1
+    if y mod 2 == 0: return y
+    if x == y: return -1
+    return y - 1
+end function

@@ -1,0 +1,7 @@
+// HumanEval/8: sum_product
+// Return a tuple (sum, product) of all integers in the list.
+// Empty list gives (0, 1).
+// Examples: sum_product([]) -> (0, 1); sum_product([1,2,3,4]) -> (10, 24)
+function sum_product(numbers):
+    AI_ASSIST { return (sum, product) of numbers; empty -> (0, 1) }
+end function

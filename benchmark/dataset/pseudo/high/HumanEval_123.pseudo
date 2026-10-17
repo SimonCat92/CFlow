@@ -1,0 +1,15 @@
+// HumanEval/123: get_odd_collatz
+// Return the sorted list of odd numbers in the Collatz sequence starting
+// at n (next term is n/2 for even n, 3n+1 for odd n; ends at 1).
+// Example: get_odd_collatz(5) -> [1, 5]
+function get_odd_collatz(n):
+    let odd_collatz = empty list
+    if n mod 2 == 1: append n to odd_collatz
+    while n > 1:
+        AI_ASSIST { advance n by one Collatz step (n/2 if even, 3n+1 if
+                    odd), and if the new n is odd append it to
+                    odd_collatz }
+    end while
+    sort(odd_collatz)
+    return odd_collatz
+end function

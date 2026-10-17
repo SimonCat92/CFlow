@@ -1,0 +1,10 @@
+// HumanEval/13: greatest_common_divisor
+// Return the greatest common divisor of two integers a and b.
+// Examples: greatest_common_divisor(3, 5) -> 1;
+//           greatest_common_divisor(25, 15) -> 5
+function greatest_common_divisor(a, b):
+    let x = a
+    let y = b
+    AI_ASSIST { reduce x and y with Euclid's method until y is 0, then
+                return x }
+end function

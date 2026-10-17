@@ -1,0 +1,12 @@
+fn bool is_simple_power(int x, int n) {
+    if (x == 1) { return true; }
+    if (n == 0) { return x == 0; }
+    if (n == 1) { return x == 1; }
+    if (n == -1) { return abs(x) == 1; }
+    int power = n;
+    while (abs(power) <= abs(x)) {
+        if (power == x) { return true; }
+        power = power * n;
+    }
+    return false;
+}

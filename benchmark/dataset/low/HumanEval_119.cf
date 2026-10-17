@@ -1,0 +1,9 @@
+// HumanEval/119: match_parens
+// Both strings consist of "(" and ")". Return "Yes" if they can be
+// concatenated in some order into a balanced string, else "No".
+// Examples: match_parens(["()(", ")"]) -> "Yes";
+//           match_parens([")", ")"]) -> "No"
+fn string match_parens(list<string> lst) {
+    AI_ASSIST { return "Yes" if lst[0]+lst[1] or lst[1]+lst[0] is a
+                balanced parenthesis string, else "No" }
+}

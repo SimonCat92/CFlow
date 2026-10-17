@@ -1,0 +1,8 @@
+// HumanEval/19: sort_numbers
+// Input is a space-delimited string of numerals from "zero" to "nine".
+// Return the string with the numbers sorted from smallest to largest.
+// Example: sort_numbers("three one five") -> "one three five"
+fn string sort_numbers(string numbers) {
+    AI_ASSIST { sort the numeral words ascending by value and join them
+                back with spaces }
+}

@@ -1,0 +1,8 @@
+// HumanEval/122: add_elements
+// Return the sum of the elements with at most two digits among the first
+// k elements of arr (1 <= k <= len(arr)).
+// Example: add_elements([111,21,3,4000,5,6,7,8,9], 4) -> 24
+fn int add_elements(list<int> arr, int k) {
+    AI_ASSIST { return the sum of the first k elements that have at most
+                two digits, ignoring sign }
+}

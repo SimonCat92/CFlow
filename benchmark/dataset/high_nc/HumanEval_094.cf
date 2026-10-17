@@ -1,0 +1,11 @@
+fn bool is_prime(int n) {
+    AI_ASSIST { return true if n is prime }
+}
+
+fn int skjkasdkd(list<int> lst) {
+    int maxx = 0;
+    for (int v in lst) {
+        if (v > maxx && is_prime(v)) { maxx = v; }
+    }
+    AI_ASSIST { return the sum of the decimal digits of maxx }
+}

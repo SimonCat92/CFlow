@@ -1,0 +1,23 @@
+// HumanEval/129: minPath
+// The N x N grid (N >= 2) contains each value 1..N*N exactly once.
+// A path of length k visits exactly k cells (revisits allowed), moving
+// only to edge-adjacent cells, starting anywhere, never off the grid.
+// Paths compare lexicographically by their visited values; the answer
+// is unique. Return the ordered values of the minimum path.
+// Examples: minPath([[1,2,3],[4,5,6],[7,8,9]], 3) -> [1, 2, 1];
+//           minPath([[5,9,3],[4,1,6],[7,8,2]], 1) -> [1]
+fn list<int> minPath(list<list<int>> grid, int k) {
+    int n = grid.length();
+    int best = n * n + 1;
+    // the minimum path starts at the cell containing 1 and alternates
+    // with its cheapest neighbor
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (grid[i][j] == 1) {
+                AI_ASSIST { set best to the smallest value among the
+                            edge-adjacent neighbors of cell (i, j) }
+            }
+        }
+    }
+    AI_ASSIST { return the length-k list alternating 1, best, 1, best, ... }
+}

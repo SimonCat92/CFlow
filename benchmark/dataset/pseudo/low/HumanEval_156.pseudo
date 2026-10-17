@@ -1,0 +1,8 @@
+// HumanEval/156: int_to_mini_roman
+// Convert a positive integer (1 <= num <= 1000) to its Roman numeral in
+// lowercase.
+// Examples: int_to_mini_roman(19) -> "xix"; int_to_mini_roman(152) -> "clii";
+//           int_to_mini_roman(426) -> "cdxxvi"
+function int_to_mini_roman(number):
+    AI_ASSIST { return the lowercase Roman numeral of number }
+end function

@@ -1,0 +1,10 @@
+// HumanEval/85: add
+// Given a non-empty list of integers, add the even elements that sit at
+// odd indices.
+// Example: add([4, 2, 6, 7]) -> 2
+function add(lst):
+    let total = 0
+    AI_ASSIST { sum into total the elements lst[i] where i is odd and the
+                element is even }
+    return total
+end function

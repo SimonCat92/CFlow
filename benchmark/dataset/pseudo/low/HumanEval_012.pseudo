@@ -1,0 +1,9 @@
+// HumanEval/12: longest
+// Return the longest string in the list; the first one on ties, or null
+// when the list is empty.
+// Examples: longest([]) -> null; longest(["a","b","c"]) -> "a";
+//           longest(["a","bb","ccc"]) -> "ccc"
+function longest(strings):
+    AI_ASSIST { return the longest string, the first on ties, or null for
+                an empty list }
+end function

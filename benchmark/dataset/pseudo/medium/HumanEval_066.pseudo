@@ -1,0 +1,10 @@
+// HumanEval/66: digitSum
+// Return the sum of the ASCII codes of the uppercase characters only.
+// Examples: digitSum("") -> 0; digitSum("abAB") -> 131;
+//           digitSum("abcCd") -> 67; digitSum("helloE") -> 69
+function digitSum(s):
+    let total = 0
+    AI_ASSIST { add to total the ASCII code of every uppercase character
+                in s }
+    return total
+end function

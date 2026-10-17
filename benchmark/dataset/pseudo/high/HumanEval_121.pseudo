@@ -1,0 +1,11 @@
+// HumanEval/121: solution
+// Return the sum of the odd elements that are in even positions.
+// Examples: solution([5,8,7,1]) -> 12; solution([3,3,3,3,3]) -> 9;
+//           solution([30,13,24,321]) -> 0
+function solution(lst):
+    let total = 0
+    for i from 0 to length(lst) - 1 step 2:
+        if lst[i] mod 2 == 1: total = total + lst[i]
+    end for
+    return total
+end function

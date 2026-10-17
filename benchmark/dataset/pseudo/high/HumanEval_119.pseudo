@@ -1,0 +1,21 @@
+// HumanEval/119: match_parens
+// Both strings consist of "(" and ")". Return "Yes" if they can be
+// concatenated in some order into a balanced string, else "No".
+// Examples: match_parens(["()(", ")"]) -> "Yes";
+//           match_parens([")", ")"]) -> "No"
+function balanced(s):
+    let val = 0
+    for each c in s:
+        if c == "(": increment val
+        else: decrement val
+        if val < 0: return false
+    end for
+    return val == 0
+end function
+
+function match_parens(lst):
+    let s1 = lst[0] + lst[1]
+    let s2 = lst[1] + lst[0]
+    if balanced(s1) or balanced(s2): return "Yes"
+    return "No"
+end function

@@ -1,0 +1,11 @@
+// HumanEval/147: get_max_triples
+// Build a[i] = i*i - i + 1 for i in 1..n. Return the number of triples
+// (a[i], a[j], a[k]) with i < j < k whose sum is a multiple of 3.
+// Example: get_max_triples(5) -> 1  // only (1, 7, 13)
+function get_max_triples(n):
+    let A = empty list
+    let count = 0
+    AI_ASSIST { build A per the formula and count triples summing to a
+                multiple of 3 }
+    return count
+end function

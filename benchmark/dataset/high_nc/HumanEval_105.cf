@@ -1,0 +1,10 @@
+fn list<string> by_length(list<int> arr) {
+    map<int, string> names;
+    list<int> sorted_arr = copy(arr);
+    AI_ASSIST { sort sorted_arr descending }
+    list<string> new_arr;
+    for (int v in sorted_arr) {
+        AI_ASSIST { if v is between 1 and 9, append names[v] to new_arr }
+    }
+    return new_arr;
+}

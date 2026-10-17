@@ -1,0 +1,5 @@
+fn float triangle_area(float a, float b, float c) {
+    if (a + b <= c || a + c <= b || b + c <= a) { return -1; }
+    AI_ASSIST { return the area via Heron's formula, rounded to 2 decimal
+                places }
+}

@@ -1,0 +1,9 @@
+fn list<int> generate_integers(int a, int b) {
+    int lower = max(2, min(a, b));
+    int upper = min(8, max(a, b));
+    list<int> result;
+    for (int i = lower; i <= upper; i++) {
+        if (i % 2 == 0) { result.add(i); }
+    }
+    return result;
+}

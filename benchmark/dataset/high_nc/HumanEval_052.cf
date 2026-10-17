@@ -1,0 +1,6 @@
+fn bool below_threshold(list<int> l, int t) {
+    for (int e in l) {
+        if (e >= t) { return false; }
+    }
+    return true;
+}

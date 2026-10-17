@@ -1,0 +1,8 @@
+fn int double_the_difference(list<any> lst) {
+    int total = 0;
+    for (any i in lst) {
+        AI_ASSIST { if i is an integer, positive and odd, add i * i to
+                    total }
+    }
+    return total;
+}

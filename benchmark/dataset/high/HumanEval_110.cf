@@ -1,0 +1,17 @@
+// HumanEval/110: exchange
+// You may swap any number of elements between lst1 and lst2. Return
+// "YES" if lst1 can end up all even, else "NO".
+// Examples: exchange([1,2,3,4], [1,2,3,4]) -> "YES";
+//           exchange([1,2,3,4], [1,5,3,4]) -> "NO"
+fn string exchange(list<int> lst1, list<int> lst2) {
+    int odd = 0;
+    for (int v in lst1) {
+        if (v % 2 != 0) { odd++; }
+    }
+    int even = 0;
+    for (int v in lst2) {
+        if (v % 2 == 0) { even++; }
+    }
+    if (even >= odd) { return "YES"; }
+    return "NO";
+}

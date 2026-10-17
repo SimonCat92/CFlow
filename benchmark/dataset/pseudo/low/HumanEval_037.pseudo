@@ -1,0 +1,9 @@
+// HumanEval/37: sort_even
+// Return a list identical to l except that the values at even indices
+// are sorted among themselves (odd indices untouched).
+// Examples: sort_even([1,2,3]) -> [1,2,3];
+//           sort_even([5,6,3,4]) -> [3,6,5,4]
+function sort_even(l):
+    AI_ASSIST { return l with the elements at even indices sorted among
+                themselves, odd positions unchanged }
+end function

@@ -1,0 +1,7 @@
+fn bool same_chars(string s0, string s1) {
+    set<string> a;
+    set<string> b;
+    for (string c in s0) { a.add(c); }
+    for (string c in s1) { b.add(c); }
+    return a == b;
+}

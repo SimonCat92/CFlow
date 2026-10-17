@@ -1,0 +1,19 @@
+// HumanEval/38: decode_cyclic
+// Encodes s by cycling groups of three characters: each full group is
+// rotated left by one, a trailing shorter group stays as is.
+function encode_cyclic(s):
+    let result = ""
+    for i from 0 to length(s) - 1 step 3:
+        let g = substring(s, i, 3)
+        AI_ASSIST { rotate g left by one character if it has 3 characters,
+                    otherwise keep it; append to result }
+    end for
+    return result
+end function
+
+// Decode a string produced by encode_cyclic (the encoding applied twice
+// restores the original).
+// Example: decode_cyclic(encode_cyclic("abcdef")) -> "abcdef"
+function decode_cyclic(s):
+    return encode_cyclic(encode_cyclic(s))
+end function

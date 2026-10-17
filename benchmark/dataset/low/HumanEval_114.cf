@@ -1,0 +1,8 @@
+// HumanEval/114: minSubArraySum
+// Find the minimum sum of any non-empty sub-array of nums.
+// Examples: minSubArraySum([2,3,4,1,2,4]) -> 1;
+//           minSubArraySum([-1,-2,-3]) -> -6
+fn int minSubArraySum(list<int> nums) {
+    AI_ASSIST { return the minimum sum over all non-empty contiguous
+                sub-arrays }
+}

@@ -1,0 +1,13 @@
+// HumanEval/68: pluck
+// Given an array of non-negative integers, pluck the node with the
+// smallest even value and return it as [value, index]; ties go to the
+// smallest index. Return [] if there are no even values or the array is
+// empty.
+// Examples: pluck([4,2,3]) -> [2,1]; pluck([5,0,3,0,4,2]) -> [0,1];
+//           pluck([]) -> []
+fn list<int> pluck(list<int> arr) {
+    int best;
+    int idx;
+    AI_ASSIST { find the smallest even value in arr (first index on ties)
+                into best and idx; return [best, idx] or [] if none }
+}

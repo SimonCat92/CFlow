@@ -1,0 +1,9 @@
+// HumanEval/24: largest_divisor
+// For a given number n, find the largest number that divides n evenly
+// and is smaller than n.
+// Example: largest_divisor(15) -> 5
+function largest_divisor(n):
+    declare i
+    AI_ASSIST { scan i downward from n - 1 and return the first value that
+                divides n evenly }
+end function

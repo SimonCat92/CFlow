@@ -1,0 +1,9 @@
+fn map<string, int> histogram(string test) {
+    map<string, int> counts;
+    for (string w in test.split(" ")) {
+        if (w == "") { continue; }
+        if (counts.has(w)) { counts[w]++; } else { counts[w] = 1; }
+    }
+    AI_ASSIST { return a map containing only the letters whose count
+                equals the maximum count in counts; empty map if none }
+}

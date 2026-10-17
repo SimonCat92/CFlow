@@ -1,0 +1,12 @@
+// HumanEval/158: find_max
+// Return the word with the maximum number of unique characters; ties go
+// to the first in lexicographical order.
+// Examples: find_max(["name","of","string"]) -> "string";
+//           find_max(["name","enam","game"]) -> "enam";
+//           find_max(["aaaaaaa","bb","cc"]) -> "aaaaaaa"
+function find_max(words):
+    declare best
+    declare best_count
+    AI_ASSIST { pick into best the word with the most distinct characters
+                (lexicographically first on ties) and return it }
+end function

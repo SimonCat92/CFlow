@@ -1,0 +1,11 @@
+// HumanEval/57: monotonic
+// Return true if the list elements are monotonically increasing or
+// decreasing.
+// Examples: monotonic([1,2,4,20]) -> true; monotonic([1,20,4,10]) -> false;
+//           monotonic([4,1,0,-10]) -> true
+function monotonic(l):
+    declare inc
+    declare dec
+    AI_ASSIST { determine whether l is non-decreasing or non-increasing
+                and return true in either case }
+end function

@@ -1,0 +1,17 @@
+// HumanEval/132: is_nested
+// String of square brackets only. Return true iff there is a valid
+// subsequence of brackets where at least one bracket is nested.
+// Examples: is_nested("[[]]") -> true; is_nested("[]]]]]]][[[[[]") -> false;
+//           is_nested("[][]") -> false; is_nested("[[][]]") -> true;
+//           is_nested("[[]][[") -> true
+function is_nested(s):
+    let opening = empty list
+    let closing = empty list
+    for i from 0 to length(s) - 1:
+        if s[i] == "[": append i to opening
+        else: append i to closing
+    end for
+    AI_ASSIST { scan closings from the end; for each opening index that is
+                followed by a still-unmatched closing index, count one
+                match; return true if at least 2 matches exist }
+end function

@@ -1,0 +1,11 @@
+fn list<float> rescale_to_unit(list<float> numbers) {
+    float lo = numbers[0];
+    float hi = numbers[0];
+    for (float x in numbers) {
+        if (x < lo) { lo = x; }
+        if (x > hi) { hi = x; }
+    }
+    list<float> result;
+    for (float x in numbers) { result.add((x - lo) / (hi - lo)); }
+    return result;
+}

@@ -1,0 +1,12 @@
+// HumanEval/74: total_match
+// Return the list whose strings have the smaller total character count;
+// on a tie return the first list.
+// Examples: total_match([], []) -> [];
+//           total_match(["hi","admin"], ["hI","Hi"]) -> ["hI","Hi"];
+//           total_match(["hi","admin"], ["hi","hi","admin","project"]) -> ["hi","admin"]
+function total_match(lst1, lst2):
+    let l1 = 0
+    let l2 = 0
+    AI_ASSIST { sum the string lengths of lst1 into l1 and of lst2 into l2,
+                then return lst1 if l1 <= l2 else lst2 }
+end function

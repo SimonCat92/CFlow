@@ -1,0 +1,12 @@
+fn list<int> common(list<int> l1, list<int> l2) {
+    set<int> both;
+    for (int e1 in l1) {
+        for (int e2 in l2) {
+            if (e1 == e2) { both.add(e1); }
+        }
+    }
+    list<int> result;
+    for (int e in both) { result.add(e); }
+    sort(result);
+    return result;
+}

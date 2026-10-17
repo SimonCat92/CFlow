@@ -1,0 +1,9 @@
+fn any compare_one(any a, any b) {
+    float fa = 0.0;
+    float fb = 0.0;
+    AI_ASSIST { parse a into fa and b into fb, accepting strings whose
+                decimal separator may be "," as well as "." }
+    if (fa == fb) { return null; }
+    if (fa > fb) { return a; }
+    return b;
+}

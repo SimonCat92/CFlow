@@ -1,0 +1,8 @@
+// HumanEval/160: do_algebra
+// Build the algebraic expression operand[0] op[0] operand[1] op[1] ...
+// (operators are +, -, *, //, **) and return its evaluation.
+// Example: do_algebra(["+","*","-"], [2,3,4,5]) -> 9  // 2+3*4-5
+fn int do_algebra(list<string> op, list<int> operand) {
+    AI_ASSIST { evaluate the expression formed by interleaving operands
+                and operators with standard precedence }
+}

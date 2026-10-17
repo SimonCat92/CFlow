@@ -1,0 +1,7 @@
+fn list<int> compare(list<int> game, list<int> guess) {
+    list<int> result;
+    for (int i = 0; i < game.length(); i++) {
+        result.add(abs(game[i] - guess[i]));
+    }
+    return result;
+}

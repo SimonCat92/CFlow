@@ -1,0 +1,15 @@
+// HumanEval/137: compare_one
+// a and b are integers, floats, or strings representing real numbers
+// (strings may use "." or "," as the decimal separator). Return the
+// larger one in its original type; null if equal.
+// Examples: compare_one(1, 2.5) -> 2.5; compare_one(1, "2,3") -> "2,3";
+//           compare_one("5,1", "6") -> "6"; compare_one("1", 1) -> null
+function compare_one(a, b):
+    let fa = 0.0
+    let fb = 0.0
+    AI_ASSIST { parse a into fa and b into fb, accepting strings whose
+                decimal separator may be "," as well as "." }
+    if fa == fb: return none
+    if fa > fb: return a
+    return b
+end function

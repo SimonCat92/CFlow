@@ -1,0 +1,9 @@
+// HumanEval/159: eat
+// A rabbit has eaten `number` carrots, needs `need` more, and `remaining`
+// are in stock. Return [total eaten after the meal, carrots left]; if
+// stock is short the rabbit eats all remaining and stays hungry.
+// Examples: eat(5, 6, 10) -> [11, 4]; eat(4, 8, 9) -> [12, 1];
+//           eat(1, 10, 10) -> [11, 0]; eat(2, 11, 5) -> [7, 0]
+function eat(number, need, remaining):
+    AI_ASSIST { return [number eaten after meal, carrots left] }
+end function

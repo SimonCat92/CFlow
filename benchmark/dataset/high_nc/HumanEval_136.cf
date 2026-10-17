@@ -1,0 +1,13 @@
+fn tuple largest_smallest_integers(list<int> lst) {
+    int neg = 0;
+    bool has_neg = false;
+    int pos = 0;
+    bool has_pos = false;
+    for (int v in lst) {
+        AI_ASSIST { if v < 0, keep in neg the largest negative seen and set
+                    has_neg; if v > 0, keep in pos the smallest positive
+                    seen and set has_pos }
+    }
+    AI_ASSIST { return (neg if has_neg else null, pos if has_pos else
+                null) }
+}

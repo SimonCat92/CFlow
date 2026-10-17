@@ -1,0 +1,11 @@
+// HumanEval/128: prod_signs
+// Return the sum of the magnitudes of the integers multiplied by the
+// product of their signs (1, -1, or 0). Return null for an empty array.
+// Examples: prod_signs([1,2,2,-4]) -> -9; prod_signs([0,1]) -> 0;
+//           prod_signs([]) -> null
+fn any prod_signs(list<int> arr) {
+    int prod;
+    int magsum = 0;
+    AI_ASSIST { return null if empty; compute prod of the element signs
+                and the magnitude sum, return prod * magsum }
+}

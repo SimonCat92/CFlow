@@ -1,0 +1,9 @@
+// HumanEval/61: correct_bracketing
+// brackets is a string of "(" and ")". Return true if every opening
+// bracket has a corresponding closing bracket.
+// Examples: correct_bracketing("(") -> false; correct_bracketing("()") -> true;
+//           correct_bracketing("(()())") -> true; correct_bracketing(")(()") -> false
+fn bool correct_bracketing(string brackets) {
+    AI_ASSIST { return true if the "(" and ")" brackets are correctly
+                nested }
+}

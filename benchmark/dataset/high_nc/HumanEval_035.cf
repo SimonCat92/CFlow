@@ -1,0 +1,7 @@
+fn int max_element(list<int> l) {
+    int m = l[0];
+    for (int e in l) {
+        if (e > m) { m = e; }
+    }
+    return m;
+}

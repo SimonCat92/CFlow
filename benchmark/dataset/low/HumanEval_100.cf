@@ -1,0 +1,8 @@
+// HumanEval/100: make_a_pile
+// Make a pile of n levels: level 1 has n stones and each next level has
+// the next number of the same parity (next odd if n is odd, next even if
+// n is even). Return the stones per level.
+// Example: make_a_pile(3) -> [3, 5, 7]
+fn list<int> make_a_pile(int n) {
+    AI_ASSIST { return the list of stone counts for the n levels }
+}

@@ -1,0 +1,9 @@
+fn int max_fill(list<list<int>> grid, int capacity) {
+    int total = 0;
+    for (list<int> row in grid) {
+        int water = 0;
+        for (int cell in row) { water += cell; }
+        total += ceil((float)water / capacity);
+    }
+    return total;
+}

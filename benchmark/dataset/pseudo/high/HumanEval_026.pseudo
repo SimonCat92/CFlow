@@ -1,0 +1,16 @@
+// HumanEval/26: remove_duplicates
+// Remove all elements that occur more than once, keeping the order of
+// the survivors.
+// Example: remove_duplicates([1, 2, 3, 2, 4]) -> [1, 3, 4]
+function remove_duplicates(numbers):
+    let counts = empty map
+    for each n in numbers:
+        if counts contains n: increment counts[n]
+        else: counts[n] = 1
+    end for
+    let result = empty list
+    for each n in numbers:
+        if counts[n] <= 1: append n to result
+    end for
+    return result
+end function

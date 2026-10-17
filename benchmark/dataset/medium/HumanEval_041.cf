@@ -1,0 +1,10 @@
+// HumanEval/41: car_race_collision
+// n cars drive left-to-right and n other cars drive right-to-left on an
+// infinite straight road, all at the same speed, starting far apart.
+// Cars are infinitely sturdy: they pass through each other. Return the
+// number of collisions.
+fn int car_race_collision(int n) {
+    int collisions;
+    AI_ASSIST { every left-to-right car meets every right-to-left car once;
+                compute collisions and return it }
+}

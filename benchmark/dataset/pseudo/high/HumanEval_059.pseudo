@@ -1,0 +1,14 @@
+// HumanEval/59: largest_prime_factor
+// Return the largest prime factor of n (n > 1 and not prime).
+// Examples: largest_prime_factor(13195) -> 29; largest_prime_factor(2048) -> 2
+function is_prime(k):
+    AI_ASSIST { return true if k is prime }
+end function
+
+function largest_prime_factor(n):
+    let largest = 1
+    for j from 2 to n:
+        if n mod j == 0 and is_prime(j): largest = j
+    end for
+    return largest
+end function

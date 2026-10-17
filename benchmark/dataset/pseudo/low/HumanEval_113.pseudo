@@ -1,0 +1,11 @@
+// HumanEval/113: odd_count
+// Each input string contains only digits. For the i-th string, count its
+// odd digits n and return the template
+// "the number of odd elements {n}n the str{n}ng {n} of the {n}nput."
+// with n substituted everywhere.
+// Examples: odd_count(["1234567"])
+//             -> ["the number of odd elements 4n the str4ng 4 of the 4nput."]
+function odd_count(lst):
+    AI_ASSIST { for each digit string, emit the template above with n =
+                its count of odd digits }
+end function

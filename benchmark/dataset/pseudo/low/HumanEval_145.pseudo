@@ -1,0 +1,10 @@
+// HumanEval/145: order_by_points
+// Sort the integers ascending by the sum of their digits; for negatives
+// the first signed digit is negative (-12 -> -1+2). Ties keep the
+// original order.
+// Example: order_by_points([1, 11, -1, -11, -12]) -> [-1, -11, 1, -12, 11];
+//          order_by_points([]) -> []
+function order_by_points(nums):
+    AI_ASSIST { return nums sorted by signed digit sum, ties in original
+                order }
+end function

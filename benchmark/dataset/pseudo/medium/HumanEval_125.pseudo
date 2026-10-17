@@ -1,0 +1,13 @@
+// HumanEval/125: split_words
+// Split txt on whitespace if it contains spaces; else split on commas;
+// else return the count of lowercase letters at odd positions in the
+// alphabet (a=0, b=1, ...).
+// Examples: split_words("Hello world!") -> ["Hello","world!"];
+//           split_words("Hello,world!") -> ["Hello","world!"];
+//           split_words("abcdef") -> 3
+function split_words(txt):
+    let count = 0
+    AI_ASSIST { if txt has spaces split on whitespace; else if it has
+                commas split on those; else count lowercase letters at odd
+                alphabet positions into count and return it }
+end function

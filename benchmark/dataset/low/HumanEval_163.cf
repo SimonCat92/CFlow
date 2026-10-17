@@ -1,0 +1,9 @@
+// HumanEval/163: generate_integers
+// Return the even digits between a and b (inclusive), ascending.
+// Examples: generate_integers(2, 8) -> [2,4,6,8];
+//           generate_integers(8, 2) -> [2,4,6,8];
+//           generate_integers(10, 14) -> []
+fn list<int> generate_integers(int a, int b) {
+    AI_ASSIST { return the even single digits in the inclusive range
+                between a and b }
+}

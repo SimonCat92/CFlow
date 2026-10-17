@@ -1,0 +1,11 @@
+// HumanEval/33: sort_third
+// Return a list identical to l except that the values at indices
+// divisible by three are sorted among themselves.
+// Examples: sort_third([1,2,3]) -> [1,2,3];
+//           sort_third([5,6,3,4,8,9,2]) -> [2,6,3,4,8,9,5]
+function sort_third(l):
+    let result = copy(l)
+    AI_ASSIST { sort the elements at indices 0, 3, 6, ... of result among
+                themselves, leaving all other positions unchanged;
+                return result }
+end function

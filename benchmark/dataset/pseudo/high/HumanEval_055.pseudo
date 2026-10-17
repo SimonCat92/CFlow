@@ -1,0 +1,14 @@
+// HumanEval/55: fib
+// Return the n-th Fibonacci number.
+// Examples: fib(10) -> 55; fib(1) -> 1; fib(8) -> 21
+function fib(n):
+    if n == 0: return 0
+    let a = 0
+    let b = 1
+    for i from 2 to n:
+        let next = a + b
+        a = b
+        b = next
+    end for
+    return b
+end function

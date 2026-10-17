@@ -1,0 +1,11 @@
+// HumanEval/91: is_bored
+// Count the boredoms: sentences (delimited by ".", "?" or "!") that
+// start with the word "I".
+// Examples: is_bored("Hello world") -> 0;
+//           is_bored("The sky is blue. The sun is shining. I love this weather") -> 1
+fn int is_bored(string S) {
+    int count = 0;
+    AI_ASSIST { split S into sentences on ".", "?", "!" and count into
+                count those starting with "I " }
+    return count;
+}

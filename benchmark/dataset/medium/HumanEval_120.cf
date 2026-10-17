@@ -1,0 +1,13 @@
+// HumanEval/120: maximum
+// Given an array of integers and a non-negative integer k
+// (0 <= k <= arr.length()), return a sorted list of length k with the
+// maximum k numbers in arr.
+// Examples: maximum([-3, -4, 5], 3) -> [-4, -3, 5];
+//           maximum([4, -4, 4], 2) -> [4, 4];
+//           maximum([-3, 2, 1, 2, -1, -2, 1], 1) -> [2]
+fn list<int> maximum(list<int> arr, int k) {
+    list<int> result;
+    AI_ASSIST { fill result with the k largest values of arr, sorted
+                ascending (empty when k == 0) }
+    return result;
+}

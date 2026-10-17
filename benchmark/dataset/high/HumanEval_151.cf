@@ -1,0 +1,14 @@
+// HumanEval/151: double_the_difference
+// Return the sum of squares of the odd numbers in the list, ignoring
+// negative numbers and non-integers. Empty list -> 0.
+// Examples: double_the_difference([1,3,2,0]) -> 10;
+//           double_the_difference([-1,-2,0]) -> 0;
+//           double_the_difference([9,-2]) -> 81
+fn int double_the_difference(list<any> lst) {
+    int total = 0;
+    for (any i in lst) {
+        AI_ASSIST { if i is an integer, positive and odd, add i * i to
+                    total }
+    }
+    return total;
+}

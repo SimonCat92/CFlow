@@ -1,0 +1,11 @@
+fn string anti_shuffle(string s) {
+    string result = "";
+    bool first = true;
+    for (string word in s.split(" ")) {
+        if (!first) { result += " "; }
+        AI_ASSIST { append the characters of word sorted ascending by ASCII
+                    value to result }
+        first = false;
+    }
+    return result;
+}

@@ -1,0 +1,8 @@
+fn list<string> total_match(list<string> lst1, list<string> lst2) {
+    int l1 = 0;
+    for (string st in lst1) { l1 += st.length(); }
+    int l2 = 0;
+    for (string st in lst2) { l2 += st.length(); }
+    if (l1 <= l2) { return lst1; }
+    return lst2;
+}

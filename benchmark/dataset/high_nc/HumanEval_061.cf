@@ -1,0 +1,8 @@
+fn bool correct_bracketing(string brackets) {
+    int depth = 0;
+    for (string b in brackets) {
+        if (b == "(") { depth++; } else { depth--; }
+        if (depth < 0) { return false; }
+    }
+    return depth == 0;
+}

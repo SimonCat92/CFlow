@@ -1,0 +1,13 @@
+fn list<string> odd_count(list<string> lst) {
+    list<string> res;
+    for (string arr in lst) {
+        int n = 0;
+        for (string d in arr) {
+            AI_ASSIST { if d is an odd digit character, increment n }
+        }
+        AI_ASSIST { append to res the string "the number of odd elements
+                    {n}n the str{n}ng {n} of the {n}nput." with n
+                    substituted }
+    }
+    return res;
+}

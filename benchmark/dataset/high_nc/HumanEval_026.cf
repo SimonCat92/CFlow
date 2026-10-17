@@ -1,0 +1,11 @@
+fn list<int> remove_duplicates(list<int> numbers) {
+    map<int, int> counts;
+    for (int n in numbers) {
+        if (counts.has(n)) { counts[n]++; } else { counts[n] = 1; }
+    }
+    list<int> result;
+    for (int n in numbers) {
+        if (counts[n] <= 1) { result.add(n); }
+    }
+    return result;
+}

@@ -1,0 +1,11 @@
+// HumanEval/124: valid_date
+// Validate a date string in the format mm-dd-yyyy: non-empty, month
+// 1..12, day within that month's range (31 for 1,3,5,7,8,10,12; 30 for
+// 4,6,9,11; 29 for 2).
+// Examples: valid_date("03-11-2000") -> true; valid_date("15-01-2012") -> false;
+//           valid_date("04-0-2040") -> false; valid_date("06/04/2020") -> false
+fn bool valid_date(string date) {
+    int month; int day; int year;
+    AI_ASSIST { parse date into month, day, year and return true iff it is
+                a valid mm-dd-yyyy date per the rules above }
+}

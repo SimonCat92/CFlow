@@ -1,0 +1,8 @@
+// HumanEval/27: flip_case
+// Flip lowercase characters to uppercase and vice versa.
+// Example: flip_case("Hello") -> "hELLO"
+fn string flip_case(string s) {
+    string result = "";
+    AI_ASSIST { append each character of s to result with flipped case }
+    return result;
+}

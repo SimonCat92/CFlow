@@ -1,0 +1,16 @@
+// HumanEval/0: has_close_elements
+// Check if any two distinct numbers in the list are closer to each
+// other than the given threshold.
+// Examples: has_close_elements([1.0, 2.0, 3.0], 0.5) -> false
+//           has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3) -> true
+function has_close_elements(numbers, threshold):
+    for i from 0 to length(numbers) - 1:
+        for j from 0 to length(numbers) - 1:
+            if i != j:
+                AI_ASSIST { if the distance between numbers[i] and
+                            numbers[j] is below threshold, return true }
+            end if
+        end for
+    end for
+    return false
+end function

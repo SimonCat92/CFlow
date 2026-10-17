@@ -1,0 +1,10 @@
+// HumanEval/76: is_simple_power
+// Return true if x is a simple power of n (x == n^k for some integer k).
+// Examples: is_simple_power(1,4) -> true; is_simple_power(8,2) -> true;
+//           is_simple_power(3,2) -> false; is_simple_power(3,1) -> false
+function is_simple_power(x, n):
+    let power = 1
+    AI_ASSIST { handle the edge cases (x == 1, n in {0, 1, -1}) first,
+                then grow power by n until |power| exceeds |x|, and
+                return whether power == x }
+end function

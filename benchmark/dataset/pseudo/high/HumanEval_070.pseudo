@@ -1,0 +1,17 @@
+// HumanEval/70: strange_sort_list
+// Return the list in "strange" order: minimum, then maximum of the rest,
+// then minimum of the rest, and so on.
+// Examples: strange_sort_list([1,2,3,4]) -> [1,4,2,3];
+//           strange_sort_list([5,5,5,5]) -> [5,5,5,5];
+//           strange_sort_list([]) -> []
+function strange_sort_list(lst):
+    let rest = copy(lst)
+    let res = empty list
+    let take_min = true
+    while length(rest) > 0:
+        AI_ASSIST { remove the minimum element of rest (or the maximum when
+                    take_min is false) and append it to res }
+        take_min = not take_min
+    end while
+    return res
+end function

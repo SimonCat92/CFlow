@@ -1,0 +1,10 @@
+fn string solve(string s) {
+    string new_str = "";
+    int flg = 0;
+    for (string c in s) {
+        AI_ASSIST { if c is a letter, append its case-flipped form to
+                    new_str and set flg to 1; otherwise append c }
+    }
+    if (flg == 0) { return reverse(new_str); }
+    return new_str;
+}

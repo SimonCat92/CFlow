@@ -1,0 +1,7 @@
+// HumanEval/5: intersperse
+// Insert `delimeter` between every two consecutive elements of numbers.
+// Examples: intersperse([], 4) -> []; intersperse([1,2,3], 4) -> [1,4,2,4,3]
+fn list<int> intersperse(list<int> numbers, int delimeter) {
+    AI_ASSIST { return numbers with delimeter inserted between each pair
+                of consecutive elements; empty input returns empty }
+}

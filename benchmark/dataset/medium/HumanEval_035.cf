@@ -1,0 +1,8 @@
+// HumanEval/35: max_element
+// Return the maximum element in the list.
+// Examples: max_element([1,2,3]) -> 3;
+//           max_element([5,3,-5,2,-3,3,9,0,123,1,-10]) -> 123
+fn int max_element(list<int> l) {
+    int m = l[0];
+    AI_ASSIST { scan l keeping m as the largest element seen, return m }
+}

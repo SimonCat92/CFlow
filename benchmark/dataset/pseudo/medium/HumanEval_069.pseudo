@@ -1,0 +1,13 @@
+// HumanEval/69: search
+// Given a non-empty list of positive integers, return the greatest
+// integer whose frequency is >= its own value, or -1 if none exists.
+// Examples: search([4,1,2,2,3,1]) -> 2;
+//           search([1,2,2,3,3,3,4,4,4]) -> 3;
+//           search([5,5,4,4,4]) -> -1
+function search(lst):
+    let frq = empty map
+    let ans = -1
+    AI_ASSIST { count occurrences into frq, then set ans to the greatest
+                value v with frq[v] >= v }
+    return ans
+end function

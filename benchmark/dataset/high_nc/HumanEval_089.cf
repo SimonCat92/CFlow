@@ -1,0 +1,9 @@
+fn string encrypt(string s) {
+    string out = "";
+    for (string c in s) {
+        AI_ASSIST { if c is a lowercase letter, append to out the letter 4
+                    positions ahead in the alphabet (wrapping around);
+                    otherwise append c unchanged }
+    }
+    return out;
+}

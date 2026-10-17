@@ -1,0 +1,14 @@
+// HumanEval/39: prime_fib
+// Return the n-th number that is both a Fibonacci number and prime.
+// Examples: prime_fib(1) -> 2; prime_fib(2) -> 3; prime_fib(3) -> 5;
+//           prime_fib(4) -> 13; prime_fib(5) -> 89
+fn bool is_prime(int p) {
+    AI_ASSIST { return true if p is prime }
+}
+
+fn int prime_fib(int n) {
+    int a = 0;
+    int b = 1;
+    AI_ASSIST { generate Fibonacci numbers from a and b, count those that
+                are prime, and return the n-th prime Fibonacci }
+}

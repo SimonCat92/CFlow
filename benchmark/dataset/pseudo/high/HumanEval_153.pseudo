@@ -1,0 +1,18 @@
+// HumanEval/153: Strongest_Extension
+// Strength of an extension name = (#uppercase letters) - (#lowercase
+// letters). Return "ClassName.StrongestExtensionName" for the strongest
+// extension; ties go to the first in the list.
+// Examples: Strongest_Extension("Slices", ["SErviNGSliCes","Cheese","StuFfed"])
+//             -> "Slices.SErviNGSliCes";
+//           Strongest_Extension("my_class", ["AA","Be","CC"]) -> "my_class.AA"
+function Strongest_Extension(class_name, extensions):
+    let strong = extensions[0]
+    let my_val = 0
+    AI_ASSIST { set my_val to the strength of strong: its count of
+                uppercase letters minus lowercase letters }
+    for each s in extensions:
+        AI_ASSIST { if s's strength exceeds my_val, update strong and
+                    my_val }
+    end for
+    return class_name + "." + strong
+end function

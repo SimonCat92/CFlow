@@ -1,0 +1,9 @@
+// HumanEval/55: fib
+// Return the n-th Fibonacci number.
+// Examples: fib(10) -> 55; fib(1) -> 1; fib(8) -> 21
+fn int fib(int n) {
+    int result;
+    AI_ASSIST { compute the n-th Fibonacci number into result (fib(0)=0,
+                fib(1)=1) }
+    return result;
+}

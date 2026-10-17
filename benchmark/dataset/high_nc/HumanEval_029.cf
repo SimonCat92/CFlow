@@ -1,0 +1,7 @@
+fn list<string> filter_by_prefix(list<string> strings, string prefix) {
+    list<string> result;
+    for (string s in strings) {
+        if (s.starts_with(prefix)) { result.add(s); }
+    }
+    return result;
+}

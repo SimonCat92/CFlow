@@ -1,0 +1,7 @@
+// HumanEval/48: is_palindrome
+// Checks if the given string is a palindrome.
+// Examples: is_palindrome("") -> true; is_palindrome("aba") -> true;
+//           is_palindrome("aaaaa") -> true; is_palindrome("zbcd") -> false
+function is_palindrome(text):
+    AI_ASSIST { return true if text reads the same forwards and backwards }
+end function

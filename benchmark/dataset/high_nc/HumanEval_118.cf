@@ -1,0 +1,9 @@
+fn string get_closest_vowel(string word) {
+    if (word.length() < 3) { return ""; }
+    set<string> vowels;
+    for (int i = word.length() - 2; i > 0; i--) {
+        AI_ASSIST { if word[i] is in vowels and word[i-1] and word[i+1]
+                    are not, return word[i] }
+    }
+    return "";
+}

@@ -1,0 +1,11 @@
+// HumanEval/95: check_dict_case
+// Return true if all dict keys are strings in lower case or all in upper
+// case; false otherwise, and false for an empty dict.
+// Examples: check_dict_case({"a":"apple","b":"banana"}) -> true;
+//           check_dict_case({"a":"apple","A":"banana","B":"banana"}) -> false;
+//           check_dict_case({"a":"apple",8:"banana"}) -> false;
+//           check_dict_case({"STATE":"NC","ZIP":"12345"}) -> true
+function check_dict_case(any, dict):
+    AI_ASSIST { return true iff all keys are strings sharing one case
+                (all lower or all upper) }
+end function

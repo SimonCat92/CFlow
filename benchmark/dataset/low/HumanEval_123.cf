@@ -1,0 +1,8 @@
+// HumanEval/123: get_odd_collatz
+// Return the sorted list of odd numbers in the Collatz sequence starting
+// at n (next term is n/2 for even n, 3n+1 for odd n; ends at 1).
+// Example: get_odd_collatz(5) -> [1, 5]
+fn list<int> get_odd_collatz(int n) {
+    AI_ASSIST { return the odd values of the Collatz sequence from n,
+                sorted }
+}

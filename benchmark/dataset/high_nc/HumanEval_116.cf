@@ -1,0 +1,7 @@
+fn list<int> sort_array(list<int> arr) {
+    list<int> result = copy(arr);
+    sort(result);
+    AI_ASSIST { stable-sort result ascending by the number of 1 bits in
+                each element's binary representation }
+    return result;
+}

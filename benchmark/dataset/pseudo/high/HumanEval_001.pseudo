@@ -1,0 +1,21 @@
+// HumanEval/1: separate_paren_groups
+// Input is a string of multiple groups of nested parentheses. Groups are
+// balanced and never nested within each other; spaces are ignored.
+// Return the list of the separate group strings.
+// Example: separate_paren_groups("( ) (( )) (( )( ))") -> ["()", "(())", "(()())"]
+function separate_paren_groups(paren_string):
+    let result = empty list
+    let current = ""
+    let depth = 0
+    for each c in paren_string:
+        if c == "(":
+            increment depth
+            current = current + c
+        else if c == ")":
+            decrement depth
+            current = current + c
+            AI_ASSIST { if depth == 0, add current to result and reset it }
+        end if
+    end for
+    return result
+end function

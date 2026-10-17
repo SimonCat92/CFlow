@@ -1,0 +1,11 @@
+// HumanEval/44: change_base
+// Convert x to the given base (bases are < 10) and return the string
+// representation.
+// Examples: change_base(8, 3) -> "22"; change_base(8, 2) -> "1000";
+//           change_base(7, 2) -> "111"
+fn string change_base(int x, int base) {
+    string ret = "";
+    AI_ASSIST { build ret by repeatedly taking x % base and dividing x by
+                base, digits most-significant first; x == 0 yields "0" }
+    return ret;
+}

@@ -1,0 +1,28 @@
+// HumanEval/32: find_zero
+// Evaluates the polynomial with coefficients xs at point x:
+// xs[0] + xs[1]*x + xs[2]*x^2 + ...
+function poly(xs, x):
+    let total = 0.0
+    let power = 1.0
+    for each c in xs:
+        total = total + c * power
+        power = power * x
+    end for
+    return total
+end function
+
+// xs are the coefficients of a polynomial. The list always has an even
+// number of coefficients and a nonzero leading coefficient, which
+// guarantees a real root exists. Return one x such that poly(x) == 0.
+// Examples: find_zero([1, 2]) -> -0.5;  find_zero([-6, 11, -6, 1]) -> 1.0
+function find_zero(xs):
+    // expand a bracket until the endpoints have opposite signs
+    let begin = -1.0
+    let end = 1.0
+    while poly(xs, begin) * poly(xs, end) > 0:
+        begin = begin * 2.0
+        end = end * 2.0
+    end while
+    AI_ASSIST { bisect [begin, end] until end - begin <= 1e-10, each step
+                keeping the half where poly changes sign; return begin }
+end function

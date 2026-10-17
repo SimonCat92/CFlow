@@ -1,0 +1,10 @@
+// HumanEval/4: mean_absolute_deviation
+// Mean Absolute Deviation: the average absolute difference between each
+// element and the mean of the dataset. MAD = average |x - x_mean|.
+// Example: mean_absolute_deviation([1.0, 2.0, 3.0, 4.0]) -> 1.0
+function mean_absolute_deviation(numbers):
+    let mean = 0.0
+    for each x in numbers: mean = mean + x
+    mean = mean / length(numbers)
+    AI_ASSIST { return the average of |x - mean| over all x in numbers }
+end function

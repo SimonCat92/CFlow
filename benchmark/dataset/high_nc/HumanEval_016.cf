@@ -1,0 +1,5 @@
+fn int count_distinct_characters(string s) {
+    set<string> seen;
+    for (string c in s) { seen.add(lowercase(c)); }
+    return seen.length();
+}

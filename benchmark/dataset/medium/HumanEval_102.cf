@@ -1,0 +1,9 @@
+// HumanEval/102: choose_num
+// Return the biggest even integer in the range [x, y] inclusive, or -1
+// if none exists (also -1 when x > y).
+// Examples: choose_num(12, 15) -> 14; choose_num(13, 12) -> -1
+fn int choose_num(int x, int y) {
+    int result;
+    AI_ASSIST { set result to the largest even integer in [x, y], or -1 }
+    return result;
+}

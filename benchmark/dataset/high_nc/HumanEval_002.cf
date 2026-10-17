@@ -1,0 +1,3 @@
+fn float truncate_number(float number) {
+    return number % 1.0;
+}

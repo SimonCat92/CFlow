@@ -1,0 +1,6 @@
+// HumanEval/150: x_or_y
+// Return x if n is a prime number, y otherwise.
+// Examples: x_or_y(7, 34, 12) -> 34; x_or_y(15, 8, 5) -> 5
+fn int x_or_y(int n, int x, int y) {
+    AI_ASSIST { return x if n is prime, else y }
+}

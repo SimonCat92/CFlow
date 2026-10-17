@@ -1,0 +1,8 @@
+// HumanEval/53: add
+// Add two numbers x and y.
+// Examples: add(2, 3) -> 5; add(5, 7) -> 12
+function add(x, y):
+    declare sum
+    AI_ASSIST { set sum to x + y }
+    return sum
+end function

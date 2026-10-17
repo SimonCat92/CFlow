@@ -1,0 +1,14 @@
+// HumanEval/105: by_length
+// Sort the integers between 1 and 9 inclusive, reverse them, and replace
+// each digit by its name: "One".."Nine". Ignore values outside 1..9.
+// Examples: by_length([2,1,1,4,5,8,2,3])
+//             -> ["Eight","Five","Four","Three","Two","Two","One","One"]
+//           by_length([]) -> []; by_length([1,-1,55]) -> ["One"]
+function by_length(arr):
+    let names = empty map   // 1->"One", ..., 9->"Nine"
+    let sorted_arr = empty list
+    let new_arr = empty list
+    AI_ASSIST { sort arr descending into sorted_arr, then append to
+                new_arr the name of each value between 1 and 9 }
+    return new_arr
+end function

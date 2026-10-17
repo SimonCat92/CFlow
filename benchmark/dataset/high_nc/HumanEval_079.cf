@@ -1,0 +1,3 @@
+fn string decimal_to_binary(int decimal) {
+    return "db" + binary(decimal) + "db";
+}

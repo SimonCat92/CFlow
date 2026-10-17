@@ -1,0 +1,13 @@
+fn string encode_cyclic(string s) {
+    string result = "";
+    for (int i = 0; i < s.length(); i += 3) {
+        string g = substring(s, i, 3);
+        AI_ASSIST { rotate g left by one character if it has 3 characters,
+                    otherwise keep it; append to result }
+    }
+    return result;
+}
+
+fn string decode_cyclic(string s) {
+    return encode_cyclic(encode_cyclic(s));
+}

@@ -1,0 +1,7 @@
+fn list<int> filter_integers(list<any> values) {
+    list<int> result;
+    for (any v in values) {
+        AI_ASSIST { if v is an integer, append it to result }
+    }
+    return result;
+}

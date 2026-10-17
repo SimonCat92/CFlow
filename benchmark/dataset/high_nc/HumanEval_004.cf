@@ -1,0 +1,6 @@
+fn float mean_absolute_deviation(list<float> numbers) {
+    float mean = 0.0;
+    for (float x in numbers) { mean += x; }
+    mean /= numbers.length();
+    AI_ASSIST { return the average of |x - mean| over all x in numbers }
+}

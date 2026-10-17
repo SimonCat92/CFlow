@@ -1,0 +1,14 @@
+// HumanEval/67: fruit_distribution
+// s describes how many apples and oranges are in a basket that contains
+// apples, oranges and mangoes; n is the total fruit count. Return the
+// number of mangoes.
+// Examples: fruit_distribution("5 apples and 6 oranges", 19) -> 8;
+//           fruit_distribution("2 apples and 3 oranges", 100) -> 95
+function fruit_distribution(s, n):
+    let counted = 0
+    for each tok in split s on " ":
+        AI_ASSIST { if tok is a decimal number, add its integer value to
+                    counted }
+    end for
+    return n - counted
+end function

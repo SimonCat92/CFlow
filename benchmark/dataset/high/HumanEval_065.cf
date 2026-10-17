@@ -1,0 +1,11 @@
+// HumanEval/65: circular_shift
+// Circular-shift the digits of integer x right by `shift` and return the
+// result as a string. If shift exceeds the number of digits, return the
+// digits reversed.
+// Examples: circular_shift(12, 1) -> "21"; circular_shift(12, 2) -> "12"
+fn string circular_shift(int x, int shift) {
+    string s = str(x);
+    if (shift > s.length()) { return reverse(s); }
+    AI_ASSIST { return the last `shift` digits of s followed by the
+                remaining leading digits }
+}

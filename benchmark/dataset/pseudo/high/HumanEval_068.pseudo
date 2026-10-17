@@ -1,0 +1,18 @@
+// HumanEval/68: pluck
+// Given an array of non-negative integers, pluck the node with the
+// smallest even value and return it as [value, index]; ties go to the
+// smallest index. Return [] if there are no even values or the array is
+// empty.
+// Examples: pluck([4,2,3]) -> [2,1]; pluck([5,0,3,0,4,2]) -> [0,1];
+//           pluck([]) -> []
+function pluck(arr):
+    let best = 0
+    let idx = -1
+    for i from 0 to length(arr) - 1:
+        AI_ASSIST { if arr[i] is even and it is the first even seen or is
+                    smaller than best, store it in best and its index in
+                    idx }
+    end for
+    if idx == -1: return []
+    return [best, idx]
+end function

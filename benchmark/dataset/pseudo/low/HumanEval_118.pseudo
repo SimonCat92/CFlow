@@ -1,0 +1,10 @@
+// HumanEval/118: get_closest_vowel
+// Find the closest vowel (case sensitive) that stands between two
+// consonants, scanning from the right. Vowels at the very start or end
+// do not count. Return "" if none.
+// Examples: get_closest_vowel("yogurt") -> "u"; get_closest_vowel("FULL") -> "U";
+//           get_closest_vowel("quick") -> ""; get_closest_vowel("ab") -> ""
+function get_closest_vowel(word):
+    AI_ASSIST { return the rightmost vowel of word that is flanked by
+                consonants, or "" }
+end function

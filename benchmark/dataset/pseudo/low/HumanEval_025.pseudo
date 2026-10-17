@@ -1,0 +1,9 @@
+// HumanEval/25: factorize
+// Return the prime factors of n in ascending order, each repeated as
+// many times as it appears in the factorization.
+// Examples: factorize(8) -> [2,2,2]; factorize(25) -> [5,5];
+//           factorize(70) -> [2,5,7]
+function factorize(n):
+    AI_ASSIST { return the prime factorization of n, factors ascending and
+                repeated by multiplicity }
+end function

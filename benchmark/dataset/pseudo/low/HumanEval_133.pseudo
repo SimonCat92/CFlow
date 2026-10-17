@@ -1,0 +1,9 @@
+// HumanEval/133: sum_squares
+// Round each element up to the ceiling int first, then return the sum of
+// the squares.
+// Examples: sum_squares([1,2,3]) -> 14; sum_squares([1,4,9]) -> 98;
+//           sum_squares([1.4,4.2,0]) -> 29; sum_squares([-2.4,1,1]) -> 6
+function sum_squares(lst):
+    AI_ASSIST { return the sum of the squares of the ceiling of each
+                element }
+end function

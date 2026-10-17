@@ -1,0 +1,7 @@
+// HumanEval/13: greatest_common_divisor
+// Return the greatest common divisor of two integers a and b.
+// Examples: greatest_common_divisor(3, 5) -> 1;
+//           greatest_common_divisor(25, 15) -> 5
+fn int greatest_common_divisor(int a, int b) {
+    AI_ASSIST { return the greatest common divisor of a and b }
+}

@@ -1,0 +1,6 @@
+fn tuple sum_product(list<int> numbers) {
+    int s = 0;
+    int p = 1;
+    for (int n in numbers) { s += n; p *= n; }
+    return (s, p);
+}

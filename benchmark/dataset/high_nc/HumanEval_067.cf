@@ -1,0 +1,8 @@
+fn int fruit_distribution(string s, int n) {
+    int counted = 0;
+    for (string tok in s.split(" ")) {
+        AI_ASSIST { if tok is a decimal number, add its integer value to
+                    counted }
+    }
+    return n - counted;
+}

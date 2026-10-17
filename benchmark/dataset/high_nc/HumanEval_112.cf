@@ -1,0 +1,7 @@
+fn tuple reverse_delete(string s, string c) {
+    string result = "";
+    for (string ch in s) {
+        AI_ASSIST { append ch to result unless ch appears in c }
+    }
+    return (result, result == reverse(result));
+}

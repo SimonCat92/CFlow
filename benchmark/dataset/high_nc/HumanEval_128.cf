@@ -1,0 +1,10 @@
+fn any prod_signs(list<int> arr) {
+    if (arr.length() == 0) { return null; }
+    int prod = 1;
+    int magsum = 0;
+    for (int v in arr) {
+        magsum += abs(v);
+        AI_ASSIST { multiply prod by 0 if v == 0, by -1 if v < 0 }
+    }
+    return prod * magsum;
+}

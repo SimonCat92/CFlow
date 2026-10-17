@@ -1,0 +1,10 @@
+// HumanEval/11: string_xor
+// Two strings of 0s and 1s: perform binary XOR per position and return
+// the result string.
+// Example: string_xor("010", "110") -> "100"
+function string_xor(a, b):
+    let result = ""
+    AI_ASSIST { for each position, append "0" to result when a[i] == b[i]
+                and "1" otherwise }
+    return result
+end function

@@ -1,0 +1,13 @@
+// HumanEval/12: longest
+// Return the longest string in the list; the first one on ties, or null
+// when the list is empty.
+// Examples: longest([]) -> null; longest(["a","b","c"]) -> "a";
+//           longest(["a","bb","ccc"]) -> "ccc"
+function longest(strings):
+    if length(strings) == 0: return none
+    let best = strings[0]
+    for each s in strings:
+        if length(s) > length(best): best = s
+    end for
+    return best
+end function

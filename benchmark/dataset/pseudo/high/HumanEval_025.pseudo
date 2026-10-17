@@ -1,0 +1,15 @@
+// HumanEval/25: factorize
+// Return the prime factors of n in ascending order, each repeated as
+// many times as it appears in the factorization.
+// Examples: factorize(8) -> [2,2,2]; factorize(25) -> [5,5];
+//           factorize(70) -> [2,5,7]
+function factorize(n):
+    let fact = empty list
+    let i = 2
+    while i <= sqrt(n) + 1:
+        AI_ASSIST { while n is divisible by i, append i to fact and divide
+                    n by i; once it is not, increment i }
+    end while
+    if n > 1: append n to fact
+    return fact
+end function

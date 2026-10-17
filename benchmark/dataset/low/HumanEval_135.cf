@@ -1,0 +1,7 @@
+// HumanEval/135: can_arrange
+// Return the largest index of an element that is smaller than the
+// element immediately before it; -1 if none exists. No duplicates.
+// Examples: can_arrange([1,2,4,3,5]) -> 3; can_arrange([1,2,3]) -> -1
+fn int can_arrange(list<int> arr) {
+    AI_ASSIST { return the largest index i where arr[i] < arr[i-1], or -1 }
+}

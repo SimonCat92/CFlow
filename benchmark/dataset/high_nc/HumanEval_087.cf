@@ -1,0 +1,11 @@
+fn list<tuple> get_row(list<list<int>> lst, int x) {
+    list<tuple> coords;
+    for (int i = 0; i < lst.length(); i++) {
+        for (int j = 0; j < lst[i].length(); j++) {
+            if (lst[i][j] == x) { coords.add((i, j)); }
+        }
+    }
+    AI_ASSIST { sort coords by row ascending, then by column descending
+                within the same row }
+    return coords;
+}

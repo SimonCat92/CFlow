@@ -1,0 +1,11 @@
+// HumanEval/31: is_prime
+// Return true if the given number is prime, false otherwise.
+// Examples: is_prime(6) -> false; is_prime(101) -> true;
+//           is_prime(1) -> false; is_prime(13441) -> true
+function is_prime(n):
+    if n < 2: return false
+    for k from 2 to n - 1:
+        if n mod k == 0: return false
+    end for
+    return true
+end function

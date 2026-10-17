@@ -1,0 +1,9 @@
+// HumanEval/14: all_prefixes
+// Return the list of all prefixes of the input string, shortest to
+// longest.
+// Example: all_prefixes("abc") -> ["a", "ab", "abc"]
+function all_prefixes(s):
+    let result = empty list
+    AI_ASSIST { append each prefix of s to result, shortest to longest }
+    return result
+end function

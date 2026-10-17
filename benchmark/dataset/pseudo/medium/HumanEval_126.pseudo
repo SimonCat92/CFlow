@@ -1,0 +1,11 @@
+// HumanEval/126: is_sorted
+// Return true if lst is sorted ascending AND no number appears more than
+// twice (integers, no negatives).
+// Examples: is_sorted([5]) -> true; is_sorted([1,2,2,3,3,4]) -> true;
+//           is_sorted([1,2,2,2,3,4]) -> false; is_sorted([1,3,2,4,5]) -> false
+function is_sorted(lst):
+    let count_digit = empty map
+    AI_ASSIST { count occurrences into count_digit; return false if any
+                value occurs more than twice or if the list is not
+                non-decreasing, else true }
+end function

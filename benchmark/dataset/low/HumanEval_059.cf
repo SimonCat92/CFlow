@@ -1,0 +1,6 @@
+// HumanEval/59: largest_prime_factor
+// Return the largest prime factor of n (n > 1 and not prime).
+// Examples: largest_prime_factor(13195) -> 29; largest_prime_factor(2048) -> 2
+fn int largest_prime_factor(int n) {
+    AI_ASSIST { return the largest prime factor of n }
+}

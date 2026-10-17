@@ -1,0 +1,16 @@
+fn string encode_shift(string s) {
+    AI_ASSIST { shift every character forward by 5 in the lowercase
+                alphabet position formula, wrapping around — apply to
+                every character including spaces and punctuation }
+}
+
+fn string decode_shift(string s) {
+    string result = "";
+    for (string c in s) {
+        AI_ASSIST { append to result the character 5 positions before c in
+                    the lowercase alphabet position formula, wrapping
+                    around — apply to every character including spaces
+                    and punctuation }
+    }
+    return result;
+}

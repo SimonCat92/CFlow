@@ -1,0 +1,8 @@
+fn int digitSum(string s) {
+    int total = 0;
+    for (string c in s) {
+        AI_ASSIST { if c is an uppercase ASCII letter, add its ASCII code
+                    to total }
+    }
+    return total;
+}

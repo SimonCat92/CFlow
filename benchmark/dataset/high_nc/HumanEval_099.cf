@@ -1,0 +1,6 @@
+fn int closest_integer(string value) {
+    AI_ASSIST { strip trailing zeros from value's decimal part }
+    float num = parse_float(value);
+    AI_ASSIST { return the integer nearest num; if the stripped value ends
+                in ".5", round away from zero }
+}

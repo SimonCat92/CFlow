@@ -1,0 +1,5 @@
+fn bool iscube(int a) {
+    int m = abs(a);
+    int r = round(pow(m, 1.0 / 3.0));
+    return r * r * r == m;
+}

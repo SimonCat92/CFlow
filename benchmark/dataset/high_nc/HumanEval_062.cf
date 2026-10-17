@@ -1,0 +1,7 @@
+fn list<int> derivative(list<int> xs) {
+    list<int> result;
+    for (int i = 1; i < xs.length(); i++) {
+        result.add(i * xs[i]);
+    }
+    return result;
+}

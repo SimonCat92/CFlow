@@ -1,0 +1,13 @@
+// HumanEval/155: even_odd_count
+// Return the number of even and odd digits of the integer (handle
+// negatives) as a tuple (even, odd).
+// Examples: even_odd_count(-12) -> (1, 1); even_odd_count(123) -> (1, 2)
+function even_odd_count(num):
+    let even_count = 0
+    let odd_count = 0
+    for each d in str(abs(num)):
+        AI_ASSIST { if d is an even digit increment even_count, else
+                    increment odd_count }
+    end for
+    return (even_count, odd_count)
+end function

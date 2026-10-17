@@ -1,0 +1,7 @@
+// HumanEval/76: is_simple_power
+// Return true if x is a simple power of n (x == n^k for some integer k).
+// Examples: is_simple_power(1,4) -> true; is_simple_power(8,2) -> true;
+//           is_simple_power(3,2) -> false; is_simple_power(3,1) -> false
+fn bool is_simple_power(int x, int n) {
+    AI_ASSIST { return true if x equals some integer power of n }
+}

@@ -1,0 +1,17 @@
+// HumanEval/10: make_palindrome
+// Test if the given string is a palindrome.
+function is_palindrome(s):
+    AI_ASSIST { return true if s equals its reverse }
+end function
+
+// Find the shortest palindrome that begins with the supplied string.
+// Idea: find the longest postfix that is a palindrome, then append the
+// reverse of the prefix that comes before it.
+// Examples: make_palindrome("") -> ""; make_palindrome("cat") -> "catac";
+//           make_palindrome("cata") -> "catac"
+function make_palindrome(s):
+    if length(s) == 0: return ""
+    let i = 0
+    AI_ASSIST { advance i until substring(s, i) is a palindrome, then
+                return s plus the reverse of the prefix s[0..i) }
+end function

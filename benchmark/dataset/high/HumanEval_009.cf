@@ -1,0 +1,11 @@
+// HumanEval/9: rolling_max
+// Generate a list of the rolling maximum element found until each point
+// of the sequence.
+// Example: rolling_max([1, 2, 3, 2, 3, 4, 2]) -> [1,2,3,3,3,4,4]
+fn list<int> rolling_max(list<int> numbers) {
+    list<int> result;
+    for (int n in numbers) {
+        AI_ASSIST { append to result the maximum value seen so far }
+    }
+    return result;
+}

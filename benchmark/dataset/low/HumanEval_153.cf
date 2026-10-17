@@ -1,0 +1,11 @@
+// HumanEval/153: Strongest_Extension
+// Strength of an extension name = (#uppercase letters) - (#lowercase
+// letters). Return "ClassName.StrongestExtensionName" for the strongest
+// extension; ties go to the first in the list.
+// Examples: Strongest_Extension("Slices", ["SErviNGSliCes","Cheese","StuFfed"])
+//             -> "Slices.SErviNGSliCes";
+//           Strongest_Extension("my_class", ["AA","Be","CC"]) -> "my_class.AA"
+fn string Strongest_Extension(string class_name, list<string> extensions) {
+    AI_ASSIST { return "class_name." + the strongest extension by the
+                CAP - SM rule }
+}

@@ -1,0 +1,8 @@
+// HumanEval/150: x_or_y
+// Return x if n is a prime number, y otherwise.
+// Examples: x_or_y(7, 34, 12) -> 34; x_or_y(15, 8, 5) -> 5
+function x_or_y(n, x, y):
+    declare prime
+    AI_ASSIST { determine whether n is prime into prime (numbers below 2
+                are not prime) and return x or y accordingly }
+end function

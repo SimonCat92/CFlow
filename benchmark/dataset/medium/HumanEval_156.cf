@@ -1,0 +1,12 @@
+// HumanEval/156: int_to_mini_roman
+// Convert a positive integer (1 <= num <= 1000) to its Roman numeral in
+// lowercase.
+// Examples: int_to_mini_roman(19) -> "xix"; int_to_mini_roman(152) -> "clii";
+//           int_to_mini_roman(426) -> "cdxxvi"
+fn string int_to_mini_roman(int number) {
+    list<int> num;      // 1,4,5,9,10,40,50,90,100,400,500,900,1000
+    list<string> sym;   // I,IV,V,IX,X,XL,L,XC,C,CD,D,CM,M
+    string res = "";
+    AI_ASSIST { greedily subtract the largest numeral values, appending
+                their symbols to res; return res lowercase }
+}

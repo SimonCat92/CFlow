@@ -1,0 +1,15 @@
+// HumanEval/119: match_parens
+// Both strings consist of "(" and ")". Return "Yes" if they can be
+// concatenated in some order into a balanced string, else "No".
+// Examples: match_parens(["()(", ")"]) -> "Yes";
+//           match_parens([")", ")"]) -> "No"
+function balanced(s):
+    AI_ASSIST { return true if s has balanced parentheses }
+end function
+
+function match_parens(lst):
+    declare s1
+    declare s2
+    AI_ASSIST { set s1 to lst[0]+lst[1] and s2 to lst[1]+lst[0]; return
+                "Yes" if either is balanced else "No" }
+end function

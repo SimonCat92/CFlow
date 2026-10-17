@@ -1,0 +1,11 @@
+// HumanEval/78: hex_key
+// Count the hexadecimal digits of num that are also prime digits:
+// 2, 3, 5, 7, B, D. num is uppercase hex, possibly empty.
+// Examples: hex_key("AB") -> 1; hex_key("1077E") -> 2;
+//           hex_key("ABED1A33") -> 4; hex_key("2020") -> 2
+function hex_key(num):
+    let total = 0
+    AI_ASSIST { count into total the characters of num that are one of
+                2, 3, 5, 7, B, D }
+    return total
+end function

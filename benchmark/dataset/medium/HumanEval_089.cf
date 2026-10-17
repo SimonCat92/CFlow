@@ -1,0 +1,12 @@
+// HumanEval/89: encrypt
+// Encrypt the string by rotating every letter 4 positions down the
+// alphabet (wrapping around); non-letters stay unchanged.
+// Examples: encrypt("hi") -> "lm"; encrypt("asdfghjkl") -> "ewhjklnop";
+//           encrypt("gf") -> "kj"; encrypt("et") -> "ix"
+fn string encrypt(string s) {
+    string out = "";
+    AI_ASSIST { append each character of s to out shifted 4 letters
+                forward in the alphabet (wrapping), or unchanged if it
+                is not a letter }
+    return out;
+}

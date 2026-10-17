@@ -1,0 +1,181 @@
+// ============================================================
+// example_program.cf: GradeFlow
+// Cƒ (C Flow) Example Program v5.0
+// ============================================================
+// HOW TO READ THIS FILE:
+// - Declarations (structs, classes, fn signatures) = YOU control the architecture
+// - Empty bodies {} = AI invents the implementation
+// - Logic blocks in main/control flow = YOU define what happens and in what order
+// - A comment above an empty body = the contract the AI must satisfy
+// ============================================================
+
+#import math
+#import json
+#import datetime
+#import fileio     // doesn't exist? AI will scaffold it or find the closest equivalent
+
+// --- CONSTANTS & CONFIG ---
+const string APP_NAME      = "GradeFlow";
+const int    MAX_STUDENTS  = 100;
+const float  PASS_GRADE    = 60.0;
+const string OUTPUT_PATH   = "./output/";
+const bool   DEBUG         = true;
+
+// --- ENUMS ---
+enum GradeLabel  { FAIL, PASS, GOOD, GREAT, EXCELLENT }
+enum SortOrder   { ASC, DESC }
+enum ExportFormat { JSON, CSV, XML }
+
+// --- STRUCTS ---
+// Lightweight data containers with no methods, pure data
+struct ExamResult {
+    string  subject;
+    float   score;
+    datetime date;
+}
+
+struct ReportConfig {
+    bool    show_exams;
+    bool    show_stats;
+    bool    motivational_closing;
+    SortOrder exam_order;
+}
+
+// --- CLASSES ---
+
+class Student {
+    // attributes
+    int     id;
+    string  name;
+    string  surname;
+    string  email;
+    list<ExamResult> grades;
+    bool    is_active;
+
+    // constructor
+    Student(int id, string name, string surname, string email) {}
+
+    // methods: signatures define the contract, AI builds the body
+    fn add_grade(string subject, float score) -> void           {}
+    fn average()                              -> float          {}
+    fn best_subject()                         -> string         {}
+    fn worst_subject()                        -> string         {}
+    fn grade_label()                          -> GradeLabel     {}
+    fn passed_all()                           -> bool           {}
+    fn to_dict()                              -> dict           {}
+    fn clone()                                -> Student        {}  // deep copy
+}
+
+class Roster {
+    vector<Student>  students;
+    vector<string>   subjects;
+    int              capacity;
+
+    Roster(int capacity) {}
+
+    fn add(Student s)                                 -> bool          {}
+    fn remove(int student_id)                         -> bool          {}
+    fn find(int student_id)                           -> *Student      {}  // returns pointer, null if not found
+    fn find_by_name(string name)                      -> *Student      {}
+    fn all_active()                                   -> vector<Student> {}
+    fn sorted(SortOrder order)                        -> vector<Student> {}  // sorted by average
+    fn top_n(int n)                                   -> vector<Student> {}
+    fn failing()                                      -> vector<Student> {}
+    fn stats_for_subject(string subject)              -> dict          {}
+    fn export(string filepath, ExportFormat fmt)      -> void          {}
+}
+
+// --- GLOBAL ROSTER INSTANCE ---
+Roster *db = new Roster(MAX_STUDENTS);   // pointer to the single global roster
+
+// --- UTILITY FUNCTIONS ---
+
+fn float  clamp(float val, float min, float max)  {}   // clamp val between min and max
+fn bool   is_valid_email(string email)            {}   // basic email format check
+fn string label_to_string(GradeLabel label)       {}   // enum -> human readable string
+fn void   log(string msg)                         {    // only runs if DEBUG == true
+    if (DEBUG) { print("[LOG] " + msg); }
+}
+
+// --- CORE LOGIC FUNCTIONS ---
+
+fn bool enroll(int id, string name, string surname, string email) {
+    if (!is_valid_email(email)) {
+        log("Invalid email for student: " + name);
+        return false;
+    }
+    if (db->find(id) != null) {
+        log("Student id already exists: " + id);
+        return false;
+    }
+    Student s = Student(id, name, surname, email);
+    return db->add(s);
+}
+
+fn bool submit_grade(int student_id, string subject, float raw_score) {
+    float score = clamp(raw_score, 0.0, 100.0);
+    *Student s  = db->find(student_id);
+    if (s == null) {
+        log("Student not found: " + student_id);
+        return false;
+    }
+    s->add_grade(subject, score);
+    log("Grade recorded: " + s->name + " | " + subject + " | " + score);
+    return true;
+}
+
+// AI implements the whole function. Minimum requirements for the report:
+// - if s is null, print an error and return;
+// - a header with the student's name and surname;
+// - the average, its GradeLabel (via label_to_string) and whether all
+//   exams were passed;
+// - if cfg.show_exams, the exam list sorted by date in cfg.exam_order,
+//   one "date | subject | score" line each;
+// - if cfg.show_stats, the best and worst subjects;
+// - if cfg.motivational_closing, a short closing line that fits the
+//   GradeLabel, using the student name (max 2 sentences).
+fn void generate_report(*Student s, ReportConfig cfg) {}
+
+// --- MAIN ---
+
+fn main() {
+    log(APP_NAME + " starting...");
+
+    // enroll students
+    enroll(1, "Luca",   "Rossi",   "luca@uni.it");
+    enroll(2, "Giulia", "Bianchi", "giulia@uni.it");
+    enroll(3, "Marco",  "Verdi",   "marco@uni.it");
+    enroll(4, "Sara",   "Neri",    "not-an-email");   // should fail validation
+
+    // submit grades
+    submit_grade(1, "Math",        88.5);
+    submit_grade(1, "Physics",     76.0);
+    submit_grade(1, "History",     91.0);
+    submit_grade(2, "Math",        55.0);
+    submit_grade(2, "Physics",     62.5);
+    submit_grade(3, "Math",        99.0);
+    submit_grade(3, "Physics",     95.5);
+    submit_grade(99, "Math",       80.0);   // should fail, student not found
+
+    // print top 3 leaderboard
+    print("--- TOP 3 ---");
+    for (*Student s in db->top_n(3)) {
+        print(s->name + ": " + s->average() + " [" + label_to_string(s->grade_label()) + "]");
+    }
+
+    // print students at risk
+    print("--- FAILING ---");
+    for (*Student s in db->failing()) {
+        print(s->name + " " + s->surname + " needs support.");
+    }
+
+    // generate a full report for student 1
+    ReportConfig cfg = { show_exams: true, show_stats: true, motivational_closing: true, exam_order: ASC };
+    generate_report(db->find(1), cfg);
+
+    // export the full roster
+    db->export(OUTPUT_PATH + "grades.json", ExportFormat.JSON);
+    db->export(OUTPUT_PATH + "grades.csv",  ExportFormat.CSV);
+
+    log("Done. Go with the Cƒ flow!");
+}

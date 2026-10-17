@@ -1,0 +1,14 @@
+fn list<string> select_words(string s, int n) {
+    list<string> result;
+    for (string word in split_whitespace(s)) {
+        int n_consonants = 0;
+        for (string c in word) {
+            string lc = lower(c);
+            if (lc != "a" && lc != "e" && lc != "i" && lc != "o" && lc != "u") {
+                n_consonants++;
+            }
+        }
+        if (n_consonants == n) { result.add(word); }
+    }
+    return result;
+}

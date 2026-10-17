@@ -1,0 +1,7 @@
+fn list<int> get_positive(list<int> l) {
+    list<int> result;
+    for (int e in l) {
+        if (e > 0) { result.add(e); }
+    }
+    return result;
+}

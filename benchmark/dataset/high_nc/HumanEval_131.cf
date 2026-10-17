@@ -1,0 +1,10 @@
+fn int digits(int n) {
+    int product = 1;
+    int odd_count = 0;
+    for (string d in str(n)) {
+        AI_ASSIST { if digit d is odd, multiply product by its value and
+                    increment odd_count }
+    }
+    if (odd_count == 0) { return 0; }
+    return product;
+}

@@ -1,0 +1,7 @@
+// HumanEval/79: decimal_to_binary
+// Convert decimal to binary and return it wrapped in "db" markers.
+// Examples: decimal_to_binary(15) -> "db1111db";
+//           decimal_to_binary(32) -> "db100000db"
+fn string decimal_to_binary(int decimal) {
+    return "db" + binary(decimal) + "db";
+}

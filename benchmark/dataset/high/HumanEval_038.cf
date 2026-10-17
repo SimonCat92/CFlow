@@ -1,0 +1,19 @@
+// HumanEval/38: decode_cyclic
+// Encodes s by cycling groups of three characters: each full group is
+// rotated left by one, a trailing shorter group stays as is.
+fn string encode_cyclic(string s) {
+    string result = "";
+    for (int i = 0; i < s.length(); i += 3) {
+        string g = substring(s, i, 3);
+        AI_ASSIST { rotate g left by one character if it has 3 characters,
+                    otherwise keep it; append to result }
+    }
+    return result;
+}
+
+// Decode a string produced by encode_cyclic (the encoding applied twice
+// restores the original).
+// Example: decode_cyclic(encode_cyclic("abcdef")) -> "abcdef"
+fn string decode_cyclic(string s) {
+    return encode_cyclic(encode_cyclic(s));
+}

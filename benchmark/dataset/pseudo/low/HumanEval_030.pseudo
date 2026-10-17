@@ -1,0 +1,7 @@
+// HumanEval/30: get_positive
+// Return only the positive numbers in the list.
+// Examples: get_positive([-1, 2, -4, 5, 6]) -> [2, 5, 6];
+//           get_positive([5,3,-5,2,-3,3,9,0,123,1,-10]) -> [5,3,2,3,9,123,1]
+function get_positive(l):
+    AI_ASSIST { return the elements of l that are strictly positive }
+end function

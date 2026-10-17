@@ -1,0 +1,14 @@
+// HumanEval/131: digits
+// Return the product of the odd digits of n (n > 0); 0 if all digits are
+// even.
+// Examples: digits(1) -> 1; digits(4) -> 0; digits(235) -> 15
+fn int digits(int n) {
+    int product = 1;
+    int odd_count = 0;
+    for (string d in str(n)) {
+        AI_ASSIST { if digit d is odd, multiply product by its value and
+                    increment odd_count }
+    }
+    if (odd_count == 0) { return 0; }
+    return product;
+}

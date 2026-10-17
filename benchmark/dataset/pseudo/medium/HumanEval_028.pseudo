@@ -1,0 +1,8 @@
+// HumanEval/28: concatenate
+// Concatenate a list of strings into a single string.
+// Examples: concatenate([]) -> ""; concatenate(["a","b","c"]) -> "abc"
+function concatenate(strings):
+    let result = ""
+    AI_ASSIST { append every string of the list to result in order }
+    return result
+end function

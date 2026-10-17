@@ -1,0 +1,10 @@
+// HumanEval/16: count_distinct_characters
+// How many distinct characters does the string consist of, case
+// insensitive.
+// Examples: count_distinct_characters("xyzXYZ") -> 3;
+//           count_distinct_characters("Jerry") -> 4
+function count_distinct_characters(s):
+    let seen = empty set
+    for each c in s: append lowercase(c) to seen
+    return length(seen)
+end function

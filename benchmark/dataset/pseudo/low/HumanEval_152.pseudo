@@ -1,0 +1,9 @@
+// HumanEval/152: compare
+// Two equal-length arrays of scores and guesses. Return an array of the
+// same length with how far off each guess was: 0 if correct, else the
+// absolute difference.
+// Examples: compare([1,2,3,4,5,1],[1,2,3,4,2,-2]) -> [0,0,0,0,3,3];
+//           compare([0,5,0,0,0,4],[4,1,1,0,0,-2]) -> [4,4,1,0,0,6]
+function compare(game, guess):
+    AI_ASSIST { return the element-wise absolute differences }
+end function

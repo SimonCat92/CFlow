@@ -1,0 +1,3 @@
+fn string flip_case(string s) {
+    return swap_case(s);
+}

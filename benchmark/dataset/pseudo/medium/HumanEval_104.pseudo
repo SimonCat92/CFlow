@@ -1,0 +1,10 @@
+// HumanEval/104: unique_digits
+// Return the sorted list of elements whose decimal digits are all odd.
+// Examples: unique_digits([15, 33, 1422, 1]) -> [1, 15, 33];
+//           unique_digits([152, 323, 1422, 10]) -> []
+function unique_digits(x):
+    let result = empty list
+    AI_ASSIST { keep the elements of x whose digits are all odd, and return
+                them sorted into result }
+    return result
+end function

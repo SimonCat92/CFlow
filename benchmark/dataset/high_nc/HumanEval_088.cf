@@ -1,0 +1,7 @@
+fn list<int> sort_array(list<int> array) {
+    list<int> result = copy(array);
+    if (result.length() == 0) { return result; }
+    AI_ASSIST { sort result ascending if result[0] + result[last index] is
+                odd, descending if it is even }
+    return result;
+}

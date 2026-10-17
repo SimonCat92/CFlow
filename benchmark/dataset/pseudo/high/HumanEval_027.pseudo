@@ -1,0 +1,6 @@
+// HumanEval/27: flip_case
+// Flip lowercase characters to uppercase and vice versa.
+// Example: flip_case("Hello") -> "hELLO"
+function flip_case(s):
+    return swap_case(s)
+end function

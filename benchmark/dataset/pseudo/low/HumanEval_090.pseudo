@@ -1,0 +1,9 @@
+// HumanEval/90: next_smallest
+// Return the 2nd smallest element of the list, or null if there is no
+// such element.
+// Examples: next_smallest([1,2,3,4,5]) -> 2; next_smallest([5,1,4,3,2]) -> 2;
+//           next_smallest([]) -> null; next_smallest([1,1]) -> null
+function next_smallest(lst):
+    AI_ASSIST { return the 2nd smallest distinct element of lst, or null
+                if fewer than 2 distinct values exist }
+end function

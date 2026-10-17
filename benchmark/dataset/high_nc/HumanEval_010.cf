@@ -1,0 +1,14 @@
+fn bool is_palindrome(string s) {
+    int n = s.length();
+    for (int i = 0; i < n; i++) {
+        if (s[i] != s[n - 1 - i]) { return false; }
+    }
+    return true;
+}
+
+fn string make_palindrome(string s) {
+    if (s.length() == 0) { return ""; }
+    int i = 0;
+    while (!is_palindrome(substring(s, i))) { i++; }
+    AI_ASSIST { return s plus the reverse of the prefix s[0..i) }
+}

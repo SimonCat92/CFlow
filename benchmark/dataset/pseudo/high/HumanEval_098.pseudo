@@ -1,0 +1,14 @@
+// HumanEval/98: count_upper
+// Count the uppercase vowels (A, E, I, O, U) found at even indices.
+// Examples: count_upper("aBCdEf") -> 1; count_upper("abcdefg") -> 0;
+//           count_upper("dBBE") -> 0
+function count_upper(s):
+    let count = 0
+    for i from 0 to length(s) - 1 step 2:
+        let c = s[i]
+        if c == "A" or c == "E" or c == "I" or c == "O" or c == "U":
+            increment count
+        end if
+    end for
+    return count
+end function

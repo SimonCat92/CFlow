@@ -1,0 +1,6 @@
+// HumanEval/15: string_sequence
+// Return a string of space-delimited numbers from 0 up to n inclusive.
+// Examples: string_sequence(0) -> "0"; string_sequence(5) -> "0 1 2 3 4 5"
+function string_sequence(n):
+    AI_ASSIST { return the numbers 0..n joined with single spaces }
+end function

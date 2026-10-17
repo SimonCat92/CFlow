@@ -1,0 +1,14 @@
+// HumanEval/93: encode
+// Encode the message (letters only): swap the case of every letter, then
+// replace every vowel with the letter 2 places ahead in the alphabet.
+// Examples: encode("test") -> "TGST";
+//           encode("This is a message") -> "tHKS KS C MGSSCGG"
+function encode(message):
+    let result = ""
+    for each c in message:
+        AI_ASSIST { swap the case of c; if it is now a vowel, replace it
+                    with the letter 2 positions ahead in the alphabet;
+                    append to result }
+    end for
+    return result
+end function

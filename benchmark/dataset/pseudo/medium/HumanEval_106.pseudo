@@ -1,0 +1,11 @@
+// HumanEval/106: f
+// Return a list of size n where element i (i starts at 1) is i!
+// (factorial) if i is even, or the sum 1..i otherwise.
+// Example: f(5) -> [1, 2, 6, 24, 15]
+function f(n):
+    let ret = empty list
+    declare x
+    AI_ASSIST { for i from 1 to n, append i! to ret if i is even, else
+                append the sum 1..i }
+    return ret
+end function

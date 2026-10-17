@@ -1,0 +1,14 @@
+// HumanEval/89: encrypt
+// Encrypt the string by rotating every letter 4 positions down the
+// alphabet (wrapping around); non-letters stay unchanged.
+// Examples: encrypt("hi") -> "lm"; encrypt("asdfghjkl") -> "ewhjklnop";
+//           encrypt("gf") -> "kj"; encrypt("et") -> "ix"
+function encrypt(s):
+    let out = ""
+    for each c in s:
+        AI_ASSIST { if c is a lowercase letter, append to out the letter 4
+                    positions ahead in the alphabet (wrapping around);
+                    otherwise append c unchanged }
+    end for
+    return out
+end function

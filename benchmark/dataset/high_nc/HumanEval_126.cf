@@ -1,0 +1,11 @@
+fn bool is_sorted(list<int> lst) {
+    map<int, int> count_digit;
+    for (int v in lst) {
+        if (count_digit.has(v)) { count_digit[v]++; } else { count_digit[v] = 1; }
+        if (count_digit[v] > 2) { return false; }
+    }
+    for (int i = 1; i < lst.length(); i++) {
+        if (lst[i - 1] > lst[i]) { return false; }
+    }
+    return true;
+}

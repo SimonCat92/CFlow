@@ -1,0 +1,7 @@
+fn string solve(int N) {
+    int total = 0;
+    for (string c in str(N)) {
+        AI_ASSIST { add the numeric value of digit character c to total }
+    }
+    return binary(total);
+}

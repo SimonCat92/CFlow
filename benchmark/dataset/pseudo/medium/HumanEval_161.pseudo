@@ -1,0 +1,11 @@
+// HumanEval/161: solve
+// Flip the case of every letter in s; other characters stay. If s has no
+// letters at all, return it reversed.
+// Examples: solve("1234") -> "4321"; solve("ab") -> "AB";
+//           solve("#a@C") -> "#A@c"
+function solve(s):
+    let new_str = ""
+    let flg = 0
+    AI_ASSIST { build new_str flipping letter cases (flg marks any letter
+                seen); return it reversed if flg is 0 }
+end function

@@ -1,0 +1,8 @@
+fn bool below_zero(list<int> operations) {
+    int balance = 0;
+    for (int op in operations) {
+        balance += op;
+        if (balance < 0) { return true; }
+    }
+    return false;
+}

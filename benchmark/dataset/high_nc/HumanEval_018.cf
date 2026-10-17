@@ -1,0 +1,7 @@
+fn int how_many_times(string s, string sub) {
+    int count = 0;
+    for (int i = 0; i <= s.length() - sub.length(); i++) {
+        if (substring(s, i, sub.length()) == sub) { count++; }
+    }
+    return count;
+}

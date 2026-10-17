@@ -1,0 +1,5 @@
+fn bool any_int(any x, any y, any z) {
+    AI_ASSIST { if x, y or z is not an integer, return false }
+    if (x + y == z || x + z == y || y + z == x) { return true; }
+    return false;
+}

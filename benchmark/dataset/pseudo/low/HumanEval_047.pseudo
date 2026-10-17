@@ -1,0 +1,6 @@
+// HumanEval/47: median
+// Return the median of the elements in l.
+// Examples: median([3,1,2,4,5]) -> 3; median([-10,4,6,1000,10,20]) -> 15.0
+function median(l):
+    AI_ASSIST { return the median of l }
+end function

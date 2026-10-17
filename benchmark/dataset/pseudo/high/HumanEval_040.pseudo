@@ -1,0 +1,18 @@
+// HumanEval/40: triples_sum_to_zero
+// Return true if there are three distinct elements in the list that sum
+// to zero, false otherwise.
+// Examples: triples_sum_to_zero([1,3,5,0]) -> false;
+//           triples_sum_to_zero([1,3,-2,1]) -> true;
+//           triples_sum_to_zero([2,4,-5,3,9,7]) -> true;
+//           triples_sum_to_zero([1]) -> false
+function triples_sum_to_zero(l):
+    let n = length(l)
+    for i from 0 to n - 1:
+        for j from i + 1 to n - 1:
+            for k from j + 1 to n - 1:
+                if l[i] + l[j] + l[k] == 0: return true
+            end for
+        end for
+    end for
+    return false
+end function

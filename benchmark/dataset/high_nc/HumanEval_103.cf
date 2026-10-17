@@ -1,0 +1,7 @@
+fn any rounded_avg(int n, int m) {
+    if (m < n) { return -1; }
+    int summation = 0;
+    for (int i = n; i <= m; i++) { summation += i; }
+    int avg = round((float)summation / (m - n + 1));
+    return "0b" + binary(avg);
+}

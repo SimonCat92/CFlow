@@ -1,0 +1,10 @@
+// HumanEval/24: largest_divisor
+// For a given number n, find the largest number that divides n evenly
+// and is smaller than n.
+// Example: largest_divisor(15) -> 5
+fn int largest_divisor(int n) {
+    for (int i = n - 1; i >= 1; i--) {
+        if (n % i == 0) { return i; }
+    }
+    return 1;
+}

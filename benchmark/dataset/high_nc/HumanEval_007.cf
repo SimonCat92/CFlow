@@ -1,0 +1,7 @@
+fn list<string> filter_by_substring(list<string> strings, string substring) {
+    list<string> result;
+    for (string s in strings) {
+        if (s.contains(substring)) { result.add(s); }
+    }
+    return result;
+}

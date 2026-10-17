@@ -1,0 +1,8 @@
+fn list<int> unique(list<int> l) {
+    set<int> seen;
+    for (int n in l) { seen.add(n); }
+    list<int> result;
+    for (int n in seen) { result.add(n); }
+    sort(result);
+    return result;
+}

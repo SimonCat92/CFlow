@@ -1,0 +1,11 @@
+// HumanEval/49: modp
+// Return 2^n modulo p (mind numerics).
+// Examples: modp(3, 5) -> 3; modp(1101, 101) -> 2; modp(0, 101) -> 1;
+//           modp(100, 101) -> 1
+function modp(n, p):
+    let ret = 1 mod p
+    for i from 0 to n - 1:
+        ret = (2 * ret) mod p
+    end for
+    return ret
+end function

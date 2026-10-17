@@ -1,0 +1,12 @@
+fn string fix_spaces(string text) {
+    string new_text = "";
+    int start = 0;
+    int end = 0;
+    for (int i = 0; i < text.length(); i++) {
+        AI_ASSIST { grow the pending space run end when text[i] is a space;
+                    on a non-space, flush the run as "_" per space (1-2)
+                    or "-" (3+), append the character, and reset the run }
+    }
+    AI_ASSIST { flush a trailing space run the same way }
+    return new_text;
+}

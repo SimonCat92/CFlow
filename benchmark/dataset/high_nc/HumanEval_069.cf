@@ -1,0 +1,9 @@
+fn int search(list<int> lst) {
+    map<int, int> frq;
+    for (int v in lst) {
+        if (frq.has(v)) { frq[v]++; } else { frq[v] = 1; }
+    }
+    int ans = -1;
+    AI_ASSIST { set ans to the greatest value v such that frq[v] >= v }
+    return ans;
+}

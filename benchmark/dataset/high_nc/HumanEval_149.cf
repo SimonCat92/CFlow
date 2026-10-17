@@ -1,0 +1,9 @@
+fn list<string> sorted_list_sum(list<string> lst) {
+    list<string> new_lst;
+    for (string w in lst) {
+        if (w.length() % 2 == 0) { new_lst.add(w); }
+    }
+    AI_ASSIST { sort new_lst ascending by word length, with alphabetical
+                order for equal lengths }
+    return new_lst;
+}

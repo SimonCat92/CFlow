@@ -1,0 +1,13 @@
+// HumanEval/6: parse_nested_parens
+// Input is a string of space-separated groups of nested parentheses.
+// For each group return the deepest nesting level: "(()())" -> 2,
+// "((()))" -> 3.
+// Example: parse_nested_parens("(()()) ((())) () ((())()())") -> [2,3,1,3]
+fn list<int> parse_nested_parens(string paren_string) {
+    list<int> result;
+    for (string g in paren_string.split(" ")) {
+        if (g == "") { continue; }
+        AI_ASSIST { append to result the deepest nesting level of g }
+    }
+    return result;
+}

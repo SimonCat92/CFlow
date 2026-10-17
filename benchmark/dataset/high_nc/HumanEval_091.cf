@@ -1,0 +1,7 @@
+fn int is_bored(string S) {
+    int count = 0;
+    AI_ASSIST { split S into sentences wherever ".", "?" or "!" appears;
+                for each sentence, if it starts with the word "I"
+                increment count }
+    return count;
+}

@@ -1,0 +1,7 @@
+fn string words_in_sentence(string sentence) {
+    list<string> new_lst;
+    for (string word in split_whitespace(sentence)) {
+        AI_ASSIST { if the length of word is prime, append it to new_lst }
+    }
+    return join(new_lst, " ");
+}

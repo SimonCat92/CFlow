@@ -1,0 +1,11 @@
+// HumanEval/43: pairs_sum_to_zero
+// Return true if there are two distinct elements in the list that sum
+// to zero, false otherwise.
+// Examples: pairs_sum_to_zero([1,3,5,0]) -> false;
+//           pairs_sum_to_zero([2,4,-5,3,5,7]) -> true;
+//           pairs_sum_to_zero([1]) -> false
+fn bool pairs_sum_to_zero(list<int> l) {
+    int i; int j;
+    AI_ASSIST { check every pair of distinct indices i < j and return true
+                if l[i] + l[j] == 0, else false }
+}

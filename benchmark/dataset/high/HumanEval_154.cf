@@ -1,0 +1,19 @@
+// HumanEval/154: cycpattern_check
+// Return true if the second word or any of its rotations is a substring
+// of the first word.
+// Examples: cycpattern_check("abcd","abd") -> false;
+//           cycpattern_check("hello","ell") -> true;
+//           cycpattern_check("abab","baa") -> true;
+//           cycpattern_check("himenss","simen") -> true
+fn bool cycpattern_check(string a, string b) {
+    int l = b.length();
+    string pat = b + b;
+    for (int i = 0; i <= a.length() - l; i++) {
+        for (int j = 0; j <= l; j++) {
+            AI_ASSIST { if the length-l window of a starting at i equals
+                        the length-l window of pat starting at j, return
+                        true }
+        }
+    }
+    return false;
+}

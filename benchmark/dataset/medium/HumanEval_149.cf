@@ -1,0 +1,10 @@
+// HumanEval/149: sorted_list_sum
+// Delete the strings with odd lengths, then return the list sorted
+// ascending by word length (ties alphabetical).
+// Examples: sorted_list_sum(["aa", "a", "aaa"]) -> ["aa"];
+//           sorted_list_sum(["ab", "a", "aaa", "cd"]) -> ["ab", "cd"]
+fn list<string> sorted_list_sum(list<string> lst) {
+    list<string> new_lst;
+    AI_ASSIST { keep the even-length strings of lst into new_lst, sort by
+                length (ties alphabetical), and return it }
+}

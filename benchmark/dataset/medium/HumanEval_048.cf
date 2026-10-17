@@ -1,0 +1,9 @@
+// HumanEval/48: is_palindrome
+// Checks if the given string is a palindrome.
+// Examples: is_palindrome("") -> true; is_palindrome("aba") -> true;
+//           is_palindrome("aaaaa") -> true; is_palindrome("zbcd") -> false
+fn bool is_palindrome(string text) {
+    int n = text.length();
+    AI_ASSIST { scan mirrored character pairs from both ends of text;
+                if any pair differs return false, else return true }
+}

@@ -1,0 +1,11 @@
+// HumanEval/77: iscube
+// Return true if integer a is the cube of some integer (input valid,
+// may be negative).
+// Examples: iscube(1) -> true; iscube(2) -> false; iscube(-1) -> true;
+//           iscube(64) -> true; iscube(0) -> true; iscube(180) -> false
+function iscube(a):
+    let m = abs(a)
+    declare r
+    AI_ASSIST { let r be the integer nearest the cube root of m, and
+                return whether r cubed equals m }
+end function

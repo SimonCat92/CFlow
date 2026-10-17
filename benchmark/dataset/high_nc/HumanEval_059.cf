@@ -1,0 +1,11 @@
+fn bool is_prime(int k) {
+    AI_ASSIST { return true if k is prime }
+}
+
+fn int largest_prime_factor(int n) {
+    int largest = 1;
+    for (int j = 2; j <= n; j++) {
+        if (n % j == 0 && is_prime(j)) { largest = j; }
+    }
+    return largest;
+}

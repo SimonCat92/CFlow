@@ -1,0 +1,8 @@
+// HumanEval/66: digitSum
+// Return the sum of the ASCII codes of the uppercase characters only.
+// Examples: digitSum("") -> 0; digitSum("abAB") -> 131;
+//           digitSum("abcCd") -> 67; digitSum("helloE") -> 69
+fn int digitSum(string s) {
+    AI_ASSIST { return the sum of ASCII codes of the uppercase characters
+                in s }
+}

@@ -1,0 +1,11 @@
+// HumanEval/20: find_closest_elements
+// From a list of numbers (length >= 2), select the two closest to each
+// other and return them in order (smaller, larger).
+// Examples: find_closest_elements([1.0,2.0,3.0,4.0,5.0,2.2]) -> (2.0, 2.2);
+//           find_closest_elements([1.0,2.0,3.0,4.0,5.0,2.0]) -> (2.0, 2.0)
+fn tuple find_closest_elements(list<float> numbers) {
+    float best;
+    tuple pair;
+    AI_ASSIST { scan every pair of distinct elements, keep the closest in
+                pair (ascending) and its distance in best, return pair }
+}

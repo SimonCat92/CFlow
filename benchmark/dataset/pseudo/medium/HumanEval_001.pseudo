@@ -1,0 +1,11 @@
+// HumanEval/1: separate_paren_groups
+// Input is a string of multiple groups of nested parentheses. Groups are
+// balanced and never nested within each other; spaces are ignored.
+// Return the list of the separate group strings.
+// Example: separate_paren_groups("( ) (( )) (( )( ))") -> ["()", "(())", "(()())"]
+function separate_paren_groups(paren_string):
+    let result = empty list
+    AI_ASSIST { collect each balanced top-level parenthesis group of
+                paren_string into result, ignoring spaces }
+    return result
+end function

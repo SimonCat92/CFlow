@@ -1,0 +1,10 @@
+// HumanEval/139: special_factorial
+// Brazilian factorial: special_factorial(n) = n! * (n-1)! * ... * 1!.
+// Example: special_factorial(4) -> 288
+function special_factorial(n):
+    let fact_i = 1
+    let special_fact = 1
+    AI_ASSIST { accumulate running factorials into fact_i and their product
+                into special_fact }
+    return special_fact
+end function

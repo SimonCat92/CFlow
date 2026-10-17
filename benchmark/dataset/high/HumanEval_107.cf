@@ -1,0 +1,20 @@
+// HumanEval/107: even_odd_palindrome
+// Count the even and odd integer palindromes in the range 1..n
+// inclusive (1 <= n <= 1000); return them as a tuple (even, odd).
+// Examples: even_odd_palindrome(3) -> (1, 2);
+//           even_odd_palindrome(12) -> (4, 6)
+fn bool is_palindrome(int k) {
+    AI_ASSIST { return true if the decimal representation of k reads the
+                same forwards and backwards }
+}
+
+fn tuple even_odd_palindrome(int n) {
+    int even_count = 0;
+    int odd_count = 0;
+    for (int i = 1; i <= n; i++) {
+        if (is_palindrome(i)) {
+            if (i % 2 == 0) { even_count++; } else { odd_count++; }
+        }
+    }
+    return (even_count, odd_count);
+}

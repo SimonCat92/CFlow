@@ -1,0 +1,7 @@
+fn bool move_one_ball(list<int> arr) {
+    if (arr.length() == 0) { return true; }
+    list<int> sorted_arr = copy(arr);
+    sort(sorted_arr);
+    AI_ASSIST { rotate arr so it begins at its minimum element, then
+                return whether the rotation equals sorted_arr }
+}

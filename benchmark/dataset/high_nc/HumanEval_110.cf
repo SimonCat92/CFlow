@@ -1,0 +1,12 @@
+fn string exchange(list<int> lst1, list<int> lst2) {
+    int odd = 0;
+    for (int v in lst1) {
+        if (v % 2 != 0) { odd++; }
+    }
+    int even = 0;
+    for (int v in lst2) {
+        if (v % 2 == 0) { even++; }
+    }
+    if (even >= odd) { return "YES"; }
+    return "NO";
+}

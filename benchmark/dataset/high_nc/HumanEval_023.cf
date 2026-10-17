@@ -1,0 +1,3 @@
+fn int strlen(string s) {
+    return s.length();
+}

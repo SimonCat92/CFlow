@@ -1,0 +1,6 @@
+// HumanEval/55: fib
+// Return the n-th Fibonacci number.
+// Examples: fib(10) -> 55; fib(1) -> 1; fib(8) -> 21
+function fib(n):
+    AI_ASSIST { return the n-th Fibonacci number }
+end function

@@ -1,0 +1,9 @@
+// HumanEval/60: sum_to_n
+// Sum the numbers from 1 to n.
+// Examples: sum_to_n(30) -> 465; sum_to_n(100) -> 5050;
+//           sum_to_n(5) -> 15; sum_to_n(1) -> 1
+fn int sum_to_n(int n) {
+    int s = 0;
+    AI_ASSIST { accumulate the sum of 1..n into s }
+    return s;
+}

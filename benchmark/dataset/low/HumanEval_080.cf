@@ -1,0 +1,10 @@
+// HumanEval/80: is_happy
+// A string is happy if its length is at least 3 and every 3 consecutive
+// letters are distinct.
+// Examples: is_happy("a") -> false; is_happy("aa") -> false;
+//           is_happy("abcd") -> true; is_happy("aabb") -> false;
+//           is_happy("adb") -> true; is_happy("xyy") -> false
+fn bool is_happy(string s) {
+    AI_ASSIST { return true if s has length >= 3 and every window of 3
+                consecutive characters has all-distinct letters }
+}

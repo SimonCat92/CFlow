@@ -1,0 +1,6 @@
+fn bool check_if_last_char_is_a_letter(string txt) {
+    list<string> parts = txt.split(" ");
+    string check = parts.last();
+    AI_ASSIST { return true iff check is a single character and that
+                character is a letter a-z (either case) }
+}

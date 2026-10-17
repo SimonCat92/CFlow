@@ -1,0 +1,18 @@
+// HumanEval/114: minSubArraySum
+// Find the minimum sum of any non-empty sub-array of nums.
+// Examples: minSubArraySum([2,3,4,1,2,4]) -> 1;
+//           minSubArraySum([-1,-2,-3]) -> -6
+fn int minSubArraySum(list<int> nums) {
+    int max_sum = 0;
+    int s = 0;
+    for (int num in nums) {
+        s += -num;
+        if (s < 0) { s = 0; }
+        if (s > max_sum) { max_sum = s; }
+    }
+    if (max_sum == 0) {
+        AI_ASSIST { set max_sum to the largest value among -num for num in
+                    nums (the all-negative case) }
+    }
+    return -max_sum;
+}

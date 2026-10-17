@@ -1,0 +1,9 @@
+// HumanEval/112: reverse_delete
+// Delete from s every character that appears in c, then check whether
+// the result is a palindrome. Return (result string, bool).
+// Examples: reverse_delete("abcde", "ae") -> ("bcd", false);
+//           reverse_delete("abcdedcba", "ab") -> ("cdedc", true)
+fn tuple reverse_delete(string s, string c) {
+    AI_ASSIST { return (s with all characters of c removed, whether that
+                result is a palindrome) }
+}

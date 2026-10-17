@@ -1,0 +1,10 @@
+// HumanEval/47: median
+// Return the median of the elements in l.
+// Examples: median([3,1,2,4,5]) -> 3; median([-10,4,6,1000,10,20]) -> 15.0
+function median(l):
+    let s = copy(l)
+    sort(s)
+    let m = length(s) / 2
+    if length(s) mod 2 == 1: return s[m]
+    return (s[m - 1] + s[m]) / 2.0
+end function

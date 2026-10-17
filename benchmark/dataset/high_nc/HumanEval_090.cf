@@ -1,0 +1,6 @@
+fn any next_smallest(list<int> lst) {
+    set<int> vals;
+    for (int v in lst) { vals.add(v); }
+    AI_ASSIST { return the 2nd smallest value in vals, or null if vals has
+                fewer than 2 elements }
+}

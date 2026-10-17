@@ -1,0 +1,14 @@
+// HumanEval/67: fruit_distribution
+// s describes how many apples and oranges are in a basket that contains
+// apples, oranges and mangoes; n is the total fruit count. Return the
+// number of mangoes.
+// Examples: fruit_distribution("5 apples and 6 oranges", 19) -> 8;
+//           fruit_distribution("2 apples and 3 oranges", 100) -> 95
+fn int fruit_distribution(string s, int n) {
+    int counted = 0;
+    for (string tok in s.split(" ")) {
+        AI_ASSIST { if tok is a decimal number, add its integer value to
+                    counted }
+    }
+    return n - counted;
+}

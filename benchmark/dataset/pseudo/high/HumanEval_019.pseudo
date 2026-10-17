@@ -1,0 +1,14 @@
+// HumanEval/19: sort_numbers
+// Input is a space-delimited string of numerals from "zero" to "nine".
+// Return the string with the numbers sorted from smallest to largest.
+// Example: sort_numbers("three one five") -> "one three five"
+function sort_numbers(numbers):
+    let value = { "zero": 0, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9 }
+    let words = empty list
+    for each w in split numbers on " ":
+        if w == "": continue
+        append w to words
+    end for
+    AI_ASSIST { sort words by their value in `value`, join with single
+                spaces and return the string }
+end function

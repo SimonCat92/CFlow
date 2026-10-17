@@ -1,0 +1,10 @@
+// HumanEval/141: file_name_check
+// Return "Yes" if the file name is valid: at most 3 digits, exactly one
+// ".", a non-empty name part starting with a latin letter, and an
+// extension of txt, exe or dll.
+// Examples: file_name_check("example.txt") -> "Yes";
+//           file_name_check("1example.dll") -> "No"
+function file_name_check(file_name):
+    AI_ASSIST { return "Yes" iff file_name meets all the validity rules
+                above }
+end function

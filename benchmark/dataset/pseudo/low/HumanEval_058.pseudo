@@ -1,0 +1,7 @@
+// HumanEval/58: common
+// Return the sorted unique elements common to both lists.
+// Examples: common([1,4,3,34,653,2,5], [5,7,1,5,9,653,121]) -> [1,5,653];
+//           common([5,3,2,8], [3,2]) -> [2,3]
+function common(l1, l2):
+    AI_ASSIST { return the distinct values present in both lists, sorted }
+end function

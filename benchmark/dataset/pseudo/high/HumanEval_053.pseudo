@@ -1,0 +1,6 @@
+// HumanEval/53: add
+// Add two numbers x and y.
+// Examples: add(2, 3) -> 5; add(5, 7) -> 12
+function add(x, y):
+    return x + y
+end function

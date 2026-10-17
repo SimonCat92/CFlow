@@ -1,0 +1,7 @@
+// HumanEval/31: is_prime
+// Return true if the given number is prime, false otherwise.
+// Examples: is_prime(6) -> false; is_prime(101) -> true;
+//           is_prime(1) -> false; is_prime(13441) -> true
+function is_prime(n):
+    AI_ASSIST { return true if n is prime }
+end function

@@ -1,0 +1,7 @@
+fn list<int> rolling_max(list<int> numbers) {
+    list<int> result;
+    for (int n in numbers) {
+        AI_ASSIST { append to result the maximum value seen so far }
+    }
+    return result;
+}

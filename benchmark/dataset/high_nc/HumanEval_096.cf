@@ -1,0 +1,7 @@
+fn list<int> count_up_to(int n) {
+    list<int> primes;
+    for (int i = 2; i < n; i++) {
+        AI_ASSIST { if i is prime, append it to primes }
+    }
+    return primes;
+}

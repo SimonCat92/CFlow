@@ -1,0 +1,9 @@
+// HumanEval/71: triangle_area
+// Given the three side lengths, return the triangle's area rounded to 2
+// decimals if they form a valid triangle (sum of any two sides > third),
+// otherwise return -1.
+// Examples: triangle_area(3,4,5) -> 6.0; triangle_area(1,2,10) -> -1
+fn float triangle_area(float a, float b, float c) {
+    AI_ASSIST { return the triangle area rounded to 2 decimals if the sides
+                are valid, else -1 }
+}

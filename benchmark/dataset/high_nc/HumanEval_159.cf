@@ -1,0 +1,4 @@
+fn list<int> eat(int number, int need, int remaining) {
+    if (need <= remaining) { return [number + need, remaining - need]; }
+    return [number + remaining, 0];
+}

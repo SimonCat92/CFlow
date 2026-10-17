@@ -1,0 +1,16 @@
+// HumanEval/80: is_happy
+// A string is happy if its length is at least 3 and every 3 consecutive
+// letters are distinct.
+// Examples: is_happy("a") -> false; is_happy("aa") -> false;
+//           is_happy("abcd") -> true; is_happy("aabb") -> false;
+//           is_happy("adb") -> true; is_happy("xyy") -> false
+function is_happy(s):
+    let n = length(s)
+    if n < 3: return false
+    for i from 0 to (n - 2) - 1:
+        if s[i] == s[i + 1] or s[i + 1] == s[i + 2] or s[i] == s[i + 2]:
+            return false
+        end if
+    end for
+    return true
+end function

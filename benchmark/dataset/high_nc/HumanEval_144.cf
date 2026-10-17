@@ -1,0 +1,10 @@
+fn bool simplify(string x, string n) {
+    int a = 0;
+    int b = 0;
+    int c = 0;
+    int d = 0;
+    AI_ASSIST { parse the "num/den" fractions x and n into a, b, c, d }
+    int numerator = a * c;
+    int denom = b * d;
+    return numerator % denom == 0;
+}

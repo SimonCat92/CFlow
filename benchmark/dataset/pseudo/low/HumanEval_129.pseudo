@@ -1,0 +1,13 @@
+// HumanEval/129: minPath
+// The N x N grid (N >= 2) contains each value 1..N*N exactly once.
+// A path of length k visits exactly k cells (revisits allowed), moving
+// only to edge-adjacent cells, starting anywhere, never off the grid.
+// Paths compare lexicographically by their visited values; the answer
+// is unique. Return the ordered values of the minimum path.
+// Examples: minPath([[1,2,3],[4,5,6],[7,8,9]], 3) -> [1, 2, 1];
+//           minPath([[5,9,3],[4,1,6],[7,8,2]], 1) -> [1]
+function minPath(grid, k):
+    AI_ASSIST { determine which sequence of cells forms the
+                lexicographically minimum path of length k }
+    AI_ASSIST { build and return the ordered list of values on that path }
+end function

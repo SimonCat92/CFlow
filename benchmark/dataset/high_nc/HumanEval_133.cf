@@ -1,0 +1,8 @@
+fn int sum_squares(list<float> lst) {
+    int squared = 0;
+    for (float x in lst) {
+        int c = ceil(x);
+        squared += c * c;
+    }
+    return squared;
+}

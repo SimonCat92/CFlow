@@ -1,0 +1,8 @@
+fn string longest(list<string> strings) {
+    if (strings.length() == 0) { return null; }
+    string best = strings[0];
+    for (string s in strings) {
+        if (s.length() > best.length()) { best = s; }
+    }
+    return best;
+}

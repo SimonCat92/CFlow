@@ -1,0 +1,11 @@
+fn int vowels_count(string s) {
+    int count = 0;
+    for (string c in s) {
+        string lc = lower(c);
+        if (lc == "a" || lc == "e" || lc == "i" || lc == "o" || lc == "u") {
+            count++;
+        }
+    }
+    AI_ASSIST { add 1 to count if the last character of s is "y" or "Y" }
+    return count;
+}

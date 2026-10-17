@@ -1,0 +1,9 @@
+fn list<int> parse_music(string music_string) {
+    map<string, int> beats = { "o": 4, "o|": 2, ".|": 1 };
+    list<int> result;
+    for (string tok in music_string.split(" ")) {
+        if (tok == "") { continue; }
+        result.add(beats[tok]);
+    }
+    return result;
+}

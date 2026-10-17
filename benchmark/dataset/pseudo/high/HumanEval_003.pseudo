@@ -1,0 +1,12 @@
+// HumanEval/3: below_zero
+// Given a list of deposit/withdrawal operations on an account that
+// starts at zero, return true if the balance ever falls below zero.
+// Examples: below_zero([1, 2, 3]) -> false; below_zero([1, 2, -4, 5]) -> true
+function below_zero(operations):
+    let balance = 0
+    for each op in operations:
+        balance = balance + op
+        if balance < 0: return true
+    end for
+    return false
+end function

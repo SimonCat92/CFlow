@@ -1,0 +1,17 @@
+fn bool is_prime(int n) {
+    AI_ASSIST { return true if n is prime }
+}
+
+fn bool is_multiply_prime(int a) {
+    for (int i = 2; i < 100; i++) {
+        if (!is_prime(i)) { continue; }
+        for (int j = 2; j < 100; j++) {
+            if (!is_prime(j)) { continue; }
+            for (int k = 2; k < 100; k++) {
+                if (!is_prime(k)) { continue; }
+                if (i * j * k == a) { return true; }
+            }
+        }
+    }
+    return false;
+}

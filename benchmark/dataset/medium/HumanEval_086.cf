@@ -1,0 +1,12 @@
+// HumanEval/86: anti_shuffle
+// Return an "ordered" version of the string: each word's characters are
+// sorted ascending by ASCII value, while word order and blank spaces are
+// kept.
+// Examples: anti_shuffle("Hi") -> "Hi"; anti_shuffle("hello") -> "ehllo";
+//           anti_shuffle("Hello World!!!") -> "Hello !!!Wdlor"
+fn string anti_shuffle(string s) {
+    string result = "";
+    AI_ASSIST { rebuild s into result keeping word order and spaces, but
+                sorting each word's characters ascending by ASCII }
+    return result;
+}

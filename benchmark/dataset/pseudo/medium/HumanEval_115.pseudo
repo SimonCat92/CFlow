@@ -1,0 +1,13 @@
+// HumanEval/115: max_fill
+// Each grid row is a well; every 1 is a unit of water. Each bucket holds
+// `capacity` units and a lower-raise cycle empties one bucket of water
+// from a well. Return the total number of bucket lowerings.
+// Examples: max_fill([[0,0,1,0],[0,1,0,0],[1,1,1,1]], 1) -> 6;
+//           max_fill([[0,0,1,1],[0,0,0,0],[1,1,1,1],[0,1,1,1]], 2) -> 5;
+//           max_fill([[0,0,0],[0,0,0]], 5) -> 0
+function max_fill(grid, capacity):
+    let total = 0
+    declare water
+    AI_ASSIST { for each row, count its water units into water and add
+                ceil(water / capacity) to total; return total }
+end function

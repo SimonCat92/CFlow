@@ -1,0 +1,19 @@
+// HumanEval/87: get_row
+// Given a ragged 2-D list and integer x, return the (row, column)
+// coordinates where x occurs. Sort by row ascending, and by column
+// descending within each row.
+// Examples: get_row([[1,2,3,4,5,6],[1,2,3,4,1,6],[1,2,3,4,5,1]], 1)
+//             -> [(0,0),(1,4),(1,0),(2,5),(2,0)]
+//           get_row([], 1) -> []
+//           get_row([[], [1], [1,2,3]], 3) -> [(2,2)]
+function get_row(lst, x):
+    let coords = empty list
+    for i from 0 to length(lst) - 1:
+        for j from 0 to length(lst[i]) - 1:
+            if lst[i][j] == x: append (i, j) to coords
+        end for
+    end for
+    AI_ASSIST { sort coords by row ascending, then by column descending
+                within the same row }
+    return coords
+end function

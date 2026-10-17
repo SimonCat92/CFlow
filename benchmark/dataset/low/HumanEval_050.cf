@@ -1,0 +1,13 @@
+// HumanEval/50: decode_shift
+// Encodes s by shifting every character 5 positions forward in the
+// alphabet, wrapping around.
+fn string encode_shift(string s) {
+    AI_ASSIST { shift every character forward by 5 in the alphabet,
+                wrapping around }
+}
+
+// Decode a string produced by encode_shift.
+// Example: decode_shift(encode_shift("hello")) -> "hello"
+fn string decode_shift(string s) {
+    AI_ASSIST { return the original string }
+}

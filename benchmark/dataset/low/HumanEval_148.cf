@@ -1,0 +1,12 @@
+// HumanEval/148: bf
+// Planets from the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn,
+// Uranus, Neptune. Return the planets whose orbits lie strictly between
+// planet1 and planet2, sorted by proximity to the Sun. Empty list if
+// either name is invalid (or equal).
+// Examples: bf("Jupiter", "Neptune") -> ["Saturn", "Uranus"];
+//           bf("Earth", "Mercury") -> ["Venus"];
+//           bf("Mercury", "Uranus") -> ["Venus","Earth","Mars","Jupiter","Saturn"]
+fn list<string> bf(string planet1, string planet2) {
+    AI_ASSIST { return the planets strictly between planet1 and planet2 in
+                solar order, or [] }
+}

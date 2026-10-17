@@ -1,0 +1,14 @@
+// HumanEval/73: smallest_change
+// Return the minimum number of elements that must change to make the
+// array palindromic (one change sets an element to any value).
+// Examples: smallest_change([1,2,3,5,4,7,9,6]) -> 4;
+//           smallest_change([1,2,3,4,3,2,2]) -> 1;
+//           smallest_change([1,2,3,2,1]) -> 0
+function smallest_change(arr):
+    let ans = 0
+    let n = length(arr)
+    for i from 0 to (n / 2) - 1:
+        if arr[i] != arr[n - i - 1]: increment ans
+    end for
+    return ans
+end function

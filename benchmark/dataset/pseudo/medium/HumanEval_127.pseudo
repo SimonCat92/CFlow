@@ -1,0 +1,16 @@
+// HumanEval/127: intersection
+// Two closed intervals (start, end) with start <= end. Return "YES" if
+// the length of their intersection is a prime number, "NO" otherwise
+// (including no intersection).
+// Examples: intersection((1,2), (2,3)) -> "NO";
+//           intersection((-1,1), (0,4)) -> "NO";
+//           intersection((-3,-1), (-5,5)) -> "YES"
+function is_prime(num):
+    AI_ASSIST { return true if num is prime }
+end function
+
+function intersection(interval1, interval2):
+    declare l, r, length
+    AI_ASSIST { compute l = max(starts), r = min(ends), length = r - l;
+                return "YES" if length > 0 and is_prime(length), else "NO" }
+end function

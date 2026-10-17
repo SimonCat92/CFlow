@@ -1,0 +1,9 @@
+// HumanEval/161: solve
+// Flip the case of every letter in s; other characters stay. If s has no
+// letters at all, return it reversed.
+// Examples: solve("1234") -> "4321"; solve("ab") -> "AB";
+//           solve("#a@C") -> "#A@c"
+fn string solve(string s) {
+    AI_ASSIST { return s with letter cases flipped, or reversed if it has
+                no letters }
+}

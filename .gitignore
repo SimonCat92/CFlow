@@ -1,0 +1,6 @@
+AGENTS.md
+.venv/
+__pycache__/
+paper/
+benchmark/*
+!benchmark/dataset/

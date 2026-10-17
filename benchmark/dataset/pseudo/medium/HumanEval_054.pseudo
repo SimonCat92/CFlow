@@ -1,0 +1,11 @@
+// HumanEval/54: same_chars
+// Check if two words have the same characters.
+// Examples: same_chars("eabcdzzzz", "dddzzzzzzzddeddabc") -> true;
+//           same_chars("eabcd", "dddddddabc") -> false;
+//           same_chars("abcd", "dddddddabce") -> false
+function same_chars(s0, s1):
+    let a = empty set
+    let b = empty set
+    AI_ASSIST { fill a with the characters of s0 and b with those of s1,
+                then return whether the sets are equal }
+end function

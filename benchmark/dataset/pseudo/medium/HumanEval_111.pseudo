@@ -1,0 +1,13 @@
+// HumanEval/111: histogram
+// Given a space-separated string of lowercase letters, return a map of
+// the letter(s) with the most repetitions to their count. If several
+// letters tie, return all of them.
+// Examples: histogram("a b c") -> {"a":1,"b":1,"c":1};
+//           histogram("a b b a") -> {"a":2,"b":2};
+//           histogram("b b b b a") -> {"b":4};  histogram("") -> {}
+function histogram(test):
+    let counts = empty map
+    AI_ASSIST { count occurrences of each non-empty space-separated word
+                into counts, then return a new map containing only the
+                letters whose count equals the maximum }
+end function

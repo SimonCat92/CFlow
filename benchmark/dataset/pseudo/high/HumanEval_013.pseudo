@@ -1,0 +1,12 @@
+// HumanEval/13: greatest_common_divisor
+// Return the greatest common divisor of two integers a and b.
+// Examples: greatest_common_divisor(3, 5) -> 1;
+//           greatest_common_divisor(25, 15) -> 5
+function greatest_common_divisor(a, b):
+    while b != 0:
+        let t = b
+        b = a mod b
+        a = t
+    end while
+    return a
+end function

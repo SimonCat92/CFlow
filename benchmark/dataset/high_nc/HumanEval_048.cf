@@ -1,0 +1,8 @@
+fn bool is_palindrome(string text) {
+    int n = text.length();
+    for (int i = 0; i < n; i++) {
+        AI_ASSIST { if the i-th character of text differs from the i-th
+                    character counting from the end, return false }
+    }
+    return true;
+}

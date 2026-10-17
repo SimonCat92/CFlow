@@ -1,0 +1,9 @@
+// HumanEval/146: specialFilter
+// Count the elements greater than 10 whose first and last digits are
+// both odd (1, 3, 5, 7, 9).
+// Examples: specialFilter([15, -73, 14, -15]) -> 1;
+//           specialFilter([33, -2, -3, 45, 21, 109]) -> 2
+fn int specialFilter(list<int> nums) {
+    AI_ASSIST { count elements > 10 whose first and last digits are both
+                odd }
+}

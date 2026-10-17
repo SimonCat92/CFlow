@@ -1,0 +1,11 @@
+// HumanEval/127: intersection
+// Two closed intervals (start, end) with start <= end. Return "YES" if
+// the length of their intersection is a prime number, "NO" otherwise
+// (including no intersection).
+// Examples: intersection((1,2), (2,3)) -> "NO";
+//           intersection((-1,1), (0,4)) -> "NO";
+//           intersection((-3,-1), (-5,5)) -> "YES"
+fn string intersection(tuple interval1, tuple interval2) {
+    AI_ASSIST { return "YES" if the intersection length of the two
+                intervals is prime, else "NO" }
+}

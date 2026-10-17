@@ -1,0 +1,5 @@
+fn list<int> maximum(list<int> arr, int k) {
+    if (k == 0) { return []; }
+    sort(arr);
+    AI_ASSIST { return the last k elements of arr as a list }
+}

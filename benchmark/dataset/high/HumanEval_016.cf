@@ -1,0 +1,10 @@
+// HumanEval/16: count_distinct_characters
+// How many distinct characters does the string consist of, case
+// insensitive.
+// Examples: count_distinct_characters("xyzXYZ") -> 3;
+//           count_distinct_characters("Jerry") -> 4
+fn int count_distinct_characters(string s) {
+    set<string> seen;
+    for (string c in s) { seen.add(lowercase(c)); }
+    return seen.length();
+}

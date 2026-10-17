@@ -1,0 +1,11 @@
+fn list<int> strange_sort_list(list<int> lst) {
+    list<int> rest = copy(lst);
+    list<int> res;
+    bool take_min = true;
+    while (rest.length() > 0) {
+        AI_ASSIST { remove the minimum element of rest (or the maximum when
+                    take_min is false) and append it to res }
+        take_min = !take_min;
+    }
+    return res;
+}

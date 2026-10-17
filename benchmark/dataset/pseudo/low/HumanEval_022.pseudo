@@ -1,0 +1,7 @@
+// HumanEval/22: filter_integers
+// Filter a list of arbitrary values keeping only the integers.
+// Examples: filter_integers(["a", 3.14, 5]) -> [5];
+//           filter_integers([1, 2, 3, "abc", {}, []]) -> [1, 2, 3]
+function filter_integers(values):
+    AI_ASSIST { return only the integer elements of values }
+end function

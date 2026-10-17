@@ -1,0 +1,11 @@
+// HumanEval/109: move_one_ball
+// Return true if arr can be sorted in non-decreasing order by right
+// shifts only (last element moves to the front). Empty array -> true.
+// Elements are unique.
+// Examples: move_one_ball([3,4,5,1,2]) -> true;
+//           move_one_ball([3,5,4,1,2]) -> false
+fn bool move_one_ball(list<int> arr) {
+    list<int> sorted_arr;
+    AI_ASSIST { return true if arr is empty or the rotation of arr that
+                starts at its smallest element equals the sorted copy }
+}

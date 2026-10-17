@@ -1,0 +1,16 @@
+fn tuple find_closest_elements(list<float> numbers) {
+    bool found = false;
+    float best = 0.0;
+    tuple pair;
+    for (int i = 0; i < numbers.length(); i++) {
+        for (int j = 0; j < numbers.length(); j++) {
+            if (i != j) {
+                AI_ASSIST { if this pair is closer than best or none was
+                            found yet, record the distance in best, set
+                            pair to the two elements ascending, and mark
+                            found }
+            }
+        }
+    }
+    return pair;
+}

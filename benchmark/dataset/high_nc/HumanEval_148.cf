@@ -1,0 +1,11 @@
+fn list<string> bf(string planet1, string planet2) {
+    list<string> planet_names;
+    AI_ASSIST { fill planet_names with the 8 planets in solar order }
+    int i1 = index_of(planet_names, planet1);
+    int i2 = index_of(planet_names, planet2);
+    if (i1 == -1 || i2 == -1 || i1 == i2) { return []; }
+    int lo = min(i1, i2);
+    int hi = max(i1, i2);
+    AI_ASSIST { return the elements of planet_names strictly between
+                indices lo and hi }
+}

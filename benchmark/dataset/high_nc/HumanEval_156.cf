@@ -1,0 +1,17 @@
+fn string int_to_mini_roman(int number) {
+    list<int> num;
+    list<string> sym;
+    AI_ASSIST { fill num and sym with the numeral table above }
+    int i = 12;
+    string res = "";
+    while (number > 0) {
+        int div = number / num[i];
+        number = number % num[i];
+        while (div > 0) {
+            res += sym[i];
+            div--;
+        }
+        i--;
+    }
+    return lower(res);
+}
