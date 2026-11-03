@@ -5,6 +5,6 @@
 //           find_max(["name","enam","game"]) -> "enam";
 //           find_max(["aaaaaaa","bb","cc"]) -> "aaaaaaa"
 function find_max(words):
-    AI_ASSIST { return the word with the most distinct characters,
-                lexicographically first on ties }
+    return the word with the most distinct characters,
+                lexicographically first on ties
 end function

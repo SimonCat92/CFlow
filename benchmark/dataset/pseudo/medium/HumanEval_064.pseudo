@@ -4,7 +4,7 @@
 // Examples: vowels_count("abcde") -> 2; vowels_count("ACEDY") -> 3
 function vowels_count(s):
     let count = 0
-    AI_ASSIST { count the a/e/i/o/u vowels (either case) in s, plus a
-                trailing y/Y, into count }
+    count the a/e/i/o/u vowels (either case) in s, plus a
+                trailing y/Y, into count
     return count
 end function

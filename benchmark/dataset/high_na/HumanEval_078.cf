@@ -1,0 +1,14 @@
+// HumanEval/78: hex_key
+// Count the hexadecimal digits of num that are also prime digits:
+// 2, 3, 5, 7, B, D. num is uppercase hex, possibly empty.
+// Examples: hex_key("AB") -> 1; hex_key("1077E") -> 2;
+//           hex_key("ABED1A33") -> 4; hex_key("2020") -> 2
+fn int hex_key(string num) {
+    int total = 0;
+    for (string c in num) {
+        if (c == "2" || c == "3" || c == "5" || c == "7" || c == "B" || c == "D") {
+            total++;
+        }
+    }
+    return total;
+}

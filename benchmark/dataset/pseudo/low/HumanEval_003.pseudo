@@ -3,6 +3,6 @@
 // starts at zero, return true if the balance ever falls below zero.
 // Examples: below_zero([1, 2, 3]) -> false; below_zero([1, 2, -4, 5]) -> true
 function below_zero(operations):
-    AI_ASSIST { track the running balance starting at 0; return true the
-                moment it drops below 0, else false }
+    track the running balance starting at 0; return true the
+                moment it drops below 0, else false
 end function

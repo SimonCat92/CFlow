@@ -1,0 +1,14 @@
+// HumanEval/17: parse_music
+// Parse a string of musical notes in ASCII format into their beat
+// lengths. Legend: "o" whole = 4, "o|" half = 2, ".|" quarter = 1.
+// Example: parse_music("o o| .| o| o| .| .| .| .| o o")
+//          -> [4,2,1,2,2,1,1,1,1,4,4]
+fn list<int> parse_music(string music_string) {
+    map<string, int> beats = { "o": 4, "o|": 2, ".|": 1 };
+    list<int> result;
+    for (string tok in music_string.split(" ")) {
+        if (tok == "") { continue; }
+        result.add(beats[tok]);
+    }
+    return result;
+}

@@ -4,6 +4,6 @@
 // Examples: encode("test") -> "TGST";
 //           encode("This is a message") -> "tHKS KS C MGSSCGG"
 function encode(message):
-    AI_ASSIST { swap case of all letters and replace each vowel with the
-                letter two positions ahead }
+    swap case of all letters and replace each vowel with the
+                letter two positions ahead
 end function

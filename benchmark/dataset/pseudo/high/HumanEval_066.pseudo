@@ -5,8 +5,8 @@
 function digitSum(s):
     let total = 0
     for each c in s:
-        AI_ASSIST { if c is an uppercase ASCII letter, add its ASCII code
-                    to total }
+        if c is an uppercase ASCII letter, add its ASCII code
+                    to total
     end for
     return total
 end function

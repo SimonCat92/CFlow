@@ -1,0 +1,13 @@
+// HumanEval/133: sum_squares
+// Round each element up to the ceiling int first, then return the sum of
+// the squares.
+// Examples: sum_squares([1,2,3]) -> 14; sum_squares([1,4,9]) -> 98;
+//           sum_squares([1.4,4.2,0]) -> 29; sum_squares([-2.4,1,1]) -> 6
+fn int sum_squares(list<float> lst) {
+    int squared = 0;
+    for (float x in lst) {
+        int c = ceil(x);
+        squared += c * c;
+    }
+    return squared;
+}

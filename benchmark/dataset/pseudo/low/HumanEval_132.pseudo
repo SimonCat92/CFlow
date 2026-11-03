@@ -5,6 +5,6 @@
 //           is_nested("[][]") -> false; is_nested("[[][]]") -> true;
 //           is_nested("[[]][[") -> true
 function is_nested(s):
-    AI_ASSIST { return true iff some valid bracket subsequence of s
-                contains nesting }
+    return true iff some valid bracket subsequence of s
+                contains nesting
 end function

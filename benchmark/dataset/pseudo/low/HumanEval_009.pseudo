@@ -3,6 +3,6 @@
 // of the sequence.
 // Example: rolling_max([1, 2, 3, 2, 3, 4, 2]) -> [1,2,3,3,3,4,4]
 function rolling_max(numbers):
-    AI_ASSIST { for each position, output the maximum of all elements seen
-                up to it }
+    for each position, output the maximum of all elements seen
+                up to it
 end function

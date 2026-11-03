@@ -8,7 +8,7 @@
 //           get_row([[], [1], [1,2,3]], 3) -> [(2,2)]
 function get_row(lst, x):
     let coords = empty list
-    AI_ASSIST { collect every (i, j) with lst[i][j] == x into coords, then
-                sort by row ascending and column descending within a row }
+    collect every (i, j) with lst[i][j] == x into coords, then
+                sort by row ascending and column descending within a row
     return coords
 end function

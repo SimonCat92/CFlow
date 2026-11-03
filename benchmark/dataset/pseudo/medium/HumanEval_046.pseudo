@@ -5,6 +5,6 @@
 // Examples: fib4(5) -> 4; fib4(6) -> 8; fib4(7) -> 14
 function fib4(n):
     let results = empty list
-    AI_ASSIST { seed results with [0, 0, 2, 0] and iterate a rolling
-                window to the n-th element, return it }
+    seed results with [0, 0, 2, 0] and iterate a rolling
+                window to the n-th element, return it
 end function

@@ -5,6 +5,6 @@
 //           next_smallest([]) -> null; next_smallest([1,1]) -> null
 function next_smallest(lst):
     let vals = empty set
-    AI_ASSIST { collect the distinct values of lst into vals and return
-                the 2nd smallest, or null if fewer than 2 }
+    collect the distinct values of lst into vals and return
+                the 2nd smallest, or null if fewer than 2
 end function

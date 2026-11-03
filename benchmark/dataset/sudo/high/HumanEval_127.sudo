@@ -1,0 +1,25 @@
+Solution {
+    // HumanEval/127: intersection
+    // Two closed intervals (start, end) with start <= end. Return "YES" if
+    // the length of their intersection is a prime number, "NO" otherwise
+    // (including no intersection).
+    // Examples: intersection((1,2), (2,3)) -> "NO";
+    //           intersection((-1,1), (0,4)) -> "NO";
+    //           intersection((-3,-1), (-5,5)) -> "YES"
+    fn is_prime(num) {
+        return true if num is prime
+    }
+    
+    fn intersection(interval1, interval2) {
+        l = max(interval1[0], interval2[0])
+        r = min(interval1[1], interval2[1])
+        length = r - l
+        if (length > 0 && is_prime(length)) {
+            return "YES"
+        }
+        return "NO"
+    }
+    
+}
+
+Solution |> transpile(Python)

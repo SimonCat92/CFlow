@@ -14,7 +14,7 @@ function separate_paren_groups(paren_string):
         else if c == ")":
             decrement depth
             current = current + c
-            AI_ASSIST { if depth == 0, add current to result and reset it }
+            if depth == 0, add current to result and reset it
         end if
     end for
     return result

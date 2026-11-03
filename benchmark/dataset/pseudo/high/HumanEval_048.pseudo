@@ -5,8 +5,8 @@
 function is_palindrome(text):
     let n = length(text)
     for i from 0 to n - 1:
-        AI_ASSIST { if the i-th character of text differs from the i-th
-                    character counting from the end, return false }
+        if the i-th character of text differs from the i-th
+                    character counting from the end, return false
     end for
     return true
 end function

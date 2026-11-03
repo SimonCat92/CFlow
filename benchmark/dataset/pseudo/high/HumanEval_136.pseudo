@@ -10,10 +10,10 @@ function largest_smallest_integers(lst):
     let pos = 0
     let has_pos = false
     for each v in lst:
-        AI_ASSIST { if v < 0, keep in neg the largest negative seen and set
+        if v < 0, keep in neg the largest negative seen and set
                     has_neg; if v > 0, keep in pos the smallest positive
-                    seen and set has_pos }
+                    seen and set has_pos
     end for
-    AI_ASSIST { return (neg if has_neg else null, pos if has_pos else
-                null) }
+    return (neg if has_neg else null, pos if has_pos else
+                null)
 end function

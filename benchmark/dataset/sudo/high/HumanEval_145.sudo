@@ -1,0 +1,21 @@
+Solution {
+    // HumanEval/145: order_by_points
+    // Sort the integers ascending by the sum of their digits; for negatives
+    // the first signed digit is negative (-12 -> -1+2). Ties keep the
+    // original order.
+    // Example: order_by_points([1, 11, -1, -11, -12]) -> [-1, -11, 1, -12, 11];
+    //          order_by_points([]) -> []
+    fn digits_sum(n) {
+        return the sum of n's digits, first digit negated when n
+                    is negative (e.g. -12 -> -1+2 = 1)
+    }
+    
+    fn order_by_points(nums) {
+        result = copy(nums)
+        stable-sort result ascending by digits_sum
+        return result
+    }
+    
+}
+
+Solution |> transpile(Python)

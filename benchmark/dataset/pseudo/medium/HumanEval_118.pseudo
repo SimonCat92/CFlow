@@ -6,6 +6,6 @@
 //           get_closest_vowel("quick") -> ""; get_closest_vowel("ab") -> ""
 function get_closest_vowel(word):
     let vowels = empty set   // a,e,i,o,u in both cases
-    AI_ASSIST { scan word right-to-left and return the first vowel whose
-                neighbors are both consonants; "" if none or len < 3 }
+    scan word right-to-left and return the first vowel whose
+                neighbors are both consonants; "" if none or len < 3
 end function

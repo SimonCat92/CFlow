@@ -4,7 +4,7 @@
 //           filter_by_prefix(["abc","bcd","cde","array"], "a") -> ["abc","array"]
 function filter_by_prefix(strings, prefix):
     let result = empty list
-    AI_ASSIST { append to result every element of strings that starts
-                with prefix }
+    append to result every element of strings that starts
+                with prefix
     return result
 end function

@@ -10,6 +10,6 @@ function vowels_count(s):
             increment count
         end if
     end for
-    AI_ASSIST { add 1 to count if the last character of s is "y" or "Y" }
+    add 1 to count if the last character of s is "y" or "Y"
     return count
 end function

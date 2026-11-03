@@ -7,7 +7,7 @@
 //           histogram("b b b b a") -> {"b":4};  histogram("") -> {}
 function histogram(test):
     let counts = empty map
-    AI_ASSIST { count occurrences of each non-empty space-separated word
+    count occurrences of each non-empty space-separated word
                 into counts, then return a new map containing only the
-                letters whose count equals the maximum }
+                letters whose count equals the maximum
 end function

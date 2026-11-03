@@ -1,0 +1,21 @@
+Solution {
+    // HumanEval/55: fib
+    // Return the n-th Fibonacci number.
+    // Examples: fib(10) -> 55; fib(1) -> 1; fib(8) -> 21
+    fn fib(n) {
+        if (n == 0) {
+            return 0
+        }
+        a = 0
+        b = 1
+        for i in 2..n {
+            next = a + b
+            a = b
+            b = next
+        }
+        return b
+    }
+    
+}
+
+Solution |> transpile(Python)

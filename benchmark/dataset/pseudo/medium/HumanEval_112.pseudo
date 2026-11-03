@@ -6,6 +6,6 @@
 function reverse_delete(s, c):
     let result = ""
     declare pal
-    AI_ASSIST { build result from s minus every character in c, set pal to
-                whether result is a palindrome, and return (result, pal) }
+    build result from s minus every character in c, set pal to
+                whether result is a palindrome, and return (result, pal)
 end function

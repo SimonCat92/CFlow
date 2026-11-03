@@ -2,5 +2,5 @@
 // Given a side length and the height, return the triangle's area.
 // Example: triangle_area(5, 3) -> 7.5
 function triangle_area(a, h):
-    AI_ASSIST { return the area of a triangle with side a and height h }
+    return the area of a triangle with side a and height h
 end function

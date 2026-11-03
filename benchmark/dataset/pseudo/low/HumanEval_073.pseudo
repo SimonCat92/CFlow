@@ -5,5 +5,5 @@
 //           smallest_change([1,2,3,4,3,2,2]) -> 1;
 //           smallest_change([1,2,3,2,1]) -> 0
 function smallest_change(arr):
-    AI_ASSIST { return the number of mismatched mirrored positions }
+    return the number of mismatched mirrored positions
 end function

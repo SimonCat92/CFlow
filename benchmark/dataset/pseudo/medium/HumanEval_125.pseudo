@@ -7,7 +7,7 @@
 //           split_words("abcdef") -> 3
 function split_words(txt):
     let count = 0
-    AI_ASSIST { if txt has spaces split on whitespace; else if it has
+    if txt has spaces split on whitespace; else if it has
                 commas split on those; else count lowercase letters at odd
-                alphabet positions into count and return it }
+                alphabet positions into count and return it
 end function

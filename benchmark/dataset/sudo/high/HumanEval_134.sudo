@@ -1,0 +1,18 @@
+Solution {
+    // HumanEval/134: check_if_last_char_is_a_letter
+    // Return true if the last character of txt is an alphabetical character
+    // and is not part of a word (a "word" is a space-separated group).
+    // Examples: check_if_last_char_is_a_letter("apple pie") -> false;
+    //           check_if_last_char_is_a_letter("apple pi e") -> true;
+    //           check_if_last_char_is_a_letter("apple pi e ") -> false;
+    //           check_if_last_char_is_a_letter("") -> false
+    fn check_if_last_char_is_a_letter(txt) {
+        parts = txt.split(" ")
+        check = parts.last()
+        return true iff check is a single character and that
+                    character is a letter a-z (either case)
+    }
+    
+}
+
+Solution |> transpile(Python)

@@ -7,8 +7,8 @@ function specialFilter(nums):
     let count = 0
     for each num in nums:
         if num > 10:
-            AI_ASSIST { if the first and last digit of num are both odd,
-                        increment count }
+            if the first and last digit of num are both odd,
+                        increment count
         end if
     end for
     return count

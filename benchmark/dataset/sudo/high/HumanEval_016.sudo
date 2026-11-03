@@ -1,0 +1,17 @@
+Solution {
+    // HumanEval/16: count_distinct_characters
+    // How many distinct characters does the string consist of, case
+    // insensitive.
+    // Examples: count_distinct_characters("xyzXYZ") -> 3;
+    //           count_distinct_characters("Jerry") -> 4
+    fn count_distinct_characters(s) {
+        seen = {}
+        for each c in s {
+            seen.push(lowercase(c))
+        }
+        return length(seen)
+    }
+    
+}
+
+Solution |> transpile(Python)

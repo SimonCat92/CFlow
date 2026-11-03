@@ -4,5 +4,5 @@
 // Examples: int_to_mini_roman(19) -> "xix"; int_to_mini_roman(152) -> "clii";
 //           int_to_mini_roman(426) -> "cdxxvi"
 function int_to_mini_roman(number):
-    AI_ASSIST { return the lowercase Roman numeral of number }
+    return the lowercase Roman numeral of number
 end function

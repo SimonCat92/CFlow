@@ -5,8 +5,8 @@ function encode_cyclic(s):
     let result = ""
     for i from 0 to length(s) - 1 step 3:
         let g = substring(s, i, 3)
-        AI_ASSIST { rotate g left by one character if it has 3 characters,
-                    otherwise keep it; append to result }
+        rotate g left by one character if it has 3 characters,
+                    otherwise keep it; append to result
     end for
     return result
 end function

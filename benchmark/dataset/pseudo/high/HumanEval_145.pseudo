@@ -5,12 +5,12 @@
 // Example: order_by_points([1, 11, -1, -11, -12]) -> [-1, -11, 1, -12, 11];
 //          order_by_points([]) -> []
 function digits_sum(n):
-    AI_ASSIST { return the sum of n's digits, first digit negated when n
-                is negative (e.g. -12 -> -1+2 = 1) }
+    return the sum of n's digits, first digit negated when n
+                is negative (e.g. -12 -> -1+2 = 1)
 end function
 
 function order_by_points(nums):
     let result = copy(nums)
-    AI_ASSIST { stable-sort result ascending by digits_sum }
+    stable-sort result ascending by digits_sum
     return result
 end function

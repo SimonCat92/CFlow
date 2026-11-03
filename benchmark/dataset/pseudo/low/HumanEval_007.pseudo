@@ -4,5 +4,5 @@
 //           filter_by_substring(["abc","bacd","cde","array"], "a")
 //           -> ["abc","bacd","array"]
 function filter_by_substring(strings, substring):
-    AI_ASSIST { return the elements of strings that contain substring }
+    return the elements of strings that contain substring
 end function

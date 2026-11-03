@@ -5,6 +5,6 @@
 // Examples: get_closest_vowel("yogurt") -> "u"; get_closest_vowel("FULL") -> "U";
 //           get_closest_vowel("quick") -> ""; get_closest_vowel("ab") -> ""
 function get_closest_vowel(word):
-    AI_ASSIST { return the rightmost vowel of word that is flanked by
-                consonants, or "" }
+    return the rightmost vowel of word that is flanked by
+                consonants, or ""
 end function

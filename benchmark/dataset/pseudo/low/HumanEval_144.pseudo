@@ -4,6 +4,6 @@
 // Examples: simplify("1/5", "5/1") -> true; simplify("1/6", "2/1") -> false;
 //           simplify("7/10", "10/2") -> false
 function simplify(x, n):
-    AI_ASSIST { return true iff the product of fractions x and n is a
-                whole number }
+    return true iff the product of fractions x and n is a
+                whole number
 end function

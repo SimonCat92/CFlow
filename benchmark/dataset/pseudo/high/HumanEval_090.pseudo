@@ -6,6 +6,6 @@
 function next_smallest(lst):
     let vals = empty set
     for each v in lst: append v to vals
-    AI_ASSIST { return the 2nd smallest value in vals, or null if vals has
-                fewer than 2 elements }
+    return the 2nd smallest value in vals, or null if vals has
+                fewer than 2 elements
 end function

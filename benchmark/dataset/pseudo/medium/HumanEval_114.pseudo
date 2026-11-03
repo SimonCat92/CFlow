@@ -5,7 +5,7 @@
 function minSubArraySum(nums):
     let max_sum = 0
     let s = 0
-    AI_ASSIST { run Kadane's algorithm on the negated elements to find the
+    run Kadane's algorithm on the negated elements to find the
                 largest sum of negated elements into max_sum (handles the
-                all-negative case), then return -max_sum }
+                all-negative case), then return -max_sum
 end function

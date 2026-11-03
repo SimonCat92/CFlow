@@ -5,6 +5,6 @@
 //           words_string("One, two, three") -> ["One","two","three"]
 function words_string(s):
     let t = s
-    AI_ASSIST { replace every comma in t with a space }
+    replace every comma in t with a space
     return split_whitespace(t)
 end function

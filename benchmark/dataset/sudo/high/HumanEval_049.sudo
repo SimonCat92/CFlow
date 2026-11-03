@@ -1,0 +1,16 @@
+Solution {
+    // HumanEval/49: modp
+    // Return 2^n modulo p (mind numerics).
+    // Examples: modp(3, 5) -> 3; modp(1101, 101) -> 2; modp(0, 101) -> 1;
+    //           modp(100, 101) -> 1
+    fn modp(n, p) {
+        ret = 1 mod p
+        for i in 0..(n - 1) {
+            ret = (2 * ret) mod p
+        }
+        return ret
+    }
+    
+}
+
+Solution |> transpile(Python)

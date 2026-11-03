@@ -4,6 +4,6 @@
 //           generate_integers(8, 2) -> [2,4,6,8];
 //           generate_integers(10, 14) -> []
 function generate_integers(a, b):
-    AI_ASSIST { return the even single digits in the inclusive range
-                between a and b }
+    return the even single digits in the inclusive range
+                between a and b
 end function

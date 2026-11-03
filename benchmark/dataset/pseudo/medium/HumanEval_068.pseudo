@@ -8,6 +8,6 @@
 function pluck(arr):
     declare best
     declare idx
-    AI_ASSIST { find the smallest even value in arr (first index on ties)
-                into best and idx; return [best, idx] or [] if none }
+    find the smallest even value in arr (first index on ties)
+                into best and idx; return [best, idx] or [] if none
 end function

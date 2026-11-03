@@ -4,6 +4,6 @@
 // Examples: sum_squares([1,2,3]) -> 6; sum_squares([]) -> 0;
 //           sum_squares([-1,-5,2,-1,-5]) -> -126
 function sum_squares(lst):
-    AI_ASSIST { return the sum with elements at indices multiple of 3
-                squared, of 4 (not 3) cubed }
+    return the sum with elements at indices multiple of 3
+                squared, of 4 (not 3) cubed
 end function

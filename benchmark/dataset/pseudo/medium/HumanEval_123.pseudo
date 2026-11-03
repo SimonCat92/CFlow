@@ -4,6 +4,6 @@
 // Example: get_odd_collatz(5) -> [1, 5]
 function get_odd_collatz(n):
     let odd_collatz = empty list
-    AI_ASSIST { run the Collatz sequence from n collecting the odd values
-                into odd_collatz, then return it sorted }
+    run the Collatz sequence from n collecting the odd values
+                into odd_collatz, then return it sorted
 end function

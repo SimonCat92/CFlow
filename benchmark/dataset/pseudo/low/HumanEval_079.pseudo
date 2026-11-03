@@ -3,5 +3,5 @@
 // Examples: decimal_to_binary(15) -> "db1111db";
 //           decimal_to_binary(32) -> "db100000db"
 function decimal_to_binary(decimal):
-    AI_ASSIST { return "db" + decimal in binary + "db" }
+    return "db" + decimal in binary + "db"
 end function

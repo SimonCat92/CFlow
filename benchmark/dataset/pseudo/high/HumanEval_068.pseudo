@@ -9,9 +9,9 @@ function pluck(arr):
     let best = 0
     let idx = -1
     for i from 0 to length(arr) - 1:
-        AI_ASSIST { if arr[i] is even and it is the first even seen or is
+        if arr[i] is even and it is the first even seen or is
                     smaller than best, store it in best and its index in
-                    idx }
+                    idx
     end for
     if idx == -1: return []
     return [best, idx]

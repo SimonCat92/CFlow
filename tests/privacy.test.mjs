@@ -10,7 +10,8 @@ import { join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
-const EXCLUDED_DIRS = new Set([".git", "tests", join("assets", "vendor")]);
+const EXCLUDED_DIRS = new Set([".git", ".venv", "tests", "benchmark",
+                              join("assets", "vendor")]);
 const SCAN_EXT = new Set([".html", ".js", ".css"]);
 
 async function* walk(dir) {

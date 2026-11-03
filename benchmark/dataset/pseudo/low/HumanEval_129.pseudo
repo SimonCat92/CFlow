@@ -7,7 +7,7 @@
 // Examples: minPath([[1,2,3],[4,5,6],[7,8,9]], 3) -> [1, 2, 1];
 //           minPath([[5,9,3],[4,1,6],[7,8,2]], 1) -> [1]
 function minPath(grid, k):
-    AI_ASSIST { determine which sequence of cells forms the
-                lexicographically minimum path of length k }
-    AI_ASSIST { build and return the ordered list of values on that path }
+    determine which sequence of cells forms the
+                lexicographically minimum path of length k
+    build and return the ordered list of values on that path
 end function

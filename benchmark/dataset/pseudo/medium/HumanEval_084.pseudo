@@ -5,6 +5,6 @@
 function solve(N):
     let total = 0
     declare result
-    AI_ASSIST { sum the decimal digits of N into total and return it as a
-                binary string }
+    sum the decimal digits of N into total and return it as a
+                binary string
 end function

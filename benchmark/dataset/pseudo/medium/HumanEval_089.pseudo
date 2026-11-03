@@ -5,8 +5,8 @@
 //           encrypt("gf") -> "kj"; encrypt("et") -> "ix"
 function encrypt(s):
     let out = ""
-    AI_ASSIST { append each character of s to out shifted 4 letters
+    append each character of s to out shifted 4 letters
                 forward in the alphabet (wrapping), or unchanged if it
-                is not a letter }
+                is not a letter
     return out
 end function

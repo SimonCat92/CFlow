@@ -4,5 +4,5 @@
 // Examples: words_in_sentence("This is a test") -> "is";
 //           words_in_sentence("lets go for swimming") -> "go for"
 function words_in_sentence(sentence):
-    AI_ASSIST { return the prime-length words of sentence, space-joined }
+    return the prime-length words of sentence, space-joined
 end function

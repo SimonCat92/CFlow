@@ -9,8 +9,8 @@ function fix_spaces(text):
     let new_text = ""
     let start = 0
     let end = 0
-    AI_ASSIST { scan text tracking space runs in start/end; emit "_" per
+    scan text tracking space runs in start/end; emit "_" per
                 space (runs of 1-2) or "-" (runs of 3+), characters
-                unchanged, into new_text }
+                unchanged, into new_text
     return new_text
 end function

@@ -11,7 +11,7 @@ function is_nested(s):
         if s[i] == "[": append i to opening
         else: append i to closing
     end for
-    AI_ASSIST { scan closings from the end; for each opening index that is
+    scan closings from the end; for each opening index that is
                 followed by a still-unmatched closing index, count one
-                match; return true if at least 2 matches exist }
+                match; return true if at least 2 matches exist
 end function

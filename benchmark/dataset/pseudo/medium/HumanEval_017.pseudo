@@ -6,7 +6,7 @@
 function parse_music(music_string):
     let beats = { "o": 4, "o|": 2, ".|": 1 }
     let result = empty list
-    AI_ASSIST { for each non-empty token of music_string, append its
-                beats value to result }
+    for each non-empty token of music_string, append its
+                beats value to result
     return result
 end function

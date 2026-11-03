@@ -7,6 +7,6 @@
 function total_match(lst1, lst2):
     let l1 = 0
     let l2 = 0
-    AI_ASSIST { sum the string lengths of lst1 into l1 and of lst2 into l2,
-                then return lst1 if l1 <= l2 else lst2 }
+    sum the string lengths of lst1 into l1 and of lst2 into l2,
+                then return lst1 if l1 <= l2 else lst2
 end function

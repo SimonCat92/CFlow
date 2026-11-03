@@ -4,5 +4,5 @@
 // Compute the n-th element efficiently, without recursion.
 // Examples: fib4(5) -> 4; fib4(6) -> 8; fib4(7) -> 14
 function fib4(n):
-    AI_ASSIST { return the n-th Fib4 number iteratively }
+    return the n-th Fib4 number iteratively
 end function

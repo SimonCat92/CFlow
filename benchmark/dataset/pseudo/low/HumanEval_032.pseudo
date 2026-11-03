@@ -16,6 +16,6 @@ end function
 // guarantees a real root exists. Return one x such that poly(x) == 0.
 // Examples: find_zero([1, 2]) -> -0.5;  find_zero([-6, 11, -6, 1]) -> 1.0
 function find_zero(xs):
-    AI_ASSIST { find and return one root of poly(xs, x); any sound method
-                such as bracketing plus bisection }
+    find and return one root of poly(xs, x); any sound method
+                such as bracketing plus bisection
 end function

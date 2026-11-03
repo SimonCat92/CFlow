@@ -4,6 +4,6 @@
 // Examples: is_bored("Hello world") -> 0;
 //           is_bored("The sky is blue. The sun is shining. I love this weather") -> 1
 function is_bored(S):
-    AI_ASSIST { count the sentences of S (split on ".", "?", "!") that
-                start with the word "I" }
+    count the sentences of S (split on ".", "?", "!") that
+                start with the word "I"
 end function

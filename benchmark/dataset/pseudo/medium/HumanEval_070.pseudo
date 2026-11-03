@@ -7,7 +7,7 @@
 function strange_sort_list(lst):
     let res = empty list
     let take_min = true
-    AI_ASSIST { repeatedly move the minimum (take_min) or maximum element
-                of the remaining list into res, alternating }
+    repeatedly move the minimum (take_min) or maximum element
+                of the remaining list into res, alternating
     return res
 end function

@@ -1,0 +1,21 @@
+Solution {
+    // HumanEval/149: sorted_list_sum
+    // Delete the strings with odd lengths, then return the list sorted
+    // ascending by word length (ties alphabetical).
+    // Examples: sorted_list_sum(["aa", "a", "aaa"]) -> ["aa"];
+    //           sorted_list_sum(["ab", "a", "aaa", "cd"]) -> ["ab", "cd"]
+    fn sorted_list_sum(lst) {
+        new_lst = []
+        for each w in lst {
+            if (length(w) mod 2 == 0) {
+                new_lst.push(w)
+            }
+        }
+        sort new_lst ascending by word length, with alphabetical
+                    order for equal lengths
+        return new_lst
+    }
+    
+}
+
+Solution |> transpile(Python)

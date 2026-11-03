@@ -5,7 +5,7 @@
 //           words_string("One, two, three") -> ["One","two","three"]
 function words_string(s):
     let words = empty list
-    AI_ASSIST { replace commas with spaces, then split on whitespace into
-                words; return words }
+    replace commas with spaces, then split on whitespace into
+                words; return words
     return words
 end function

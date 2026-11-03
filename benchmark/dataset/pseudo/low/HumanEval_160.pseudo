@@ -3,6 +3,6 @@
 // (operators are +, -, *, //, **) and return its evaluation.
 // Example: do_algebra(["+","*","-"], [2,3,4,5]) -> 9  // 2+3*4-5
 function do_algebra(op, operand):
-    AI_ASSIST { evaluate the expression formed by interleaving operands
-                and operators with standard precedence }
+    evaluate the expression formed by interleaving operands
+                and operators with standard precedence
 end function

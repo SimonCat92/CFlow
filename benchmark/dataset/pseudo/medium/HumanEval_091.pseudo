@@ -5,7 +5,7 @@
 //           is_bored("The sky is blue. The sun is shining. I love this weather") -> 1
 function is_bored(S):
     let count = 0
-    AI_ASSIST { split S into sentences on ".", "?", "!" and count into
-                count those starting with "I " }
+    split S into sentences on ".", "?", "!" and count into
+                count those starting with "I "
     return count
 end function

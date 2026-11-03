@@ -6,7 +6,7 @@
 //           intersection((-1,1), (0,4)) -> "NO";
 //           intersection((-3,-1), (-5,5)) -> "YES"
 function is_prime(num):
-    AI_ASSIST { return true if num is prime }
+    return true if num is prime
 end function
 
 function intersection(interval1, interval2):

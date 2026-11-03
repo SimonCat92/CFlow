@@ -6,6 +6,6 @@
 function monotonic(l):
     declare inc
     declare dec
-    AI_ASSIST { determine whether l is non-decreasing or non-increasing
-                and return true in either case }
+    determine whether l is non-decreasing or non-increasing
+                and return true in either case
 end function

@@ -5,6 +5,6 @@
 // Example: order_by_points([1, 11, -1, -11, -12]) -> [-1, -11, 1, -12, 11];
 //          order_by_points([]) -> []
 function order_by_points(nums):
-    AI_ASSIST { return nums sorted by signed digit sum, ties in original
-                order }
+    return nums sorted by signed digit sum, ties in original
+                order
 end function

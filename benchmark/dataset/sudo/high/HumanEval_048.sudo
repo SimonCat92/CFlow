@@ -1,0 +1,17 @@
+Solution {
+    // HumanEval/48: is_palindrome
+    // Checks if the given string is a palindrome.
+    // Examples: is_palindrome("") -> true; is_palindrome("aba") -> true;
+    //           is_palindrome("aaaaa") -> true; is_palindrome("zbcd") -> false
+    fn is_palindrome(text) {
+        n = length(text)
+        for i in 0..(n - 1) {
+            if the i-th character of text differs from the i-th
+                        character counting from the end, return false
+        }
+        return true
+    }
+    
+}
+
+Solution |> transpile(Python)

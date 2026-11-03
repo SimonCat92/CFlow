@@ -5,5 +5,5 @@
 //           pairs_sum_to_zero([2,4,-5,3,5,7]) -> true;
 //           pairs_sum_to_zero([1]) -> false
 function pairs_sum_to_zero(l):
-    AI_ASSIST { return true if some pair of distinct elements sums to 0 }
+    return true if some pair of distinct elements sums to 0
 end function

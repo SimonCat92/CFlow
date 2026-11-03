@@ -1,0 +1,29 @@
+Solution {
+    // HumanEval/107: even_odd_palindrome
+    // Count the even and odd integer palindromes in the range 1..n
+    // inclusive (1 <= n <= 1000); return them as a tuple (even, odd).
+    // Examples: even_odd_palindrome(3) -> (1, 2);
+    //           even_odd_palindrome(12) -> (4, 6)
+    fn is_palindrome(k) {
+        return true if the decimal representation of k reads the
+                    same forwards and backwards
+    }
+    
+    fn even_odd_palindrome(n) {
+        even_count = 0
+        odd_count = 0
+        for i in 1..n {
+            if (is_palindrome(i)) {
+                if (i mod 2 == 0) {
+                    even_count += 1
+                } else {
+                    odd_count += 1
+                }
+            }
+        }
+        return (even_count, odd_count)
+    }
+    
+}
+
+Solution |> transpile(Python)

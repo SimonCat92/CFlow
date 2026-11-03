@@ -12,8 +12,8 @@ function tri(n):
         if i mod 2 == 0:
             append i / 2 + 1 to my_tri
         else:
-            AI_ASSIST { append my_tri[i-1] + my_tri[i-2] + (i+3)/2, where
-                        the (i+3)/2 term is tri(i+1) since i+1 is even }
+            append my_tri[i-1] + my_tri[i-2] + (i+3)/2, where
+                        the (i+3)/2 term is tri(i+1) since i+1 is even
         end if
     end for
     return my_tri

@@ -8,8 +8,8 @@ function get_closest_vowel(word):
     if length(word) < 3: return ""
     let vowels = empty set   // a,e,i,o,u in both cases
     for i from length(word) - 2 down to 1:
-        AI_ASSIST { if word[i] is in vowels and word[i-1] and word[i+1]
-                    are not, return word[i] }
+        if word[i] is in vowels and word[i-1] and word[i+1]
+                    are not, return word[i]
     end for
     return ""
 end function

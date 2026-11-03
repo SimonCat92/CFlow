@@ -17,5 +17,5 @@ function make_palindrome(s):
     if length(s) == 0: return ""
     let i = 0
     while not is_palindrome(substring(s, i)): increment i
-    AI_ASSIST { return s plus the reverse of the prefix s[0..i) }
+    return s plus the reverse of the prefix s[0..i)
 end function

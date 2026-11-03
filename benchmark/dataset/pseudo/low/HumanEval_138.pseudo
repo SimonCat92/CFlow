@@ -5,5 +5,5 @@
 //           is_equal_to_sum_even(6) -> false;
 //           is_equal_to_sum_even(8) -> true
 function is_equal_to_sum_even(n):
-    AI_ASSIST { return true iff n is the sum of 4 positive even numbers }
+    return true iff n is the sum of 4 positive even numbers
 end function

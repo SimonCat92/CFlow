@@ -7,6 +7,6 @@
 //           check_if_last_char_is_a_letter("") -> false
 function check_if_last_char_is_a_letter(txt):
     declare check
-    AI_ASSIST { set check to the last token of txt split on spaces; return
-                true iff check is a single alphabetical character }
+    set check to the last token of txt split on spaces; return
+                true iff check is a single alphabetical character
 end function

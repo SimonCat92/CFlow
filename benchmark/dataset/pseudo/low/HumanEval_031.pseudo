@@ -3,5 +3,5 @@
 // Examples: is_prime(6) -> false; is_prime(101) -> true;
 //           is_prime(1) -> false; is_prime(13441) -> true
 function is_prime(n):
-    AI_ASSIST { return true if n is prime }
+    return true if n is prime
 end function

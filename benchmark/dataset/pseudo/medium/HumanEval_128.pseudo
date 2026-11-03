@@ -6,6 +6,6 @@
 function prod_signs(arr):
     declare prod
     let magsum = 0
-    AI_ASSIST { return null if empty; compute prod of the element signs
-                and the magnitude sum, return prod * magsum }
+    return null if empty; compute prod of the element signs
+                and the magnitude sum, return prod * magsum
 end function

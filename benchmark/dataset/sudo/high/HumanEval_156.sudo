@@ -1,0 +1,27 @@
+Solution {
+    // HumanEval/156: int_to_mini_roman
+    // Convert a positive integer (1 <= num <= 1000) to its Roman numeral in
+    // lowercase.
+    // Examples: int_to_mini_roman(19) -> "xix"; int_to_mini_roman(152) -> "clii";
+    //           int_to_mini_roman(426) -> "cdxxvi"
+    fn int_to_mini_roman(number) {
+        num = []   // values: 1,4,5,9,10,40,50,90,100,400,500,900,1000
+        sym = []   // symbols: I,IV,V,IX,X,XL,L,XC,C,CD,D,CM,M
+        fill num and sym with the numeral table above
+        i = 12
+        res = ""
+        while (number > 0) {
+            div = number / num[i]
+            number = number mod num[i]
+            while (div > 0) {
+                res = res + sym[i]
+                div -= 1
+            }
+            i -= 1
+        }
+        return lower(res)
+    }
+    
+}
+
+Solution |> transpile(Python)

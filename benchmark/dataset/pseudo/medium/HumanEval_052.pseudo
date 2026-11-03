@@ -4,6 +4,6 @@
 //           below_threshold([1,20,4,10], 5) -> false
 function below_threshold(l, t):
     let ok = true
-    AI_ASSIST { check every element of l against t, updating ok }
+    check every element of l against t, updating ok
     return ok
 end function

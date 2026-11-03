@@ -1,0 +1,10 @@
+// HumanEval/77: iscube
+// Return true if integer a is the cube of some integer (input valid,
+// may be negative).
+// Examples: iscube(1) -> true; iscube(2) -> false; iscube(-1) -> true;
+//           iscube(64) -> true; iscube(0) -> true; iscube(180) -> false
+fn bool iscube(int a) {
+    int m = abs(a);
+    int r = round(pow(m, 1.0 / 3.0));
+    return r * r * r == m;
+}

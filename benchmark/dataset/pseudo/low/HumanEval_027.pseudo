@@ -2,5 +2,5 @@
 // Flip lowercase characters to uppercase and vice versa.
 // Example: flip_case("Hello") -> "hELLO"
 function flip_case(s):
-    AI_ASSIST { return s with the case of every character flipped }
+    return s with the case of every character flipped
 end function

@@ -4,7 +4,7 @@
 function unique(l):
     let seen = empty set
     let result = empty list
-    AI_ASSIST { collect the distinct elements of l into result and return
-                it sorted ascending }
+    collect the distinct elements of l into result and return
+                it sorted ascending
     return result
 end function

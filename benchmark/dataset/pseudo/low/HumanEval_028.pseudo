@@ -2,5 +2,5 @@
 // Concatenate a list of strings into a single string.
 // Examples: concatenate([]) -> ""; concatenate(["a","b","c"]) -> "abc"
 function concatenate(strings):
-    AI_ASSIST { return all strings concatenated in order }
+    return all strings concatenated in order
 end function

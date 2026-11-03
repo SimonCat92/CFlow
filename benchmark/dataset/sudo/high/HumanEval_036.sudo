@@ -1,0 +1,18 @@
+Solution {
+    // HumanEval/36: fizz_buzz
+    // Return the number of times the digit 7 appears in integers below n
+    // that are divisible by 11 or 13.
+    // Examples: fizz_buzz(50) -> 0; fizz_buzz(78) -> 2; fizz_buzz(79) -> 3
+    fn fizz_buzz(n) {
+        count = 0
+        for i in 0..(n - 1) {
+            if (i mod 11 == 0 || i mod 13 == 0) {
+                add to count how many '7' digits i contains
+            }
+        }
+        return count
+    }
+    
+}
+
+Solution |> transpile(Python)

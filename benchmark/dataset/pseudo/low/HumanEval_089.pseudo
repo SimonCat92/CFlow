@@ -4,6 +4,6 @@
 // Examples: encrypt("hi") -> "lm"; encrypt("asdfghjkl") -> "ewhjklnop";
 //           encrypt("gf") -> "kj"; encrypt("et") -> "ix"
 function encrypt(s):
-    AI_ASSIST { return s with every letter shifted 4 positions forward in
-                the alphabet, wrapping around }
+    return s with every letter shifted 4 positions forward in
+                the alphabet, wrapping around
 end function

@@ -1,0 +1,19 @@
+Solution {
+    // HumanEval/89: encrypt
+    // Encrypt the string by rotating every letter 4 positions down the
+    // alphabet (wrapping around); non-letters stay unchanged.
+    // Examples: encrypt("hi") -> "lm"; encrypt("asdfghjkl") -> "ewhjklnop";
+    //           encrypt("gf") -> "kj"; encrypt("et") -> "ix"
+    fn encrypt(s) {
+        out = ""
+        for each c in s {
+            if c is a lowercase letter, append to out the letter 4
+                        positions ahead in the alphabet (wrapping around);
+                        otherwise append c unchanged
+        }
+        return out
+    }
+    
+}
+
+Solution |> transpile(Python)

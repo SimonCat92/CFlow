@@ -9,7 +9,7 @@ function prod_signs(arr):
     let magsum = 0
     for each v in arr:
         magsum = magsum + abs(v)
-        AI_ASSIST { multiply prod by 0 if v == 0, by -1 if v < 0 }
+        multiply prod by 0 if v == 0, by -1 if v < 0
     end for
     return prod * magsum
 end function

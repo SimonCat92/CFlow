@@ -3,5 +3,5 @@
 // if none exists (also -1 when x > y).
 // Examples: choose_num(12, 15) -> 14; choose_num(13, 12) -> -1
 function choose_num(x, y):
-    AI_ASSIST { return the largest even integer in [x, y], or -1 }
+    return the largest even integer in [x, y], or -1
 end function

@@ -5,6 +5,6 @@
 // Examples: anti_shuffle("Hi") -> "Hi"; anti_shuffle("hello") -> "ehllo";
 //           anti_shuffle("Hello World!!!") -> "Hello !!!Wdlor"
 function anti_shuffle(s):
-    AI_ASSIST { return s with the characters of every space-separated word
-                sorted ascending by ASCII, keeping the spaces }
+    return s with the characters of every space-separated word
+                sorted ascending by ASCII, keeping the spaces
 end function

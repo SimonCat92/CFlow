@@ -4,8 +4,8 @@
 // Examples: even_odd_palindrome(3) -> (1, 2);
 //           even_odd_palindrome(12) -> (4, 6)
 function is_palindrome(k):
-    AI_ASSIST { return true if the decimal representation of k reads the
-                same forwards and backwards }
+    return true if the decimal representation of k reads the
+                same forwards and backwards
 end function
 
 function even_odd_palindrome(n):

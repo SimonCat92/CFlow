@@ -1,0 +1,12 @@
+// HumanEval/82: prime_length
+// Return true if the string's length is a prime number.
+// Examples: prime_length("Hello") -> true; prime_length("abcdcba") -> true;
+//           prime_length("kittens") -> true; prime_length("orange") -> false
+fn bool prime_length(string s) {
+    int l = s.length();
+    if (l < 2) { return false; }
+    for (int i = 2; i < l; i++) {
+        if (l % i == 0) { return false; }
+    }
+    return true;
+}

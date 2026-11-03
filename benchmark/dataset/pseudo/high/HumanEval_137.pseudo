@@ -7,8 +7,8 @@
 function compare_one(a, b):
     let fa = 0.0
     let fb = 0.0
-    AI_ASSIST { parse a into fa and b into fb, accepting strings whose
-                decimal separator may be "," as well as "." }
+    parse a into fa and b into fb, accepting strings whose
+                decimal separator may be "," as well as "."
     if fa == fb: return none
     if fa > fb: return a
     return b

@@ -13,7 +13,7 @@ function get_row(lst, x):
             if lst[i][j] == x: append (i, j) to coords
         end for
     end for
-    AI_ASSIST { sort coords by row ascending, then by column descending
-                within the same row }
+    sort coords by row ascending, then by column descending
+                within the same row
     return coords
 end function

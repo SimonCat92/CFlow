@@ -4,6 +4,6 @@
 // Example: truncate_number(3.5) -> 0.5
 function truncate_number(number):
     let frac = 0.0
-    AI_ASSIST { set frac to the fractional part of number }
+    set frac to the fractional part of number
     return frac
 end function

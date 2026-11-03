@@ -5,6 +5,6 @@
 // number of collisions.
 function car_race_collision(n):
     declare collisions
-    AI_ASSIST { every left-to-right car meets every right-to-left car once;
-                compute collisions and return it }
+    every left-to-right car meets every right-to-left car once;
+                compute collisions and return it
 end function

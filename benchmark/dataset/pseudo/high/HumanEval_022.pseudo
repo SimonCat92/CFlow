@@ -5,7 +5,7 @@
 function filter_integers(values):
     let result = empty list
     for each v in values:
-        AI_ASSIST { if v is an integer, append it to result }
+        if v is an integer, append it to result
     end for
     return result
 end function

@@ -6,6 +6,6 @@
 function iscube(a):
     let m = abs(a)
     declare r
-    AI_ASSIST { let r be the integer nearest the cube root of m, and
-                return whether r cubed equals m }
+    let r be the integer nearest the cube root of m, and
+                return whether r cubed equals m
 end function

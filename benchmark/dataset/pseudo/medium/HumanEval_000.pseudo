@@ -5,7 +5,7 @@
 //           has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3) -> true
 function has_close_elements(numbers, threshold):
     let n = length(numbers)
-    AI_ASSIST { check every pair of distinct elements of numbers; if any
+    check every pair of distinct elements of numbers; if any
                 pair differs by less than threshold return true, else
-                return false }
+                return false
 end function

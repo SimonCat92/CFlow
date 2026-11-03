@@ -1,0 +1,28 @@
+Solution {
+    // HumanEval/106: f
+    // Return a list of size n where element i (i starts at 1) is i!
+    // (factorial) if i is even, or the sum 1..i otherwise.
+    // Example: f(5) -> [1, 2, 6, 24, 15]
+    fn f(n) {
+        ret = []
+        for i in 1..n {
+            x = 0   // int
+            if (i mod 2 == 0) {
+                x = 1
+                for j in 1..i {
+                    x = x * j
+                }
+            } else {
+                x = 0
+                for j in 1..i {
+                    x = x + j
+                }
+            }
+            ret.push(x)
+        }
+        return ret
+    }
+    
+}
+
+Solution |> transpile(Python)

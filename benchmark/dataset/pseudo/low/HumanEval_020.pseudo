@@ -4,6 +4,6 @@
 // Examples: find_closest_elements([1.0,2.0,3.0,4.0,5.0,2.2]) -> (2.0, 2.2);
 //           find_closest_elements([1.0,2.0,3.0,4.0,5.0,2.0]) -> (2.0, 2.0)
 function find_closest_elements(numbers):
-    AI_ASSIST { find the pair of elements with the smallest absolute
-                difference and return them ascending as (smaller, larger) }
+    find the pair of elements with the smallest absolute
+                difference and return them ascending as (smaller, larger)
 end function

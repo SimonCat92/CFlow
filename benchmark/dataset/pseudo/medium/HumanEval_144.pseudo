@@ -6,6 +6,6 @@
 function simplify(x, n):
     declare numerator
     declare denom
-    AI_ASSIST { parse both fractions and compute numerator/denominator of
-                the product; return whether it is whole }
+    parse both fractions and compute numerator/denominator of
+                the product; return whether it is whole
 end function

@@ -8,7 +8,7 @@ function by_length(arr):
     let names = empty map   // 1->"One", ..., 9->"Nine"
     let sorted_arr = empty list
     let new_arr = empty list
-    AI_ASSIST { sort arr descending into sorted_arr, then append to
-                new_arr the name of each value between 1 and 9 }
+    sort arr descending into sorted_arr, then append to
+                new_arr the name of each value between 1 and 9
     return new_arr
 end function

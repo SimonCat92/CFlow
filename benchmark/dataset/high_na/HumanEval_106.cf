@@ -1,0 +1,19 @@
+// HumanEval/106: f
+// Return a list of size n where element i (i starts at 1) is i!
+// (factorial) if i is even, or the sum 1..i otherwise.
+// Example: f(5) -> [1, 2, 6, 24, 15]
+fn list<int> f(int n) {
+    list<int> ret;
+    for (int i = 1; i <= n; i++) {
+        int x;
+        if (i % 2 == 0) {
+            x = 1;
+            for (int j = 1; j <= i; j++) { x *= j; }
+        } else {
+            x = 0;
+            for (int j = 1; j <= i; j++) { x += j; }
+        }
+        ret.add(x);
+    }
+    return ret;
+}

@@ -5,7 +5,7 @@
 function solve(N):
     let total = 0
     for each c in str(N):
-        AI_ASSIST { add the numeric value of digit character c to total }
+        add the numeric value of digit character c to total
     end for
     return binary(total)
 end function

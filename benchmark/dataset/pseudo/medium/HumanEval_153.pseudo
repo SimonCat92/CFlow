@@ -8,7 +8,7 @@
 function Strongest_Extension(class_name, extensions):
     let strong = extensions[0]
     declare my_val
-    AI_ASSIST { compute strengths (uppercase minus lowercase count), keep
+    compute strengths (uppercase minus lowercase count), keep
                 the first extension with the highest strength in strong,
-                and return class_name + "." + strong }
+                and return class_name + "." + strong
 end function

@@ -8,6 +8,6 @@ function move_one_ball(arr):
     if length(arr) == 0: return true
     let sorted_arr = copy(arr)
     sort(sorted_arr)
-    AI_ASSIST { rotate arr so it begins at its minimum element, then
-                return whether the rotation equals sorted_arr }
+    rotate arr so it begins at its minimum element, then
+                return whether the rotation equals sorted_arr
 end function

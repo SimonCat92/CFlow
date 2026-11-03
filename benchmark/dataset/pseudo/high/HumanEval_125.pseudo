@@ -8,12 +8,12 @@
 function split_words(txt):
     if txt contains " ": return split_whitespace(txt)
     if txt contains ",":
-        AI_ASSIST { return txt split on commas }
+        return txt split on commas
     end if
     let count = 0
     for each c in txt:
-        AI_ASSIST { if c is a lowercase letter at an odd alphabet position
-                    (a=0, b=1, ...), increment count }
+        if c is a lowercase letter at an odd alphabet position
+                    (a=0, b=1, ...), increment count
     end for
     return count
 end function

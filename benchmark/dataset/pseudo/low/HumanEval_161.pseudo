@@ -4,6 +4,6 @@
 // Examples: solve("1234") -> "4321"; solve("ab") -> "AB";
 //           solve("#a@C") -> "#A@c"
 function solve(s):
-    AI_ASSIST { return s with letter cases flipped, or reversed if it has
-                no letters }
+    return s with letter cases flipped, or reversed if it has
+                no letters
 end function

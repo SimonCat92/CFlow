@@ -11,8 +11,8 @@ function minSubArraySum(nums):
         if s > max_sum: max_sum = s
     end for
     if max_sum == 0:
-        AI_ASSIST { set max_sum to the largest value among -num for num in
-                    nums (the all-negative case) }
+        set max_sum to the largest value among -num for num in
+                    nums (the all-negative case)
     end if
     return -max_sum
 end function

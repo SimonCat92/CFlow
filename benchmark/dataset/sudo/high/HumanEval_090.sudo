@@ -1,0 +1,18 @@
+Solution {
+    // HumanEval/90: next_smallest
+    // Return the 2nd smallest element of the list, or null if there is no
+    // such element.
+    // Examples: next_smallest([1,2,3,4,5]) -> 2; next_smallest([5,1,4,3,2]) -> 2;
+    //           next_smallest([]) -> null; next_smallest([1,1]) -> null
+    fn next_smallest(lst) {
+        vals = {}
+        for each v in lst {
+            vals.push(v)
+        }
+        return the 2nd smallest value in vals, or null if vals has
+                    fewer than 2 elements
+    }
+    
+}
+
+Solution |> transpile(Python)

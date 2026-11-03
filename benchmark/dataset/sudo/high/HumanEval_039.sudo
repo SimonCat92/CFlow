@@ -1,0 +1,28 @@
+Solution {
+    // HumanEval/39: prime_fib
+    // Return the n-th number that is both a Fibonacci number and prime.
+    // Examples: prime_fib(1) -> 2; prime_fib(2) -> 3; prime_fib(3) -> 5;
+    //           prime_fib(4) -> 13; prime_fib(5) -> 89
+    fn is_prime(p) {
+        return true if p is prime
+    }
+    
+    fn prime_fib(n) {
+        a = 0
+        b = 1
+        while (true) {
+            next = a + b
+            a = b
+            b = next
+            if (is_prime(b)) {
+                n -= 1
+                if (n == 0) {
+                    return b
+                }
+            }
+        }
+    }
+    
+}
+
+Solution |> transpile(Python)

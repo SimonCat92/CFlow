@@ -6,7 +6,7 @@
 //          -> ["A+","B","C-","C","A-"]
 function numerical_letter_grade(grades):
     let letter_grade = empty list
-    AI_ASSIST { for each gpa in grades, append the matching letter grade
-                per the table above }
+    for each gpa in grades, append the matching letter grade
+                per the table above
     return letter_grade
 end function

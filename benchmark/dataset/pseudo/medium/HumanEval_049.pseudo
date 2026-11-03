@@ -4,6 +4,6 @@
 //           modp(100, 101) -> 1
 function modp(n, p):
     let ret = 1 mod p
-    AI_ASSIST { compute 2^n mod p into ret without overflowing }
+    compute 2^n mod p into ret without overflowing
     return ret
 end function

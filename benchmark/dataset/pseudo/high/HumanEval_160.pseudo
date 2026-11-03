@@ -7,6 +7,6 @@ function do_algebra(op, operand):
     for i from 0 to length(op) - 1:
         expression = expression + op[i] + str(operand[i + 1])
     end for
-    AI_ASSIST { evaluate expression honoring standard precedence
-                (**, then * and //, then + and -) and return the result }
+    evaluate expression honoring standard precedence
+                (**, then * and //, then + and -) and return the result
 end function

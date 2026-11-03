@@ -10,10 +10,10 @@ function fix_spaces(text):
     let start = 0
     let end = 0
     for i from 0 to length(text) - 1:
-        AI_ASSIST { grow the pending space run end when text[i] is a space;
+        grow the pending space run end when text[i] is a space;
                     on a non-space, flush the run as "_" per space (1-2)
-                    or "-" (3+), append the character, and reset the run }
+                    or "-" (3+), append the character, and reset the run
     end for
-    AI_ASSIST { flush a trailing space run the same way }
+    flush a trailing space run the same way
     return new_text
 end function

@@ -3,5 +3,5 @@
 // Examples: remove_vowels("") -> ""; remove_vowels("abcdef") -> "bcdf";
 //           remove_vowels("aaBAA") -> "B"; remove_vowels("zbcd") -> "zbcd"
 function remove_vowels(text):
-    AI_ASSIST { return text with all vowels (both cases) removed }
+    return text with all vowels (both cases) removed
 end function

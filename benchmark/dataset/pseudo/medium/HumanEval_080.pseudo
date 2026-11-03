@@ -6,6 +6,6 @@
 //           is_happy("adb") -> true; is_happy("xyy") -> false
 function is_happy(s):
     let n = length(s)
-    AI_ASSIST { return false if n < 3 or any 3 consecutive characters of
-                s are not all distinct, else true }
+    return false if n < 3 or any 3 consecutive characters of
+                s are not all distinct, else true
 end function

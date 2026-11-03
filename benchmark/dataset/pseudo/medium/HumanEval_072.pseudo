@@ -6,6 +6,6 @@
 function will_it_fly(q, w):
     let total = 0
     declare balanced
-    AI_ASSIST { sum q into total, check whether q is a palindrome into
-                balanced, and return balanced && total <= w }
+    sum q into total, check whether q is a palindrome into
+                balanced, and return balanced && total <= w
 end function

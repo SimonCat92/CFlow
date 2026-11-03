@@ -7,8 +7,8 @@
 function double_the_difference(lst):
     let total = 0
     for each i in lst:
-        AI_ASSIST { if i is an integer, positive and odd, add i * i to
-                    total }
+        if i is an integer, positive and odd, add i * i to
+                    total
     end for
     return total
 end function

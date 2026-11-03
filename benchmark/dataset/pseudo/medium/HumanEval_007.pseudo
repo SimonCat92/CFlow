@@ -5,7 +5,7 @@
 //           -> ["abc","bacd","array"]
 function filter_by_substring(strings, substring):
     let result = empty list
-    AI_ASSIST { append to result every element of strings that contains
-                substring }
+    append to result every element of strings that contains
+                substring
     return result
 end function

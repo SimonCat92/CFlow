@@ -4,5 +4,5 @@
 // Examples: iscube(1) -> true; iscube(2) -> false; iscube(-1) -> true;
 //           iscube(64) -> true; iscube(0) -> true; iscube(180) -> false
 function iscube(a):
-    AI_ASSIST { return true if a is a perfect cube }
+    return true if a is a perfect cube
 end function

@@ -6,7 +6,7 @@
 //           anti_shuffle("Hello World!!!") -> "Hello !!!Wdlor"
 function anti_shuffle(s):
     let result = ""
-    AI_ASSIST { rebuild s into result keeping word order and spaces, but
-                sorting each word's characters ascending by ASCII }
+    rebuild s into result keeping word order and spaces, but
+                sorting each word's characters ascending by ASCII
     return result
 end function

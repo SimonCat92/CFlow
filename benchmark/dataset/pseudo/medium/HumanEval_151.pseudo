@@ -6,7 +6,7 @@
 //           double_the_difference([9,-2]) -> 81
 function double_the_difference(lst):
     let total = 0
-    AI_ASSIST { add i*i to total for every element i that is a positive
-                odd integer }
+    add i*i to total for every element i that is a positive
+                odd integer
     return total
 end function

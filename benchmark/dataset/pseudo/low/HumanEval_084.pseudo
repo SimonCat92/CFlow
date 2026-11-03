@@ -3,5 +3,5 @@
 // decimal digits expressed in binary (as a string).
 // Examples: solve(1000) -> "1"; solve(150) -> "110"; solve(147) -> "1100"
 function solve(N):
-    AI_ASSIST { return the binary string of the sum of N's decimal digits }
+    return the binary string of the sum of N's decimal digits
 end function

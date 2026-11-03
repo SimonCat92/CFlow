@@ -6,6 +6,6 @@
 //           move_one_ball([3,5,4,1,2]) -> false
 function move_one_ball(arr):
     let sorted_arr = empty list
-    AI_ASSIST { return true if arr is empty or the rotation of arr that
-                starts at its smallest element equals the sorted copy }
+    return true if arr is empty or the rotation of arr that
+                starts at its smallest element equals the sorted copy
 end function

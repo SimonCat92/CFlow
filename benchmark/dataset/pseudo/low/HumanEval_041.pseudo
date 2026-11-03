@@ -4,6 +4,6 @@
 // Cars are infinitely sturdy: they pass through each other. Return the
 // number of collisions.
 function car_race_collision(n):
-    AI_ASSIST { return the number of left-to-right vs right-to-left
-                collisions }
+    return the number of left-to-right vs right-to-left
+                collisions
 end function

@@ -4,6 +4,6 @@
 // Return the list of the separate group strings.
 // Example: separate_paren_groups("( ) (( )) (( )( ))") -> ["()", "(())", "(()())"]
 function separate_paren_groups(paren_string):
-    AI_ASSIST { split paren_string into its balanced top-level parenthesis
-                groups, ignoring spaces, and return them as a list }
+    split paren_string into its balanced top-level parenthesis
+                groups, ignoring spaces, and return them as a list
 end function

@@ -7,7 +7,7 @@ function parse_nested_parens(paren_string):
     let result = empty list
     for each g in split paren_string on " ":
         if g == "": continue
-        AI_ASSIST { append to result the deepest nesting level of g }
+        append to result the deepest nesting level of g
     end for
     return result
 end function

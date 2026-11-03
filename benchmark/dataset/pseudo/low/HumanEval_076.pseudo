@@ -3,5 +3,5 @@
 // Examples: is_simple_power(1,4) -> true; is_simple_power(8,2) -> true;
 //           is_simple_power(3,2) -> false; is_simple_power(3,1) -> false
 function is_simple_power(x, n):
-    AI_ASSIST { return true if x equals some integer power of n }
+    return true if x equals some integer power of n
 end function

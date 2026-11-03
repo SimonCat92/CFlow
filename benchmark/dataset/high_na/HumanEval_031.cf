@@ -1,0 +1,11 @@
+// HumanEval/31: is_prime
+// Return true if the given number is prime, false otherwise.
+// Examples: is_prime(6) -> false; is_prime(101) -> true;
+//           is_prime(1) -> false; is_prime(13441) -> true
+fn bool is_prime(int n) {
+    if (n < 2) { return false; }
+    for (int k = 2; k < n; k++) {
+        if (n % k == 0) { return false; }
+    }
+    return true;
+}

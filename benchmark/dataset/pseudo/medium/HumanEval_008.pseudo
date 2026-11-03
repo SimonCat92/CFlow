@@ -5,6 +5,6 @@
 function sum_product(numbers):
     let s = 0
     let p = 1
-    AI_ASSIST { accumulate each n into s (sum) and p (product), then
-                return (s, p) }
+    accumulate each n into s (sum) and p (product), then
+                return (s, p)
 end function

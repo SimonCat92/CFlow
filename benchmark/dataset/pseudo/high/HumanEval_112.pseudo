@@ -6,7 +6,7 @@
 function reverse_delete(s, c):
     let result = ""
     for each ch in s:
-        AI_ASSIST { append ch to result unless ch appears in c }
+        append ch to result unless ch appears in c
     end for
     return (result, result == reverse(result))
 end function

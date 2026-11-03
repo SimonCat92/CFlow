@@ -6,9 +6,9 @@
 function encrypt(s):
     let out = ""
     for each c in s:
-        AI_ASSIST { if c is a lowercase letter, append to out the letter 4
+        if c is a lowercase letter, append to out the letter 4
                     positions ahead in the alphabet (wrapping around);
-                    otherwise append c unchanged }
+                    otherwise append c unchanged
     end for
     return out
 end function

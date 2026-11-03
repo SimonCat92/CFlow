@@ -6,6 +6,6 @@
 //           rounded_avg(10, 20) -> "0b1111"
 function rounded_avg(n, m):
     let summation = 0
-    AI_ASSIST { return -1 if m < n; sum n..m into summation, then return
-                the rounded average as a binary string }
+    return -1 if m < n; sum n..m into summation, then return
+                the rounded average as a binary string
 end function

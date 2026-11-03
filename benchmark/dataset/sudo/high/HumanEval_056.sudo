@@ -1,0 +1,24 @@
+Solution {
+    // HumanEval/56: correct_bracketing
+    // brackets is a string of "<" and ">". Return true if every opening
+    // bracket has a corresponding closing bracket.
+    // Examples: correct_bracketing("<") -> false; correct_bracketing("<>") -> true;
+    //           correct_bracketing("<<><>>") -> true; correct_bracketing("><<>") -> false
+    fn correct_bracketing(brackets) {
+        depth = 0
+        for each b in brackets {
+            if (b == "<") {
+                depth += 1
+            } else {
+                depth -= 1
+            }
+            if (depth < 0) {
+                return false
+            }
+        }
+        return depth == 0
+    }
+    
+}
+
+Solution |> transpile(Python)

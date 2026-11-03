@@ -6,7 +6,7 @@ function fizz_buzz(n):
     let count = 0
     for i from 0 to n - 1:
         if i mod 11 == 0 or i mod 13 == 0:
-            AI_ASSIST { add to count how many '7' digits i contains }
+            add to count how many '7' digits i contains
         end if
     end for
     return count

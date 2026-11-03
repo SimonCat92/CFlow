@@ -1,0 +1,23 @@
+Solution {
+    // HumanEval/57: monotonic
+    // Return true if the list elements are monotonically increasing or
+    // decreasing.
+    // Examples: monotonic([1,2,4,20]) -> true; monotonic([1,20,4,10]) -> false;
+    //           monotonic([4,1,0,-10]) -> true
+    fn monotonic(l) {
+        inc = true
+        dec = true
+        for i in 1..(length(l) - 1) {
+            if (l[i] < l[i - 1]) {
+                inc = false
+            }
+            if (l[i] > l[i - 1]) {
+                dec = false
+            }
+        }
+        return inc || dec
+    }
+    
+}
+
+Solution |> transpile(Python)

@@ -6,9 +6,9 @@
 function encode(message):
     let result = ""
     for each c in message:
-        AI_ASSIST { swap the case of c; if it is now a vowel, replace it
+        swap the case of c; if it is now a vowel, replace it
                     with the letter 2 positions ahead in the alphabet;
-                    append to result }
+                    append to result
     end for
     return result
 end function

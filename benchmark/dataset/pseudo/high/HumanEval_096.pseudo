@@ -5,7 +5,7 @@
 function count_up_to(n):
     let primes = empty list
     for i from 2 to n - 1:
-        AI_ASSIST { if i is prime, append it to primes }
+        if i is prime, append it to primes
     end for
     return primes
 end function

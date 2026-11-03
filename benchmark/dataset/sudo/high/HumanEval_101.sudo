@@ -1,0 +1,15 @@
+Solution {
+    // HumanEval/101: words_string
+    // Split the string into words separated by commas or spaces; return the
+    // words in order.
+    // Examples: words_string("Hi, my name is John") -> ["Hi","my","name","is","John"];
+    //           words_string("One, two, three") -> ["One","two","three"]
+    fn words_string(s) {
+        t = s
+        replace every comma in t with a space
+        return split_whitespace(t)
+    }
+    
+}
+
+Solution |> transpile(Python)

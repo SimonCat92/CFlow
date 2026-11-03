@@ -5,6 +5,6 @@
 function rescale_to_unit(numbers):
     declare lo
     declare hi
-    AI_ASSIST { set lo and hi to the min and max of numbers, then return
-                each x mapped to (x - lo) / (hi - lo) }
+    set lo and hi to the min and max of numbers, then return
+                each x mapped to (x - lo) / (hi - lo)
 end function

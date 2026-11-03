@@ -7,8 +7,8 @@
 function closest_integer(value):
     declare num
     declare res
-    AI_ASSIST { strip trailing zeros from value's decimal part, parse it
+    strip trailing zeros from value's decimal part, parse it
                 into num, and set res to the nearest integer with .5 ties
-                away from zero }
+                away from zero
     return res
 end function

@@ -7,8 +7,8 @@
 function fruit_distribution(s, n):
     let counted = 0
     for each tok in split s on " ":
-        AI_ASSIST { if tok is a decimal number, add its integer value to
-                    counted }
+        if tok is a decimal number, add its integer value to
+                    counted
     end for
     return n - counted
 end function

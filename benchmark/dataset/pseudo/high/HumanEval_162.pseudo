@@ -3,5 +3,5 @@
 // Example: string_to_md5("Hello world") -> "3e25960a79dbc69b674cd4ec67a72c62"
 function string_to_md5(text):
     if text == "": return none
-    AI_ASSIST { return the md5 hex digest of text (ASCII-encoded) }
+    return the md5 hex digest of text (ASCII-encoded)
 end function

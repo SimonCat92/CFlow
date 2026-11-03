@@ -10,10 +10,10 @@ function find_closest_elements(numbers):
     for i from 0 to length(numbers) - 1:
         for j from 0 to length(numbers) - 1:
             if i != j:
-                AI_ASSIST { if this pair is closer than best or none was
+                if this pair is closer than best or none was
                             found yet, record the distance in best, set
                             pair to the two elements ascending, and mark
-                            found }
+                            found
             end if
         end for
     end for

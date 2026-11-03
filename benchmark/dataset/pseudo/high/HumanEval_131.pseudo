@@ -6,8 +6,8 @@ function digits(n):
     let product = 1
     let odd_count = 0
     for each d in str(n):
-        AI_ASSIST { if digit d is odd, multiply product by its value and
-                    increment odd_count }
+        if digit d is odd, multiply product by its value and
+                    increment odd_count
     end for
     if odd_count == 0: return 0
     return product

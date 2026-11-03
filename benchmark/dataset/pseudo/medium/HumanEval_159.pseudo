@@ -7,6 +7,6 @@
 function eat(number, need, remaining):
     declare eaten
     declare left
-    AI_ASSIST { set eaten to number + min(need, remaining) and left to the
-                carrots still in stock; return [eaten, left] }
+    set eaten to number + min(need, remaining) and left to the
+                carrots still in stock; return [eaten, left]
 end function

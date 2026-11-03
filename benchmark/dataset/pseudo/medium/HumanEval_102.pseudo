@@ -4,6 +4,6 @@
 // Examples: choose_num(12, 15) -> 14; choose_num(13, 12) -> -1
 function choose_num(x, y):
     declare result
-    AI_ASSIST { set result to the largest even integer in [x, y], or -1 }
+    set result to the largest even integer in [x, y], or -1
     return result
 end function

@@ -5,6 +5,6 @@
 //           strange_sort_list([5,5,5,5]) -> [5,5,5,5];
 //           strange_sort_list([]) -> []
 function strange_sort_list(lst):
-    AI_ASSIST { return the elements of lst alternating minimum then
-                maximum of the remaining elements }
+    return the elements of lst alternating minimum then
+                maximum of the remaining elements
 end function

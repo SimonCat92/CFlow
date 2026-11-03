@@ -4,7 +4,7 @@
 //           digitSum("abcCd") -> 67; digitSum("helloE") -> 69
 function digitSum(s):
     let total = 0
-    AI_ASSIST { add to total the ASCII code of every uppercase character
-                in s }
+    add to total the ASCII code of every uppercase character
+                in s
     return total
 end function

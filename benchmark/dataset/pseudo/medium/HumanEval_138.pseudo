@@ -6,7 +6,7 @@
 //           is_equal_to_sum_even(8) -> true
 function is_equal_to_sum_even(n):
     declare ok
-    AI_ASSIST { set ok to whether n is even and at least 8 (the minimal
-                sum of 4 positive evens) }
+    set ok to whether n is even and at least 8 (the minimal
+                sum of 4 positive evens)
     return ok
 end function

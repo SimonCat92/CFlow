@@ -4,5 +4,5 @@
 // n is even). Return the stones per level.
 // Example: make_a_pile(3) -> [3, 5, 7]
 function make_a_pile(n):
-    AI_ASSIST { return the list of stone counts for the n levels }
+    return the list of stone counts for the n levels
 end function

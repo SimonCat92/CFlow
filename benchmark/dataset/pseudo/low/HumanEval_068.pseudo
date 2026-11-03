@@ -6,6 +6,6 @@
 // Examples: pluck([4,2,3]) -> [2,1]; pluck([5,0,3,0,4,2]) -> [0,1];
 //           pluck([]) -> []
 function pluck(arr):
-    AI_ASSIST { return [smallest even value, its index] from arr, or [] if
-                none }
+    return [smallest even value, its index] from arr, or [] if
+                none
 end function

@@ -6,14 +6,14 @@
 //           file_name_check("1example.dll") -> "No"
 function file_name_check(file_name):
     let lst = empty list
-    AI_ASSIST { split file_name on "." into lst; if it does not produce
-                exactly 2 parts, return "No" }
+    split file_name on "." into lst; if it does not produce
+                exactly 2 parts, return "No"
     if lst[1] != "txt" and lst[1] != "exe" and lst[1] != "dll": return "No"
     if length(lst[0]) == 0: return "No"
-    AI_ASSIST { if lst[0] does not start with a latin letter, return "No" }
+    if lst[0] does not start with a latin letter, return "No"
     let digits = 0
     for each c in lst[0]:
-        AI_ASSIST { if c is a digit, increment digits }
+        if c is a digit, increment digits
     end for
     if digits > 3: return "No"
     return "Yes"

@@ -7,7 +7,7 @@
 function select_words(s, n):
     let result = empty list
     declare n_consonants
-    AI_ASSIST { for each word of s, count its consonants into n_consonants
-                and append the word to result when n_consonants == n }
+    for each word of s, count its consonants into n_consonants
+                and append the word to result when n_consonants == n
     return result
 end function

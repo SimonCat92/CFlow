@@ -5,6 +5,6 @@
 //           derivative([1,2,3]) -> [2,6]
 function derivative(xs):
     let result = empty list
-    AI_ASSIST { for each index i >= 1 append i * xs[i] to result }
+    for each index i >= 1 append i * xs[i] to result
     return result
 end function

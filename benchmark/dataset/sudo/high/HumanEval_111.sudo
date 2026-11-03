@@ -1,0 +1,27 @@
+Solution {
+    // HumanEval/111: histogram
+    // Given a space-separated string of lowercase letters, return a map of
+    // the letter(s) with the most repetitions to their count. If several
+    // letters tie, return all of them.
+    // Examples: histogram("a b c") -> {"a":1,"b":1,"c":1};
+    //           histogram("a b b a") -> {"a":2,"b":2};
+    //           histogram("b b b b a") -> {"b":4};  histogram("") -> {}
+    fn histogram(test) {
+        counts = {}
+        for each w in test.split(" ") {
+            if (w == "") {
+                continue
+            }
+            if (counts contains w) {
+                counts[w] += 1
+            } else {
+                counts[w] = 1
+            }
+        }
+        return a map containing only the letters whose count
+                    equals the maximum count in counts; empty map if none
+    }
+    
+}
+
+Solution |> transpile(Python)

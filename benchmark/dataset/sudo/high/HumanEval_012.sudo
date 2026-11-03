@@ -1,0 +1,22 @@
+Solution {
+    // HumanEval/12: longest
+    // Return the longest string in the list; the first one on ties, or null
+    // when the list is empty.
+    // Examples: longest([]) -> null; longest(["a","b","c"]) -> "a";
+    //           longest(["a","bb","ccc"]) -> "ccc"
+    fn longest(strings) {
+        if (length(strings) == 0) {
+            return null
+        }
+        best = strings[0]
+        for each s in strings {
+            if (length(s) > length(best)) {
+                best = s
+            }
+        }
+        return best
+    }
+    
+}
+
+Solution |> transpile(Python)

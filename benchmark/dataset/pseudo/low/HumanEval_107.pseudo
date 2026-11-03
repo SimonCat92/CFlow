@@ -4,6 +4,6 @@
 // Examples: even_odd_palindrome(3) -> (1, 2);
 //           even_odd_palindrome(12) -> (4, 6)
 function even_odd_palindrome(n):
-    AI_ASSIST { return (count of even palindromes, count of odd
-                palindromes) among 1..n }
+    return (count of even palindromes, count of odd
+                palindromes) among 1..n
 end function

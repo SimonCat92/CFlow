@@ -4,5 +4,5 @@
 // Examples: derivative([3,1,2,4,5]) -> [1,4,12,20];
 //           derivative([1,2,3]) -> [2,6]
 function derivative(xs):
-    AI_ASSIST { return the coefficient list of the derivative polynomial }
+    return the coefficient list of the derivative polynomial
 end function

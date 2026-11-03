@@ -4,7 +4,7 @@
 // Examples: any_int(5, 2, 7) -> true; any_int(3, 2, 2) -> false;
 //           any_int(3, -2, 1) -> true; any_int(3.6, -2.2, 2) -> false
 function any_int(x, y, z):
-    AI_ASSIST { if x, y or z is not an integer, return false }
+    if x, y or z is not an integer, return false
     if x + y == z or x + z == y or y + z == x: return true
     return false
 end function

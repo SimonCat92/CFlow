@@ -1,0 +1,19 @@
+Solution {
+    // HumanEval/18: how_many_times
+    // Count how many times substring occurs in string, counting overlapping
+    // occurrences.
+    // Examples: how_many_times("", "a") -> 0; how_many_times("aaa", "a") -> 3;
+    //           how_many_times("aaaa", "aa") -> 3
+    fn how_many_times(s, sub) {
+        count = 0
+        for i in 0..(length(s) - length(sub)) {
+            if (substring(s, i, length(sub)) == sub) {
+                count += 1
+            }
+        }
+        return count
+    }
+    
+}
+
+Solution |> transpile(Python)

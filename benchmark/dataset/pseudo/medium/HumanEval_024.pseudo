@@ -4,6 +4,6 @@
 // Example: largest_divisor(15) -> 5
 function largest_divisor(n):
     declare i
-    AI_ASSIST { scan i downward from n - 1 and return the first value that
-                divides n evenly }
+    scan i downward from n - 1 and return the first value that
+                divides n evenly
 end function

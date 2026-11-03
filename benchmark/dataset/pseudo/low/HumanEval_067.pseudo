@@ -5,6 +5,6 @@
 // Examples: fruit_distribution("5 apples and 6 oranges", 19) -> 8;
 //           fruit_distribution("2 apples and 3 oranges", 100) -> 95
 function fruit_distribution(s, n):
-    AI_ASSIST { subtract the apple and orange counts described in s from n
-                and return the mango count }
+    subtract the apple and orange counts described in s from n
+                and return the mango count
 end function

@@ -7,8 +7,8 @@ function factorize(n):
     let fact = empty list
     let i = 2
     while i <= sqrt(n) + 1:
-        AI_ASSIST { while n is divisible by i, append i to fact and divide
-                    n by i; once it is not, increment i }
+        while n is divisible by i, append i to fact and divide
+                    n by i; once it is not, increment i
     end while
     if n > 1: append n to fact
     return fact

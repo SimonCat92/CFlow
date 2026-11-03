@@ -1,0 +1,17 @@
+Solution {
+    // HumanEval/24: largest_divisor
+    // For a given number n, find the largest number that divides n evenly
+    // and is smaller than n.
+    // Example: largest_divisor(15) -> 5
+    fn largest_divisor(n) {
+        for i = (n - 1); i >= 1; i -= 1 {
+            if (n mod i == 0) {
+                return i
+            }
+        }
+        return 1
+    }
+    
+}
+
+Solution |> transpile(Python)

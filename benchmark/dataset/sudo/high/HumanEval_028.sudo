@@ -1,0 +1,11 @@
+Solution {
+    // HumanEval/28: concatenate
+    // Concatenate a list of strings into a single string.
+    // Examples: concatenate([]) -> ""; concatenate(["a","b","c"]) -> "abc"
+    fn concatenate(strings) {
+        return join(strings, "")
+    }
+    
+}
+
+Solution |> transpile(Python)

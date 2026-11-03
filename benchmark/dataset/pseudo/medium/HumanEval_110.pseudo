@@ -6,6 +6,6 @@
 function exchange(lst1, lst2):
     let odd = 0
     let even = 0
-    AI_ASSIST { count odd elements of lst1 into odd and even elements of
-                lst2 into even; return "YES" if even >= odd else "NO" }
+    count odd elements of lst1 into odd and even elements of
+                lst2 into even; return "YES" if even >= odd else "NO"
 end function

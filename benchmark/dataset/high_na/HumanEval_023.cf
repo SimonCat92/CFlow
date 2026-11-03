@@ -1,0 +1,6 @@
+// HumanEval/23: strlen
+// Return the length of the given string.
+// Examples: strlen("") -> 0; strlen("abc") -> 3
+fn int strlen(string s) {
+    return s.length();
+}

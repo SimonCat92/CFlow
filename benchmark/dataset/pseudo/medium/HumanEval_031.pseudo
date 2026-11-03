@@ -4,6 +4,6 @@
 //           is_prime(1) -> false; is_prime(13441) -> true
 function is_prime(n):
     declare k
-    AI_ASSIST { return false if n < 2 or has a divisor k with 2 <= k < n,
-                else true }
+    return false if n < 2 or has a divisor k with 2 <= k < n,
+                else true
 end function

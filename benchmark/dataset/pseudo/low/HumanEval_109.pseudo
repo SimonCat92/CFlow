@@ -5,6 +5,6 @@
 // Examples: move_one_ball([3,4,5,1,2]) -> true;
 //           move_one_ball([3,5,4,1,2]) -> false
 function move_one_ball(arr):
-    AI_ASSIST { return true if some rotation of arr is sorted
-                non-decreasing }
+    return true if some rotation of arr is sorted
+                non-decreasing
 end function

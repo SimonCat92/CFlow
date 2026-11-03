@@ -4,7 +4,7 @@
 // Example: add_elements([111,21,3,4000,5,6,7,8,9], 4) -> 24
 function add_elements(arr, k):
     let total = 0
-    AI_ASSIST { sum into total the first k elements of arr that have at
-                most two digits, ignoring sign }
+    sum into total the first k elements of arr that have at
+                most two digits, ignoring sign
     return total
 end function

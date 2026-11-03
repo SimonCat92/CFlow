@@ -1,0 +1,6 @@
+// HumanEval/45: triangle_area
+// Given a side length and the height, return the triangle's area.
+// Example: triangle_area(5, 3) -> 7.5
+fn float triangle_area(float a, float h) {
+    return a * h / 2.0;
+}

@@ -9,8 +9,8 @@ function anti_shuffle(s):
     let first = true
     for each word in split s on " ":
         if not first: result = result + " "
-        AI_ASSIST { append the characters of word sorted ascending by ASCII
-                    value to result }
+        append the characters of word sorted ascending by ASCII
+                    value to result
         first = false
     end for
     return result

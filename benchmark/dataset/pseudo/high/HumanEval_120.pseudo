@@ -8,5 +8,5 @@
 function maximum(arr, k):
     if k == 0: return []
     sort(arr)   // ascending, in place
-    AI_ASSIST { return the last k elements of arr as a list }
+    return the last k elements of arr as a list
 end function

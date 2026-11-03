@@ -10,9 +10,9 @@ function cycpattern_check(a, b):
     let pat = b + b
     for i from 0 to length(a) - l:
         for j from 0 to l:
-            AI_ASSIST { if the length-l window of a starting at i equals
+            if the length-l window of a starting at i equals
                         the length-l window of pat starting at j, return
-                        true }
+                        true
         end for
     end for
     return false

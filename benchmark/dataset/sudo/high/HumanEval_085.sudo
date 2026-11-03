@@ -1,0 +1,18 @@
+Solution {
+    // HumanEval/85: add
+    // Given a non-empty list of integers, add the even elements that sit at
+    // odd indices.
+    // Example: add([4, 2, 6, 7]) -> 2
+    fn add(lst) {
+        total = 0
+        for i in 1..(length(lst) - 1) step 2 {
+            if (lst[i] mod 2 == 0) {
+                total = total + lst[i]
+            }
+        }
+        return total
+    }
+    
+}
+
+Solution |> transpile(Python)

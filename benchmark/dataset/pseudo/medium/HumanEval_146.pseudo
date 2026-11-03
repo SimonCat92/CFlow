@@ -5,7 +5,7 @@
 //           specialFilter([33, -2, -3, 45, 21, 109]) -> 2
 function specialFilter(nums):
     let count = 0
-    AI_ASSIST { count into count the elements > 10 whose first and last
-                digits are both odd }
+    count into count the elements > 10 whose first and last
+                digits are both odd
     return count
 end function

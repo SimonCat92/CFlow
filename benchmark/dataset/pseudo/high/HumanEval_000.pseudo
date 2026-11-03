@@ -7,8 +7,8 @@ function has_close_elements(numbers, threshold):
     for i from 0 to length(numbers) - 1:
         for j from 0 to length(numbers) - 1:
             if i != j:
-                AI_ASSIST { if the distance between numbers[i] and
-                            numbers[j] is below threshold, return true }
+                if the distance between numbers[i] and
+                            numbers[j] is below threshold, return true
             end if
         end for
     end for

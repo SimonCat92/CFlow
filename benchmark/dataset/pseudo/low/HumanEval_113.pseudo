@@ -6,6 +6,6 @@
 // Examples: odd_count(["1234567"])
 //             -> ["the number of odd elements 4n the str4ng 4 of the 4nput."]
 function odd_count(lst):
-    AI_ASSIST { for each digit string, emit the template above with n =
-                its count of odd digits }
+    for each digit string, emit the template above with n =
+                its count of odd digits
 end function

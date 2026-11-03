@@ -10,9 +10,9 @@ function minPath(grid, k):
     let n = length(grid)
     let best = n * n + 1
     let ans = empty list
-    AI_ASSIST { the minimum path starts at the cell containing 1 and
+    the minimum path starts at the cell containing 1 and
                 alternates with its cheapest edge-adjacent neighbor:
                 set best to that neighbor's value, fill ans with k
-                entries alternating 1, best, 1, best, ... and return it }
+                entries alternating 1, best, 1, best, ... and return it
     return ans
 end function

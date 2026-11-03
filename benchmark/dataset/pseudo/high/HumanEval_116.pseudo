@@ -7,7 +7,7 @@
 function sort_array(arr):
     let result = copy(arr)
     sort(result)
-    AI_ASSIST { stable-sort result ascending by the number of 1 bits in
-                each element's binary representation }
+    stable-sort result ascending by the number of 1 bits in
+                each element's binary representation
     return result
 end function

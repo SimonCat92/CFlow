@@ -4,7 +4,7 @@
 //           unique_digits([152, 323, 1422, 10]) -> []
 function unique_digits(x):
     let result = empty list
-    AI_ASSIST { keep the elements of x whose digits are all odd, and return
-                them sorted into result }
+    keep the elements of x whose digits are all odd, and return
+                them sorted into result
     return result
 end function

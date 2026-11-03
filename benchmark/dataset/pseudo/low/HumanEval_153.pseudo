@@ -6,6 +6,6 @@
 //             -> "Slices.SErviNGSliCes";
 //           Strongest_Extension("my_class", ["AA","Be","CC"]) -> "my_class.AA"
 function Strongest_Extension(class_name, extensions):
-    AI_ASSIST { return "class_name." + the strongest extension by the
-                CAP - SM rule }
+    return "class_name." + the strongest extension by the
+                CAP - SM rule
 end function

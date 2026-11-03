@@ -1,0 +1,16 @@
+// HumanEval/115: max_fill
+// Each grid row is a well; every 1 is a unit of water. Each bucket holds
+// `capacity` units and a lower-raise cycle empties one bucket of water
+// from a well. Return the total number of bucket lowerings.
+// Examples: max_fill([[0,0,1,0],[0,1,0,0],[1,1,1,1]], 1) -> 6;
+//           max_fill([[0,0,1,1],[0,0,0,0],[1,1,1,1],[0,1,1,1]], 2) -> 5;
+//           max_fill([[0,0,0],[0,0,0]], 5) -> 0
+fn int max_fill(list<list<int>> grid, int capacity) {
+    int total = 0;
+    for (list<int> row in grid) {
+        int water = 0;
+        for (int cell in row) { water += cell; }
+        total += ceil((float)water / capacity);
+    }
+    return total;
+}

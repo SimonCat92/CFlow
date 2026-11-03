@@ -1,0 +1,20 @@
+Solution {
+    // HumanEval/11: string_xor
+    // Two strings of 0s and 1s: perform binary XOR per position and return
+    // the result string.
+    // Example: string_xor("010", "110") -> "100"
+    fn string_xor(a, b) {
+        result = ""
+        for i in 0..(length(a) - 1) {
+            if (a[i] == b[i]) {
+                result = result + "0"
+            } else {
+                result = result + "1"
+            }
+        }
+        return result
+    }
+    
+}
+
+Solution |> transpile(Python)

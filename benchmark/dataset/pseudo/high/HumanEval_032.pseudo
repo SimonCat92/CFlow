@@ -23,6 +23,6 @@ function find_zero(xs):
         begin = begin * 2.0
         end = end * 2.0
     end while
-    AI_ASSIST { bisect [begin, end] until end - begin <= 1e-10, each step
-                keeping the half where poly changes sign; return begin }
+    bisect [begin, end] until end - begin <= 1e-10, each step
+                keeping the half where poly changes sign; return begin
 end function

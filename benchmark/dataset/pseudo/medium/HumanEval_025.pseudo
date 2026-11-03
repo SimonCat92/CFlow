@@ -6,7 +6,7 @@
 function factorize(n):
     let fact = empty list
     let i = 2
-    AI_ASSIST { trial-divide n by increasing i, appending each prime
+    trial-divide n by increasing i, appending each prime
                 factor to fact (repeated by multiplicity); append any
-                leftover n > 1; return fact }
+                leftover n > 1; return fact
 end function

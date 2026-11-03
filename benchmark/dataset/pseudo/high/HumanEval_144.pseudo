@@ -8,7 +8,7 @@ function simplify(x, n):
     let b = 0
     let c = 0
     let d = 0
-    AI_ASSIST { parse the "num/den" fractions x and n into a, b, c, d }
+    parse the "num/den" fractions x and n into a, b, c, d
     let numerator = a * c
     let denom = b * d
     return numerator mod denom == 0

@@ -6,5 +6,5 @@
 //           cycpattern_check("abab","baa") -> true;
 //           cycpattern_check("himenss","simen") -> true
 function cycpattern_check(a, b):
-    AI_ASSIST { return true if any rotation of b is a substring of a }
+    return true if any rotation of b is a substring of a
 end function

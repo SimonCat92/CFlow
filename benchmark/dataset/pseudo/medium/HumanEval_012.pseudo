@@ -5,6 +5,6 @@
 //           longest(["a","bb","ccc"]) -> "ccc"
 function longest(strings):
     let best = none
-    AI_ASSIST { set best to the longest string in strings (first on ties)
-                or leave null for an empty list; return best }
+    set best to the longest string in strings (first on ties)
+                or leave null for an empty list; return best
 end function

@@ -5,7 +5,7 @@
 function rolling_max(numbers):
     let result = empty list
     declare best
-    AI_ASSIST { for each n in numbers, update best to the maximum seen so
-                far and append it to result }
+    for each n in numbers, update best to the maximum seen so
+                far and append it to result
     return result
 end function

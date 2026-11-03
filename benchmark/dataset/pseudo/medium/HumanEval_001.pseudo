@@ -5,7 +5,7 @@
 // Example: separate_paren_groups("( ) (( )) (( )( ))") -> ["()", "(())", "(()())"]
 function separate_paren_groups(paren_string):
     let result = empty list
-    AI_ASSIST { collect each balanced top-level parenthesis group of
-                paren_string into result, ignoring spaces }
+    collect each balanced top-level parenthesis group of
+                paren_string into result, ignoring spaces
     return result
 end function

@@ -8,7 +8,7 @@ function sorted_list_sum(lst):
     for each w in lst:
         if length(w) mod 2 == 0: append w to new_lst
     end for
-    AI_ASSIST { sort new_lst ascending by word length, with alphabetical
-                order for equal lengths }
+    sort new_lst ascending by word length, with alphabetical
+                order for equal lengths
     return new_lst
 end function

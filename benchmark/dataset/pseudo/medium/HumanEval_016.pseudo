@@ -5,6 +5,6 @@
 //           count_distinct_characters("Jerry") -> 4
 function count_distinct_characters(s):
     let seen = empty set
-    AI_ASSIST { add every character of s lowercased into seen, then return
-                the size of seen }
+    add every character of s lowercased into seen, then return
+                the size of seen
 end function

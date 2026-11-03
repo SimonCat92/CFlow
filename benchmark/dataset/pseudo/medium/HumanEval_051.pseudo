@@ -4,7 +4,7 @@
 //           remove_vowels("aaBAA") -> "B"; remove_vowels("zbcd") -> "zbcd"
 function remove_vowels(text):
     let result = ""
-    AI_ASSIST { append to result every character of text that is not a
-                vowel (a,e,i,o,u in either case) }
+    append to result every character of text that is not a
+                vowel (a,e,i,o,u in either case)
     return result
 end function

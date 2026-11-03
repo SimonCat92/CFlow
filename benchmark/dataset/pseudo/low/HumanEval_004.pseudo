@@ -3,6 +3,6 @@
 // element and the mean of the dataset. MAD = average |x - x_mean|.
 // Example: mean_absolute_deviation([1.0, 2.0, 3.0, 4.0]) -> 1.0
 function mean_absolute_deviation(numbers):
-    AI_ASSIST { compute the mean of numbers, then return the average of
-                |x - mean| over all x }
+    compute the mean of numbers, then return the average of
+                |x - mean| over all x
 end function

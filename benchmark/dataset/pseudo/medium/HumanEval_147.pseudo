@@ -5,7 +5,7 @@
 function get_max_triples(n):
     let A = empty list
     let count = 0
-    AI_ASSIST { build A per the formula and count triples summing to a
-                multiple of 3 }
+    build A per the formula and count triples summing to a
+                multiple of 3
     return count
 end function

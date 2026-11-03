@@ -6,6 +6,6 @@
 //           compare([0,5,0,0,0,4],[4,1,1,0,0,-2]) -> [4,4,1,0,0,6]
 function compare(game, guess):
     let result = empty list
-    AI_ASSIST { append |game[i] - guess[i]| to result for each i }
+    append |game[i] - guess[i]| to result for each i
     return result
 end function

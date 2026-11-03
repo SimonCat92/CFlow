@@ -5,7 +5,7 @@
 function remove_duplicates(numbers):
     let counts = empty map
     let result = empty list
-    AI_ASSIST { count occurrences of each element into counts, then append
-                to result the elements with count 1, in order }
+    count occurrences of each element into counts, then append
+                to result the elements with count 1, in order
     return result
 end function

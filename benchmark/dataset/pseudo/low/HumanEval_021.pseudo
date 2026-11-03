@@ -3,5 +3,5 @@
 // element becomes 0 and the largest becomes 1.
 // Example: rescale_to_unit([1.0,2.0,3.0,4.0,5.0]) -> [0.0,0.25,0.5,0.75,1.0]
 function rescale_to_unit(numbers):
-    AI_ASSIST { linearly rescale numbers so min -> 0 and max -> 1 }
+    linearly rescale numbers so min -> 0 and max -> 1
 end function

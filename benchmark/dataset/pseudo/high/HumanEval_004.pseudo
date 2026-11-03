@@ -6,5 +6,5 @@ function mean_absolute_deviation(numbers):
     let mean = 0.0
     for each x in numbers: mean = mean + x
     mean = mean / length(numbers)
-    AI_ASSIST { return the average of |x - mean| over all x in numbers }
+    return the average of |x - mean| over all x in numbers
 end function

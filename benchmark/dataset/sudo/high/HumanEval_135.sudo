@@ -1,0 +1,18 @@
+Solution {
+    // HumanEval/135: can_arrange
+    // Return the largest index of an element that is smaller than the
+    // element immediately before it; -1 if none exists. No duplicates.
+    // Examples: can_arrange([1,2,4,3,5]) -> 3; can_arrange([1,2,3]) -> -1
+    fn can_arrange(arr) {
+        ind = -1
+        for i in 1..(length(arr) - 1) {
+            if (arr[i] < arr[i - 1]) {
+                ind = i
+            }
+        }
+        return ind
+    }
+    
+}
+
+Solution |> transpile(Python)

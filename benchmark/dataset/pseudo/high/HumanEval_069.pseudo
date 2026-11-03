@@ -11,6 +11,6 @@ function search(lst):
         else: frq[v] = 1
     end for
     let ans = -1
-    AI_ASSIST { set ans to the greatest value v such that frq[v] >= v }
+    set ans to the greatest value v such that frq[v] >= v
     return ans
 end function

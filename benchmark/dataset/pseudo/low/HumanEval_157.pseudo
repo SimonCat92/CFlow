@@ -3,6 +3,6 @@
 // Examples: right_angle_triangle(3, 4, 5) -> true;
 //           right_angle_triangle(1, 2, 3) -> false
 function right_angle_triangle(a, b, c):
-    AI_ASSIST { return true iff the Pythagorean relation holds for some
-                assignment of the sides }
+    return true iff the Pythagorean relation holds for some
+                assignment of the sides
 end function

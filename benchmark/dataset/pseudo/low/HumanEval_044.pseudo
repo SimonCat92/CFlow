@@ -4,5 +4,5 @@
 // Examples: change_base(8, 3) -> "22"; change_base(8, 2) -> "1000";
 //           change_base(7, 2) -> "111"
 function change_base(x, base):
-    AI_ASSIST { return the base-`base` representation of x as a string }
+    return the base-`base` representation of x as a string
 end function

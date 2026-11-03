@@ -4,5 +4,5 @@
 // Examples: how_many_times("", "a") -> 0; how_many_times("aaa", "a") -> 3;
 //           how_many_times("aaaa", "aa") -> 3
 function how_many_times(s, sub):
-    AI_ASSIST { count occurrences of sub in s including overlapping ones }
+    count occurrences of sub in s including overlapping ones
 end function

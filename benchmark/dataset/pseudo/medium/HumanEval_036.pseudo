@@ -4,7 +4,7 @@
 // Examples: fizz_buzz(50) -> 0; fizz_buzz(78) -> 2; fizz_buzz(79) -> 3
 function fizz_buzz(n):
     let count = 0
-    AI_ASSIST { for every i < n divisible by 11 or 13, add the number of
-                '7' digits in i to count }
+    for every i < n divisible by 11 or 13, add the number of
+                '7' digits in i to count
     return count
 end function

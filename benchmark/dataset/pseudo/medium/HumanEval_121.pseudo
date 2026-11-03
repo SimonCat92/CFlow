@@ -4,7 +4,7 @@
 //           solution([30,13,24,321]) -> 0
 function solution(lst):
     let total = 0
-    AI_ASSIST { sum into total the elements lst[i] where i is even and the
-                element is odd }
+    sum into total the elements lst[i] where i is even and the
+                element is odd
     return total
 end function

@@ -3,6 +3,6 @@
 // Examples: digitSum("") -> 0; digitSum("abAB") -> 131;
 //           digitSum("abcCd") -> 67; digitSum("helloE") -> 69
 function digitSum(s):
-    AI_ASSIST { return the sum of ASCII codes of the uppercase characters
-                in s }
+    return the sum of ASCII codes of the uppercase characters
+                in s
 end function

@@ -1,0 +1,31 @@
+Solution {
+    // HumanEval/141: file_name_check
+    // Return "Yes" if the file name is valid: at most 3 digits, exactly one
+    // ".", a non-empty name part starting with a latin letter, and an
+    // extension of txt, exe or dll.
+    // Examples: file_name_check("example.txt") -> "Yes";
+    //           file_name_check("1example.dll") -> "No"
+    fn file_name_check(file_name) {
+        lst = []
+        split file_name on "." into lst; if it does not produce
+                    exactly 2 parts, return "No"
+        if (lst[1] != "txt" && lst[1] != "exe" && lst[1] != "dll") {
+            return "No"
+        }
+        if (length(lst[0]) == 0) {
+            return "No"
+        }
+        if lst[0] does not start with a latin letter, return "No"
+        digits = 0
+        for each c in lst[0] {
+            if c is a digit, increment digits
+        }
+        if (digits > 3) {
+            return "No"
+        }
+        return "Yes"
+    }
+    
+}
+
+Solution |> transpile(Python)

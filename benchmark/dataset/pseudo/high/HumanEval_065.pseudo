@@ -6,6 +6,6 @@
 function circular_shift(x, shift):
     let s = str(x)
     if shift > length(s): return reverse(s)
-    AI_ASSIST { return the last `shift` digits of s followed by the
-                remaining leading digits }
+    return the last `shift` digits of s followed by the
+                remaining leading digits
 end function

@@ -7,7 +7,7 @@
 //           maximum([-3, 2, 1, 2, -1, -2, 1], 1) -> [2]
 function maximum(arr, k):
     let result = empty list
-    AI_ASSIST { fill result with the k largest values of arr, sorted
-                ascending (empty when k == 0) }
+    fill result with the k largest values of arr, sorted
+                ascending (empty when k == 0)
     return result
 end function

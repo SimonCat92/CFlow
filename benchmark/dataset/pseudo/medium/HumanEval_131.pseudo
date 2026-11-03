@@ -5,6 +5,6 @@
 function digits(n):
     let product = 1
     let odd_count = 0
-    AI_ASSIST { multiply the odd digits of n into product tracking
-                odd_count; return product, or 0 if odd_count is 0 }
+    multiply the odd digits of n into product tracking
+                odd_count; return product, or 0 if odd_count is 0
 end function

@@ -6,7 +6,7 @@
 function generate_integers(a, b):
     declare lower, upper
     let result = empty list
-    AI_ASSIST { clamp the range to single digits, collect the even ones
-                into result }
+    clamp the range to single digits, collect the even ones
+                into result
     return result
 end function

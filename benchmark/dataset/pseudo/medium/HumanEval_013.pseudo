@@ -5,6 +5,6 @@
 function greatest_common_divisor(a, b):
     let x = a
     let y = b
-    AI_ASSIST { reduce x and y with Euclid's method until y is 0, then
-                return x }
+    reduce x and y with Euclid's method until y is 0, then
+                return x
 end function

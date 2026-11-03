@@ -3,7 +3,7 @@
 // Examples: intersperse([], 4) -> []; intersperse([1,2,3], 4) -> [1,4,2,4,3]
 function intersperse(numbers, delimeter):
     let result = empty list
-    AI_ASSIST { fill result with the elements of numbers and delimeter
-                between each consecutive pair }
+    fill result with the elements of numbers and delimeter
+                between each consecutive pair
     return result
 end function

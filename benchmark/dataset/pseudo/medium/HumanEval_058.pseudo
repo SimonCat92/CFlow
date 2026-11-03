@@ -5,7 +5,7 @@
 function common(l1, l2):
     let both = empty set
     let result = empty list
-    AI_ASSIST { collect into both the values present in l1 and l2, then
-                return them sorted into result }
+    collect into both the values present in l1 and l2, then
+                return them sorted into result
     return result
 end function

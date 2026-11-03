@@ -1,0 +1,20 @@
+// HumanEval/117: select_words
+// Return the words of s (letters and spaces only) that contain exactly n
+// consonants, in order. Empty string -> [].
+// Examples: select_words("Mary had a little lamb", 4) -> ["little"];
+//           select_words("Mary had a little lamb", 3) -> ["Mary","lamb"];
+//           select_words("simple white space", 2) -> []
+fn list<string> select_words(string s, int n) {
+    list<string> result;
+    for (string word in split_whitespace(s)) {
+        int n_consonants = 0;
+        for (string c in word) {
+            string lc = lower(c);
+            if (lc != "a" && lc != "e" && lc != "i" && lc != "o" && lc != "u") {
+                n_consonants++;
+            }
+        }
+        if (n_consonants == n) { result.add(word); }
+    }
+    return result;
+}

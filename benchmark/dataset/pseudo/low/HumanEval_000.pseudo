@@ -4,6 +4,6 @@
 // Examples: has_close_elements([1.0, 2.0, 3.0], 0.5) -> false
 //           has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3) -> true
 function has_close_elements(numbers, threshold):
-    AI_ASSIST { return true if any two distinct elements of numbers differ
-                by less than threshold, otherwise false }
+    return true if any two distinct elements of numbers differ
+                by less than threshold, otherwise false
 end function

@@ -1,0 +1,17 @@
+Solution {
+    // HumanEval/100: make_a_pile
+    // Make a pile of n levels: level 1 has n stones and each next level has
+    // the next number of the same parity (next odd if n is odd, next even if
+    // n is even). Return the stones per level.
+    // Example: make_a_pile(3) -> [3, 5, 7]
+    fn make_a_pile(n) {
+        pile = []
+        for i in 0..(n - 1) {
+            pile.push(n + 2 * i)
+        }
+        return pile
+    }
+    
+}
+
+Solution |> transpile(Python)

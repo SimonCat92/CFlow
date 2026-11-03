@@ -12,6 +12,6 @@ function histogram(test):
         if counts contains w: increment counts[w]
         else: counts[w] = 1
     end for
-    AI_ASSIST { return a map containing only the letters whose count
-                equals the maximum count in counts; empty map if none }
+    return a map containing only the letters whose count
+                equals the maximum count in counts; empty map if none
 end function

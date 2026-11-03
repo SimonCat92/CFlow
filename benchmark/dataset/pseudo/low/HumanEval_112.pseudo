@@ -4,6 +4,6 @@
 // Examples: reverse_delete("abcde", "ae") -> ("bcd", false);
 //           reverse_delete("abcdedcba", "ab") -> ("cdedc", true)
 function reverse_delete(s, c):
-    AI_ASSIST { return (s with all characters of c removed, whether that
-                result is a palindrome) }
+    return (s with all characters of c removed, whether that
+                result is a palindrome)
 end function

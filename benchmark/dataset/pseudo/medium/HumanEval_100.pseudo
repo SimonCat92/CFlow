@@ -5,6 +5,6 @@
 // Example: make_a_pile(3) -> [3, 5, 7]
 function make_a_pile(n):
     let pile = empty list
-    AI_ASSIST { append n + 2*i to pile for i from 0 to n-1 }
+    append n + 2*i to pile for i from 0 to n-1
     return pile
 end function

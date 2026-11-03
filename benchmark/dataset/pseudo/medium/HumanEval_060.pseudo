@@ -4,6 +4,6 @@
 //           sum_to_n(5) -> 15; sum_to_n(1) -> 1
 function sum_to_n(n):
     let s = 0
-    AI_ASSIST { accumulate the sum of 1..n into s }
+    accumulate the sum of 1..n into s
     return s
 end function

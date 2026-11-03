@@ -1,0 +1,23 @@
+Solution {
+    // HumanEval/80: is_happy
+    // A string is happy if its length is at least 3 and every 3 consecutive
+    // letters are distinct.
+    // Examples: is_happy("a") -> false; is_happy("aa") -> false;
+    //           is_happy("abcd") -> true; is_happy("aabb") -> false;
+    //           is_happy("adb") -> true; is_happy("xyy") -> false
+    fn is_happy(s) {
+        n = length(s)
+        if (n < 3) {
+            return false
+        }
+        for i in 0..(n - 2 - 1) {
+            if (s[i] == s[i + 1] || s[i + 1] == s[i + 2] || s[i] == s[i + 2]) {
+                return false
+            }
+        }
+        return true
+    }
+    
+}
+
+Solution |> transpile(Python)

@@ -6,7 +6,7 @@
 //           sort_array([1,0,2,3,4]) -> [0,1,2,3,4]
 function sort_array(arr):
     let result = empty list
-    AI_ASSIST { copy arr into result and sort ascending by binary popcount
-                (ties by decimal value) }
+    copy arr into result and sort ascending by binary popcount
+                (ties by decimal value)
     return result
 end function

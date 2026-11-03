@@ -5,7 +5,7 @@
 function f(n):
     let ret = empty list
     declare x
-    AI_ASSIST { for i from 1 to n, append i! to ret if i is even, else
-                append the sum 1..i }
+    for i from 1 to n, append i! to ret if i is even, else
+                append the sum 1..i
     return ret
 end function

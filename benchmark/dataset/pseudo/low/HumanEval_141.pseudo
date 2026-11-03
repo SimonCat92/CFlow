@@ -5,6 +5,6 @@
 // Examples: file_name_check("example.txt") -> "Yes";
 //           file_name_check("1example.dll") -> "No"
 function file_name_check(file_name):
-    AI_ASSIST { return "Yes" iff file_name meets all the validity rules
-                above }
+    return "Yes" iff file_name meets all the validity rules
+                above
 end function

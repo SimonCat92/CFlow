@@ -8,7 +8,7 @@
 function odd_count(lst):
     let res = empty list
     declare n
-    AI_ASSIST { for each string in lst, count its odd digits into n and
-                append the template above with n substituted }
+    for each string in lst, count its odd digits into n and
+                append the template above with n substituted
     return res
 end function

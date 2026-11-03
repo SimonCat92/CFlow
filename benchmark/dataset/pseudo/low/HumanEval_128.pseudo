@@ -4,6 +4,6 @@
 // Examples: prod_signs([1,2,2,-4]) -> -9; prod_signs([0,1]) -> 0;
 //           prod_signs([]) -> null
 function prod_signs(arr):
-    AI_ASSIST { return sum(|a|) * product(sign a) over arr, or null if
-                empty }
+    return sum(|a|) * product(sign a) over arr, or null if
+                empty
 end function

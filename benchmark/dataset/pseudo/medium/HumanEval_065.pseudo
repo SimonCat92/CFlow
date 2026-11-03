@@ -6,7 +6,7 @@
 function circular_shift(x, shift):
     let s = str(x)
     let result = ""
-    AI_ASSIST { set result to s rotated right by shift, or to s reversed
-                if shift exceeds s.length() }
+    set result to s rotated right by shift, or to s reversed
+                if shift exceeds s.length()
     return result
 end function

@@ -6,6 +6,6 @@
 //           pairs_sum_to_zero([1]) -> false
 function pairs_sum_to_zero(l):
     declare i, j
-    AI_ASSIST { check every pair of distinct indices i < j and return true
-                if l[i] + l[j] == 0, else false }
+    check every pair of distinct indices i < j and return true
+                if l[i] + l[j] == 0, else false
 end function

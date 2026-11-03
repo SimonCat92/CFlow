@@ -6,6 +6,6 @@
 //           split_words("Hello,world!") -> ["Hello","world!"];
 //           split_words("abcdef") -> 3
 function split_words(txt):
-    AI_ASSIST { split on whitespace, else commas, else return the odd-
-                position lowercase letter count }
+    split on whitespace, else commas, else return the odd-
+                position lowercase letter count
 end function

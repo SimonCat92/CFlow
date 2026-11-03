@@ -4,7 +4,7 @@
 // Example: string_xor("010", "110") -> "100"
 function string_xor(a, b):
     let result = ""
-    AI_ASSIST { for each position, append "0" to result when a[i] == b[i]
-                and "1" otherwise }
+    for each position, append "0" to result when a[i] == b[i]
+                and "1" otherwise
     return result
 end function

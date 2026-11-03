@@ -4,5 +4,5 @@
 //           prime_length("kittens") -> true; prime_length("orange") -> false
 function prime_length(s):
     let l = length(s)
-    AI_ASSIST { return true if l is prime, false if l < 2 or composite }
+    return true if l is prime, false if l < 2 or composite
 end function

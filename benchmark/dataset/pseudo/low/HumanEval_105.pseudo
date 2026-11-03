@@ -5,6 +5,6 @@
 //             -> ["Eight","Five","Four","Three","Two","Two","One","One"]
 //           by_length([]) -> []; by_length([1,-1,55]) -> ["One"]
 function by_length(arr):
-    AI_ASSIST { sort arr descending, keep only 1..9, and return the English
-                names of the digits }
+    sort arr descending, keep only 1..9, and return the English
+                names of the digits
 end function

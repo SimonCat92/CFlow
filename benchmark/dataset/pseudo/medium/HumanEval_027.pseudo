@@ -3,6 +3,6 @@
 // Example: flip_case("Hello") -> "hELLO"
 function flip_case(s):
     let result = ""
-    AI_ASSIST { append each character of s to result with flipped case }
+    append each character of s to result with flipped case
     return result
 end function

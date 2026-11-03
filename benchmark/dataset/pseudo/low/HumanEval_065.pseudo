@@ -4,6 +4,6 @@
 // digits reversed.
 // Examples: circular_shift(12, 1) -> "21"; circular_shift(12, 2) -> "12"
 function circular_shift(x, shift):
-    AI_ASSIST { return x's digits rotated right by shift as a string, or
-                the digits reversed if shift exceeds the digit count }
+    return x's digits rotated right by shift as a string, or
+                the digits reversed if shift exceeds the digit count
 end function

@@ -7,7 +7,7 @@
 function search(lst):
     let frq = empty map
     let ans = -1
-    AI_ASSIST { count occurrences into frq, then set ans to the greatest
-                value v with frq[v] >= v }
+    count occurrences into frq, then set ans to the greatest
+                value v with frq[v] >= v
     return ans
 end function

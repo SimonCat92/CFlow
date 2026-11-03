@@ -4,7 +4,7 @@
 //           count_upper("dBBE") -> 0
 function count_upper(s):
     let count = 0
-    AI_ASSIST { count into count the characters s[i] with i even that are
-                uppercase vowels }
+    count into count the characters s[i] with i even that are
+                uppercase vowels
     return count
 end function

@@ -4,6 +4,6 @@
 //           same_chars("eabcd", "dddddddabc") -> false;
 //           same_chars("abcd", "dddddddabce") -> false
 function same_chars(s0, s1):
-    AI_ASSIST { return true if the set of characters in s0 equals the set
-                in s1 }
+    return true if the set of characters in s0 equals the set
+                in s1
 end function

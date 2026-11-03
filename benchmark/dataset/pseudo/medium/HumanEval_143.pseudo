@@ -5,6 +5,6 @@
 //           words_in_sentence("lets go for swimming") -> "go for"
 function words_in_sentence(sentence):
     let new_lst = empty list
-    AI_ASSIST { keep the words of sentence with prime length into new_lst,
-                in order; return them space-joined }
+    keep the words of sentence with prime length into new_lst,
+                in order; return them space-joined
 end function

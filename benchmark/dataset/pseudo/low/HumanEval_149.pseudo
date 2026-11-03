@@ -4,6 +4,6 @@
 // Examples: sorted_list_sum(["aa", "a", "aaa"]) -> ["aa"];
 //           sorted_list_sum(["ab", "a", "aaa", "cd"]) -> ["ab", "cd"]
 function sorted_list_sum(lst):
-    AI_ASSIST { drop odd-length strings and return the rest sorted by
-                length, ties alphabetical }
+    drop odd-length strings and return the rest sorted by
+                length, ties alphabetical
 end function

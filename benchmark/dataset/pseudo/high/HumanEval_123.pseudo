@@ -6,9 +6,9 @@ function get_odd_collatz(n):
     let odd_collatz = empty list
     if n mod 2 == 1: append n to odd_collatz
     while n > 1:
-        AI_ASSIST { advance n by one Collatz step (n/2 if even, 3n+1 if
+        advance n by one Collatz step (n/2 if even, 3n+1 if
                     odd), and if the new n is odd append it to
-                    odd_collatz }
+                    odd_collatz
     end while
     sort(odd_collatz)
     return odd_collatz

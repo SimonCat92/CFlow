@@ -6,7 +6,7 @@
 function triangle_area(a, b, c):
     declare s
     declare area
-    AI_ASSIST { if the sides violate the triangle inequality return -1;
+    if the sides violate the triangle inequality return -1;
                 else compute the area via Heron's formula (s = semi-
-                perimeter) rounded to 2 decimals }
+                perimeter) rounded to 2 decimals
 end function

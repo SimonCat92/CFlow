@@ -4,6 +4,6 @@
 // Example: parse_music("o o| .| o| o| .| .| .| .| o o")
 //          -> [4,2,1,2,2,1,1,1,1,4,4]
 function parse_music(music_string):
-    AI_ASSIST { map each space-separated note token to its beat length per
-                the legend }
+    map each space-separated note token to its beat length per
+                the legend
 end function

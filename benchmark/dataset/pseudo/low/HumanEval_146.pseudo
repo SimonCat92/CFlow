@@ -4,6 +4,6 @@
 // Examples: specialFilter([15, -73, 14, -15]) -> 1;
 //           specialFilter([33, -2, -3, 45, 21, 109]) -> 2
 function specialFilter(nums):
-    AI_ASSIST { count elements > 10 whose first and last digits are both
-                odd }
+    count elements > 10 whose first and last digits are both
+                odd
 end function

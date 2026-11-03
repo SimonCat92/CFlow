@@ -6,6 +6,6 @@
 function find_closest_elements(numbers):
     declare best
     declare pair
-    AI_ASSIST { scan every pair of distinct elements, keep the closest in
-                pair (ascending) and its distance in best, return pair }
+    scan every pair of distinct elements, keep the closest in
+                pair (ascending) and its distance in best, return pair
 end function

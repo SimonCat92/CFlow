@@ -7,6 +7,6 @@
 //           triples_sum_to_zero([1]) -> false
 function triples_sum_to_zero(l):
     declare i, j, k
-    AI_ASSIST { check every triple of distinct indices i < j < k and return
-                true if their elements sum to 0, else false }
+    check every triple of distinct indices i < j < k and return
+                true if their elements sum to 0, else false
 end function

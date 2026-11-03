@@ -3,5 +3,5 @@
 // Example: triangle_area(5, 3) -> 7.5
 function triangle_area(a, h):
     declare area
-    AI_ASSIST { set area to a * h / 2 and return it }
+    set area to a * h / 2 and return it
 end function

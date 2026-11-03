@@ -1,0 +1,8 @@
+// HumanEval/97: multiply
+// Return the product of the unit digits of a and b (input always valid,
+// may be negative).
+// Examples: multiply(148, 412) -> 16; multiply(19, 28) -> 72;
+//           multiply(2020, 1851) -> 0; multiply(14, -15) -> 20
+fn int multiply(int a, int b) {
+    return (abs(a) % 10) * (abs(b) % 10);
+}

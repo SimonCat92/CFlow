@@ -4,6 +4,6 @@
 // otherwise return -1.
 // Examples: triangle_area(3,4,5) -> 6.0; triangle_area(1,2,10) -> -1
 function triangle_area(a, b, c):
-    AI_ASSIST { return the triangle area rounded to 2 decimals if the sides
-                are valid, else -1 }
+    return the triangle area rounded to 2 decimals if the sides
+                are valid, else -1
 end function

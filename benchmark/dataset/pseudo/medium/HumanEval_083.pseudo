@@ -3,7 +3,7 @@
 // integers that start or end with 1.
 function starts_one_ends(n):
     declare count
-    AI_ASSIST { compute the count combinatorially (mind the n == 1 case)
-                into count }
+    compute the count combinatorially (mind the n == 1 case)
+                into count
     return count
 end function

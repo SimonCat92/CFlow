@@ -6,8 +6,8 @@ function even_odd_count(num):
     let even_count = 0
     let odd_count = 0
     for each d in str(abs(num)):
-        AI_ASSIST { if d is an even digit increment even_count, else
-                    increment odd_count }
+        if d is an even digit increment even_count, else
+                    increment odd_count
     end for
     return (even_count, odd_count)
 end function

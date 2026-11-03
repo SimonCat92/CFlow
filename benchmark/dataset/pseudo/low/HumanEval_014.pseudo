@@ -3,5 +3,5 @@
 // longest.
 // Example: all_prefixes("abc") -> ["a", "ab", "abc"]
 function all_prefixes(s):
-    AI_ASSIST { return every prefix of s from shortest to longest }
+    return every prefix of s from shortest to longest
 end function

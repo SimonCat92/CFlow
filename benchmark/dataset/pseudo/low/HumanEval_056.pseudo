@@ -4,6 +4,6 @@
 // Examples: correct_bracketing("<") -> false; correct_bracketing("<>") -> true;
 //           correct_bracketing("<<><>>") -> true; correct_bracketing("><<>") -> false
 function correct_bracketing(brackets):
-    AI_ASSIST { return true if the "<" and ">" brackets are correctly
-                nested }
+    return true if the "<" and ">" brackets are correctly
+                nested
 end function

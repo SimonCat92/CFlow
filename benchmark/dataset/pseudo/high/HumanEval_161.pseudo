@@ -7,8 +7,8 @@ function solve(s):
     let new_str = ""
     let flg = 0
     for each c in s:
-        AI_ASSIST { if c is a letter, append its case-flipped form to
-                    new_str and set flg to 1; otherwise append c }
+        if c is a letter, append its case-flipped form to
+                    new_str and set flg to 1; otherwise append c
     end for
     if flg == 0: return reverse(new_str)
     return new_str

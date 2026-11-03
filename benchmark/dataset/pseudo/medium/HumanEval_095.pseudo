@@ -7,6 +7,6 @@
 //           check_dict_case({"STATE":"NC","ZIP":"12345"}) -> true
 function check_dict_case(any, dict):
     declare uniform
-    AI_ASSIST { return false if dict is empty; set uniform to whether all
-                keys are strings of the same case and return uniform }
+    return false if dict is empty; set uniform to whether all
+                keys are strings of the same case and return uniform
 end function

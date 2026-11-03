@@ -9,6 +9,6 @@ function sort_numbers(numbers):
         if w == "": continue
         append w to words
     end for
-    AI_ASSIST { sort words by their value in `value`, join with single
-                spaces and return the string }
+    sort words by their value in `value`, join with single
+                spaces and return the string
 end function

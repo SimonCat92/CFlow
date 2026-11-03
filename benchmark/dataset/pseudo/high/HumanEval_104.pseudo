@@ -5,7 +5,7 @@
 function unique_digits(x):
     let result = empty list
     for each v in x:
-        AI_ASSIST { if every decimal digit of v is odd, append v to result }
+        if every decimal digit of v is odd, append v to result
     end for
     sort(result)
     return result

@@ -4,6 +4,6 @@
 // Example: do_algebra(["+","*","-"], [2,3,4,5]) -> 9  // 2+3*4-5
 function do_algebra(op, operand):
     declare expression
-    AI_ASSIST { build the interleaved expression and evaluate it with
-                standard operator precedence }
+    build the interleaved expression and evaluate it with
+                standard operator precedence
 end function

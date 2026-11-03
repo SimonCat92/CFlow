@@ -5,6 +5,6 @@
 //           select_words("Mary had a little lamb", 3) -> ["Mary","lamb"];
 //           select_words("simple white space", 2) -> []
 function select_words(s, n):
-    AI_ASSIST { return the words of s containing exactly n consonants, in
-                order }
+    return the words of s containing exactly n consonants, in
+                order
 end function

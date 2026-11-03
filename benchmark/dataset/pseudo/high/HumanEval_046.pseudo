@@ -13,8 +13,8 @@ function fib4(n):
     if n == 2: return c
     if n == 3: return d
     for i from 4 to n:
-        AI_ASSIST { compute the next value as a + b + c + d and rotate the
-                    window: a = b, b = c, c = d, d = next }
+        compute the next value as a + b + c + d and rotate the
+                    window: a = b, b = c, c = d, d = next
     end for
     return d
 end function

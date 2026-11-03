@@ -5,6 +5,6 @@
 //           sorted_list_sum(["ab", "a", "aaa", "cd"]) -> ["ab", "cd"]
 function sorted_list_sum(lst):
     let new_lst = empty list
-    AI_ASSIST { keep the even-length strings of lst into new_lst, sort by
-                length (ties alphabetical), and return it }
+    keep the even-length strings of lst into new_lst, sort by
+                length (ties alphabetical), and return it
 end function

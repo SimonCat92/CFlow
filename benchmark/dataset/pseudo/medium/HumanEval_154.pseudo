@@ -8,6 +8,6 @@
 function cycpattern_check(a, b):
     let l = length(b)
     let pat = b + b
-    AI_ASSIST { return true if some length-l window of a matches a
-                length-l window of pat }
+    return true if some length-l window of a matches a
+                length-l window of pat
 end function

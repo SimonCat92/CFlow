@@ -1,0 +1,21 @@
+Solution {
+    // HumanEval/54: same_chars
+    // Check if two words have the same characters.
+    // Examples: same_chars("eabcdzzzz", "dddzzzzzzzddeddabc") -> true;
+    //           same_chars("eabcd", "dddddddabc") -> false;
+    //           same_chars("abcd", "dddddddabce") -> false
+    fn same_chars(s0, s1) {
+        a = {}
+        b = {}
+        for each c in s0 {
+            a.push(c)
+        }
+        for each c in s1 {
+            b.push(c)
+        }
+        return a == b
+    }
+    
+}
+
+Solution |> transpile(Python)

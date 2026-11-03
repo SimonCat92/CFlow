@@ -5,5 +5,5 @@
 //           double_the_difference([-1,-2,0]) -> 0;
 //           double_the_difference([9,-2]) -> 81
 function double_the_difference(lst):
-    AI_ASSIST { sum the squares of the positive odd integers in lst }
+    sum the squares of the positive odd integers in lst
 end function
